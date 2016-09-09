@@ -1,0 +1,36 @@
+/* Start of the multihandle Object...*/
+function MultiHandle(owner){
+ var my_handlers = new Array();
+ var my_owner = owner;
+ this.append = function(handler){
+  my_handlers[my_handlers.length] = handler;
+ }
+ this.fire = function(evt){
+  var i;
+  for(i = 0; i < my_handlers.length; i++){
+   my_owner.tempspace = my_handlers[i];
+   my_owner.tempspace(evt);
+  }
+ }
+}
+/* End of the multihandle object*/
+/* start of the object add event handler script */
+  
+/*This bit goes where you'd normally write...
+... object.onmouseup = [event handler]...
+... where [event handler] is an existing function ...
+... that handles an event, or even an
+... anonymous function.*/
+if(typeof(MultiHandle) != "undefined"){
+ var mup_handler = object.mh_onmouseup;
+ if(!mup_handler){
+  mup_handler = new MultiHandle(object);
+  object.mh_onmouseup = mup_handler;
+  object.onmouseup = function(evt){
+  this.mh_onmouseup.fire(evt);
+  };
+ }
+ mup_handler.append([event handler]);
+}else{
+ object.onmouseup = [event handler];
+}

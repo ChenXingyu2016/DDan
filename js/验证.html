@@ -1,0 +1,33 @@
+<html>
+<head>
+<script type="text/javascript">
+
+function validate_required(field,alerttxt)
+{
+with (field)//命名空间为field
+  {
+  if (value==null||value=="")//当field.value为空时。
+    {alert(alerttxt);return false}//弹出alertxt的内容，并返回false
+  else {return true}
+  }
+}
+
+function validate_form(thisform)//2.进入事件，参数为刚刚传进来的this
+{
+with (thisform)//with：命名空间，with{}中不用写thisform.xxx,直接写xxx就是thisform的
+  {
+  if (validate_required(email,"Email must be filled out!")==false)//调用validate_required参数是thisform下面的name=email的标签的引用，另一个参数是字符串
+    {email.focus();return false}//如果validate_required返回false,就把焦点设定到email上，然后返回false，意味着验证失败，表单不会被提交。
+  }
+}
+</script>
+</head>
+
+<body>
+<form action="submitpage.htm" onsubmit="return validate_form(this)" method="post"><!--1.执行validate_form参数 并返回this值-->
+Email: <input type="text" name="email" size="30">
+<input type="submit" value="Submit"> 
+</form>
+</body>
+
+</html>

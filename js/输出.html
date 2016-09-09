@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+	<script>
+		function myFunction()
+		{
+			x=document.getElementById("demo");//查找元素，注意大小写
+			x.innerHTML="My First HTML";
+		}
+		function myFunction1()
+		{
+			document.write("文档消失了");
+		}
+	</script>
+</head>
+	<p id="demo">Hi</p>
+	<button type="button" onclick="myFunction()">更改</button>
+	<button type="button" onclick="myFunction1()">消失</button>
+	<script>document.write("<p>通过脚本附加的内容</p>")</script>
+</body>
+</html>

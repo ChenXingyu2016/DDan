@@ -1,0 +1,4 @@
+
+Scratch Pad 2
+-------------
+This is the second scratch pad that provides the same functionality as the first scratch pad but is independent from it. You can use one or both of the scratch pads in any way that you want.

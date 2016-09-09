@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		window.onload=function()
+		{
+			document.getElementById("mybtn").onclick=function(){me()};//给id为mybtn的元素分配事件
+			function me()
+			{
+				document.getElementById("demo").innerHTML=Date();
+			}
+		}
+	</script>
+</head>
+<body>
+	<button type="button" id="mybtn">go</button><!--定义button的id-->
+	<p id="demo"></p>
+</body>
+</html>

@@ -1,0 +1,4 @@
+
+Scratch Pad 1
+-------------
+CSE HTML Validator Std/Pro features two independent scratch pads that you can use while working. If the option is enabled, as it is by default, then each scratch pad is automatically saved when you leave HTML Validator and reloaded when HTML Validator is run. Simply change (edit, delete, copy, cut, and/or paste) the text in the scratch pads as needed while you work. You may delete this default text at any time.

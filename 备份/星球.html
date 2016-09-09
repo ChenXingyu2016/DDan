@@ -1,0 +1,46 @@
+<html>
+<body>
+
+<p>请点击图像上的星球，把它们放大。</p>
+<abbr title="planetmap">
+<img
+src="E:\web\星球.jpg"
+border="0" usemap="#planetmap"
+alt="Planets" />
+</abbr>
+
+<map name="planetmap" id="planetmap">
+
+<abbr title="Vennus">
+<area
+shape="circle"
+coords="180,139,14"
+href ="E:\web\星球3.gif"
+target ="_blank"
+alt="Venus" />
+</abbr>
+
+<abbr title="Mercury">
+<area
+shape="circle"
+coords="129,161,10"
+href ="E:\web\星球2.gif"
+target ="_blank"
+alt="Mercury" />
+</abbr>
+
+<abbr title="sun">
+<area
+shape="rect"
+coords="0,0,110,260"
+href ="E:\web\星球1.gif"
+target ="_blank"
+alt="Sun" />
+</abbr>
+
+</map>
+
+<p><b>注释：</b>img 元素中的 "usemap" 属性引用 map 元素中的 "id" 或 "name" 属性（根据浏览器），所以我们同时向 map 元素添加了 "id" 和 "name" 属性。</p>
+
+</body>
+</html>

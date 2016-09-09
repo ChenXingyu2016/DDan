@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+CSE HTML Validator User Inserter Configuration by AI Internet Solutions (http://www.htmlvalidator.com/)
+
+Updated: July 19, 2011 - improved XML compatibility
+
+If you want to add your own custom entries to an inserter, then this is the recommended inserter to do it to. Unlike the CSS Inserter and Tag Inserter configuration files, this file will not be overwritten when you upgrade CSE HTML Validator, so your changes and additions will not be lost. Furthermore, the file format for this configuration file is the same as that for the Tag Inserter and CSS Inserter, so you may want to view the configuration files for those inserters in order to understand the format.
+
+For detailed documentation about this file, see the "Text Inserters" topic in help.
+
+flags:
+ 1-press return after inserting text
+ 2-don't change (preserve) case when inserting text
+ 4-line separator
+ 8-close (actually hide) tag inserter (new v4.51)
+ 16-CSS property (new v5.02)
+ 32-don't change case if XHTML document (new v5.4910)
+ 64-add quick close if XHTML document
+
+command:
+ 1-edit configuration
+ 2-reload configuration
+
+inserttext:
+ \r - to simulate pressing the enter key
+ \t - to simulate pressing the tab key
+ \b - to simulate pressing the backspace key
+
+-->
+
+<csetaginserterconfiguration version="1">
+<tag menu='User' flags='0' caption='Edit Configuration' hint='Edit the configuration file to make your own additions and changes to the User Inserter.' command='1'/>
+<tag menu='User' flags='0' caption='Reload Configuration' hint='Delete the User Inserter and recreate it to reread its configuration.' command='2'/>
+<tag menu='User' flags='4'/>
+<tag menu='User' flags='8' caption='Close User Inserter'/>
+
+<tag menu='Example' flags='32' inserttext='&lt;example>|&lt;/example>' hint='Example entry. Surrounds selected text (if any) in an "example" tag.'/>
+
+</csetaginserterconfiguration>

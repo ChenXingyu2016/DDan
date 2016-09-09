@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		function over(dd)
+		{
+			dd.innerHTML="谢谢";
+		}
+		function out(dd)
+		{
+			dd.innerHTML="把鼠标移动到这里";
+		}	
+		function mdown(ss)
+		{
+			ss.style.backgroundColor="blue";
+			ss.innerHTML="请释放鼠标"
+		}
+		function mup(ss)
+		{
+			ss.style.backgroundColor="green";
+			ss.innerHTML="请按下鼠标";
+		}
+	</script>
+</head>
+<body>
+<div onmouseover="over(this)" onmouseout="out(this)" style="background-color:green;width:120px;height:120px;padding:40px;color:white;">把鼠标移动到这里</div><!--padding：内间距（文本与边框的距离）-->
+<div onmousedown="mdown(this)" onmouseup="mup(this)" style="background-color:green;width:120px;heigth:120px;padding:40px;color:white;">请按下鼠标</div>
+</body>
+</html>

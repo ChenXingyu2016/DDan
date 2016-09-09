@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		var i;
+		var x;
+		var txt="";//若不定义""，则txt默认为undefined
+		var person={fname:"Chen",lname:"Xingyu",age:22};//两种不同的数组定义方法{}
+		var cars=["Chen","Luo","Pan"];//两种不同的数组定义方法[]
+		for (i=0;i<cars.length;i++)
+			{
+				document.write(cars[i]+"<br>");
+			}
+		function BianLi()
+		{
+			for (x in person)
+				{
+					txt=txt+person[x];
+				}
+			document.getElementById("demo").innerHTML=txt;
+		}
+	</script>
+</head>
+<body>
+	<button type="button" onclick="BianLi()">遍历</button>
+	<p id="demo"></p>
+</body>
+</html>

@@ -1,0 +1,6 @@
+div {border:1px solid #333; padding:10px 0;}
+#wrap { width:900px ; margin:0 auto; padding:0;}/* width指定框架宽度，margin使所有框架居中 */
+#header { text-align:center; margin:0 50px;}
+#left_sidebar { float:left; width:70%;}
+#right_sidebar { margin:0 0 0 70%;}
+#footer {clear:both;} 

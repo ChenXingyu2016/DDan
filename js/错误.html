@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		var txt="";
+		function message()
+			{
+				try
+				{
+					dlert("wlcome");//alert
+				}
+				catch(err)
+				{
+					txt="本页有一个错误.\n\n";
+					txt+="错误描述："+err.message+"\n\n";
+					txt+="点击确定继续。\n\n";
+					alert(txt);
+				}
+				document.getElementById("demo").innerHTML=math(4,5);
+			}
+	</script>
+</head>
+<body>
+	<p>调用函数计算并返回结果</p>
+	<p id="demo"></p>
+	<input type="button" value="查看" onclick="message()" />
+</body>
+</html>

@@ -1,0 +1,155 @@
+
+--- IMPORTANT - LICENSE AGREEMENT ---
+
+UPDATED for CSE HTML Validator Std/Pro/Enterprise/Lite v12.00 and above.
+
+Unless you have a different license agreement obtained from AI Internet Solutions LLC, installation or use of this software indicates your acceptance of the license and warranty limitation terms contained in this Agreement. If you do not agree to the terms of this Agreement, promptly delete and destroy all copies of the software and do not continue with this installation.
+
+--- HOW TO REGISTER ---
+
+For details on how to register and purchase a license, please refer to the help document included with the software, or visit CSE HTML Validator's home page at
+http://www.htmlvalidator.com/
+
+--- FOUR EDITIONS of CSE HTML Validator ---
+
+There are four editions of CSE HTML Validator: CSE HTML Validator Enterprise, CSE HTML Validator Professional, CSE HTML Validator Standard, and CSE HTML Validator Lite.
+
+--- CSE HTML VALIDATOR ENTERPRISE EDITION ---
+
+There are two sub-versions of CSE HTML Validator Enterprise, each of which is subject to this agreement. UPON ORDERING, DOWNLOADING, INSTALLING OR USING ANY VERSION OF THE SOFTWARE, YOU ARE REAFFIRMING THAT YOU ARE BOUND TO THE TERMS OF THIS AGREEMENT. FURTHERMORE, NO VERSION OF CSE HTML VALIDATOR ENTERPRISE MAY BE DISTRIBUTED.
+
+The first sub-version is the registerable trial version and can be turned into the second sub-version by entering registration information into the program. To obtain this version, you must first purchase a license to use CSE HTML Validator Enterprise. You can then download this version from CSE HTML Validator's web site by entering your registration information into a web form and/or by following the instructions that are emailed to you when you purchase a license. THIS VERSION MAY NOT BE DISTRIBUTED.
+
+The second sub-version is a registered version. This version may be used for business, government, personal, and/or educational use in accordance with this license agreement. THIS VERSION MAY NOT BE DISTRIBUTED.
+
+The first sub-version (registerable trial version) becomes the second sub-version (registered version) by entering into the first sub-version a registration name, PIN, and key legally obtained and licensed from AI Internet Solutions LLC or a legitimate reseller.
+
+IMPORTANT: The second sub-version may periodically and automatically contact a registration server with the registration information entered into the program. This is to verify the license and to limit software piracy. Illegally licensed software may be disabled. This protects our ability to continue to provide support and upgrades. The program should not be registered if you do not agree to this.
+
+--- CSE HTML VALIDATOR PROFESSIONAL EDITION ---
+
+There are three sub-versions of CSE HTML Validator Professional, each of which is subject to this agreement. UPON ORDERING, DOWNLOADING, INSTALLING OR USING ANY VERSION OF THE SOFTWARE, YOU ARE REAFFIRMING THAT YOU ARE BOUND TO THE TERMS OF THIS AGREEMENT.
+
+The first sub-version is the unregisterable trial version. The trial version is the only version that is provided without charge; however, the trial version is not free software and cannot be registered by entering a name, key, and PIN number into the software. All rights and licenses to the trial version automatically expire after the trial license period of 30 days or 200 validations (whichever comes first), after which one must pay the appropriate licensing fee in order to continue using CSE HTML Validator Professional. If you choose not to obtain a license after the trial period, then you must uninstall the software and discontinue any use until a license is obtained.  THIS VERSION (THE UNREGISTERABLE TRIAL VERSION) MAY BE DISTRIBUTED. THIS IS THE ONLY VERSION OF CSE HTML VALIDATOR PROFESSIONAL V4.50 AND ABOVE THAT MAY BE FREELY BE DISTRIBUTED.
+
+The second sub-version is the registerable trial version and is similar to the first sub-version except that this version can be turned into the third sub-version by entering registration information into the program. To obtain this version, you must first purchase a license to use CSE HTML Validator Professional. You can then download this version from CSE HTML Validator's web site by entering your registration information into a web form and/or by following the instructions that are emailed to you when you purchase a license. THIS VERSION MAY NOT BE DISTRIBUTED.
+
+The third sub-version is a registered version. This version may be used for business, government, personal, and/or educational use in accordance with this license agreement. THIS VERSION MAY NOT BE DISTRIBUTED.
+
+The second sub-version (registerable trial version) becomes the third sub-version (registered version) by entering into the second sub-version a registration name, PIN, and key legally obtained and licensed from AI Internet Solutions LLC or a legitimate reseller.
+
+IMPORTANT: The third sub-version may periodically and automatically contact a registration server with the registration information entered into the program. This is to verify the license and to limit software piracy. Illegally licensed software may be disabled. This protects our ability to continue to provide support and upgrades. The program should not be registered if you do not agree to this.
+
+--- CSE HTML VALIDATOR STANDARD EDITION ---
+
+There are two sub-versions of CSE HTML Validator Standard, each of which is subject to this agreement. UPON ORDERING, DOWNLOADING, INSTALLING OR USING ANY VERSION OF THE SOFTWARE, YOU ARE REAFFIRMING THAT YOU ARE BOUND TO THE TERMS OF THIS AGREEMENT. FURTHERMORE, NO VERSION OF CSE HTML VALIDATOR STANDARD MAY BE DISTRIBUTED.
+
+The first sub-version is the registerable trial version and can be turned into the second sub-version by entering registration information into the program. To obtain this version, you must first purchase a license to use CSE HTML Validator Standard. You can then download this version from CSE HTML Validator's web site by entering your registration information into a web form and/or by following the instructions that are emailed to you when you purchase a license. THIS VERSION MAY NOT BE DISTRIBUTED.
+
+The second sub-version is a registered version. This version may be used for business, government, personal, and/or educational use in accordance with this license agreement. THIS VERSION MAY NOT BE DISTRIBUTED.
+
+The first sub-version (registerable trial version) becomes the second sub-version (registered version) by entering into the first sub-version a registration name, PIN, and key legally obtained and licensed from AI Internet Solutions LLC or a legitimate reseller.
+
+IMPORTANT: The second sub-version may periodically and automatically contact a registration server with the registration information entered into the program. This is to verify the license and to limit software piracy. Illegally licensed software may be disabled. This protects our ability to continue to provide support and upgrades. The program should not be registered if you do not agree to this.
+
+--- CSE HTML VALIDATOR LITE EDITION ---
+
+There is only one version of CSE HTML Validator Lite. UPON ORDERING, DOWNLOADING, INSTALLING OR USING ANY VERSION OF THE SOFTWARE, YOU ARE REAFFIRMING THAT YOU ARE BOUND TO THE TERMS OF THIS AGREEMENT.
+
+CSE HTML Validator Lite is the least powerful of all the editions. It does NOT support CSS, link, accessibility, PHP, SEO, and JavaScript checking. Also, CSE HTML Validator Lite is not as thorough in its validation results. It also lacks other features that are included in the other editions. There is no day or validation limit with CSE HTML Validator Lite. The lite edition may be freely distributed in its original unmodified form only (for example, the original EXE installation setup program).
+
+CSE HTML Validator Lite is free to use only for personal and educational use, with the exception that it is not to be used to provide a validation service to third parties unless specifically approved in writing by AI Internet Solutions LLC.
+
+CSE HTML Validator Lite is NOT free to use for business, government, or any for-profit use unless paired with a paid license of CSE HTML Validator (standard, professional, or enterprise edition) with the same major version number (like 8.0, 9.0, 10.0, etc.). If you want to use CSE HTML Validator Lite for business, government, or any for-profit use, then please purchase the required paid CSE HTML Validator license to be in compliance with this license agreement.
+
+--- LICENSE TO USE ---
+
+Your license is non-exclusive.
+
+You may not sell, rent, or lease the software to others without the prior express, written permission of AI Internet Solutions LLC.
+
+You may make a reasonable number of copies of any version of the software for backup and archival purposes.
+
+One copy of the trial version of CSE HTML Validator Professional may be used by a single person and on a single computer for evaluation purposes without charge for 30 days or 200 validations, whichever comes first. Reinstalling the same version, or a different version of CSE HTML Validator Professional may or may not restart the trial license.
+
+One license of the registered version of CSE HTML Validator Standard, Professional, or Enterprise may be:
+
+(a) used by a single person who uses the software personally on one or more computers and is the only user of all the computers, or
+
+(b) installed on a single workstation used non-simultaneously by multiple people.
+
+In the case of (a) above, if one license is installed on more than one computer, then only one installation may be used at a time.
+
+You may access the registered version of CSE HTML Validator Standard, Professional, or Enterprise remotely over a network, provided that you have obtained enough licenses to cover the total number of workstations that will use the software over the network. For example, if the software will be accessed from five workstations, then five or more licenses (and not three) are required, even if only a maximum of three of those workstations will run the software at any one time. However, if you have more than ten (10) licenses and you have software that allows you to run CSE HTML Validator from a network and that software also manages the number of concurrent users to make sure it is limited to the number of licenses you have, then you only need the number of licenses that are allowed to run concurrently (minimum of ten (10) licenses).
+
+If you are a registered user, then you are entitled to use this product for your own use.
+
+You must not give away your registration key. Doing so will result in an infringement of copyright. AI Internet Solutions LLC retains the right of claims for compensation in respect of damage which occurred by your giving away the registration code. This claim shall also extend to all costs which AI Internet Solutions LLC incurs in defending itself.
+
+This paragraph applies only when used for personal or educational use. CSE HTML Validator Lite may be used by multiple people and installed on multiple computers. It may also be accessed through a network by an unlimited number of people.
+
+--- LICENSE TO REDISTRIBUTE ---
+
+You are licensed to make as many copies of the unmodified version of CSE HTML Validator Professional (first sub-version ONLY - the unregisterable trial version) and documentation as you wish, to give exact copies of the unmodified version to anyone, and to distribute the software and documentation in its unmodified form via any means, including electronic distribution and disc ROM distribution. However, you must make an effort to ensure that you are distributing the latest version of this software. YOU MAY NOT DISTRIBUTE ANY REGISTRATION KEYS OR PIN NUMBERS. YOU MAY NOT DISTRIBUTE ANY REGISTERABLE VERSION OF CSE HTML VALIDATOR STANDARD, PROFESSIONAL, OR ENTERPRISE EDITION.
+
+You are licensed to make as many copies of the original unmodified version of CSE HTML Validator Lite and documentation as you wish, to give exact copies of the original unmodified version to anyone (for example, the original EXE installation setup program), and to distribute the software and documentation in its original unmodified form via any means, including electronic distribution and disc ROM distribution. However, you must make an effort to ensure that you are distributing the latest version of this software.
+
+IMPORTANT: Any redistribution must be in the original, unmodified form. The setup program cannot be distributed to the public by bundling it with or launching it from other software (such as another installer) unless express written permission to do so is acquired from AI Internet Solutions LLC.
+
+--- NO ADDITIONAL LICENSES ---
+
+All rights to the CSE HTML Validator software and documentation not expressly granted under this Agreement are reserved to AI Internet Solutions LLC.
+
+--- USER ACKNOWLEDGEMENTS ---
+
+The licensee acknowledges that (applies to all editions and versions):
+
+(a) title and ownership of the software and patents, trademarks, trade secrets and copyright relating thereto are the exclusive property of AI Internet Solutions LLC and their respective licensors;
+
+(b) licensee shall only acquire the right to use the software in accordance with this agreement; and
+
+(c) licensee shall take all reasonable steps to ensure that all intellectual property which is embodied in the software in licensee's possession remains confidential.
+
+--- PROHIBITIONS ---
+
+The licensee is specifically prohibited from charging, or requesting donations, for any distribution of this software without the prior express written permission of AI Internet Solutions LLC.
+
+The licensee may not (applies to all editions and versions):
+
+(a) translate, decompile, recompile, disassemble or reverse engineer the software or documentation;
+
+(b) copy the software for any reason other than for archival or emergency restart purposes or program error verification;
+
+(c) offer the software for use in a service bureau, or time-sharing environment, except when it is used by the licensee's employees or contractors;
+
+(d) sub-license, rent, or otherwise make the software available outside of the licensee's legal business entities;
+
+(e) assign any rights under this licence agreement without the prior written consent of AI Internet Solutions LLC;
+
+(f) use the software to provide free or for money or profit validation or syntax checking services to any entity other than that for which the software is licensed for (for example, using the software to provide validation or syntax checking services to the public or any outside entity is strictly prohibited).
+
+(g) purchase or obtain a single user license that is used to provide validation services for more than one person or computer (for example, purchasing a single license and running it on a server so that more than one person or computer can connect to the server to check documents). If you want to do this, please contact AI Internet Solutions LLC to purchase a license that allows this.
+
+--- RIGHT TO TERMINATE ---
+
+AI Internet Solutions LLC has the right to terminate any license for any breach of this agreement or in case of piracy or illegal use of the license key. In this case, no payment or refund will be made for a terminated license. At the sole discretion of AI Internet Solutions LLC, a new license may be issued if the reason for the termination has been addressed.
+
+AI Internet Solutions LLC has the right to program its software to periodically contact a server to verify a license, and to automatically deactivate any license that is deemed to be invalid or illegal.
+
+--- LIMITED WARRANTY ---
+
+THE MEDIUM (IF ANY) ON WHICH THE PROGRAM IS FURNISHED IS WARRANTED TO BE FREE OF DEFECTS IN MATERIALS AND WORKMANSHIP UNDER NORMAL USE FOR A PERIOD OF THIRTY (30) DAYS FROM THE DATE OF DELIVERY OF THE SOFTWARE.
+
+THE WARRANTY ABOVE IS IN LIEU OF ALL OTHER WARRANTIES, EITHER EXPRESS, IMPLIED OR STATUTORY, INCLUDING THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+
+--- DISCLAIMER OF WARRANTY ---
+
+THIS SOFTWARE IS PROVIDED ON AN "AS IS" BASIS, WITHOUT WARRANTY OF ANY KIND, INCLUDING WITHOUT LIMITATION THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, YEAR 2000 COMPLIANCE, AND NON-INFRINGEMENT. THE ENTIRE RISK WITH RESPECT TO THE QUALITY AND PERFORMANCE OF THE SOFTWARE IS BORNE BY YOU. SHOULD THE SOFTWARE PROVE DEFECTIVE, YOU ALONE ASSUME THE ENTIRE COST OF ANY SERVICE AND REPAIR.
+
+SOME STATES DO NOT ALLOW EXCLUSIONS OF AN IMPLIED WARRANTY, SO THIS DISCLAIMER MAY NOT APPLY TO YOU AND YOU MAY HAVE OTHER LEGAL RIGHTS THAT VARY FROM STATE TO STATE OR BY JURISDICTION.
+
+UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, TORT, CONTRACT, OR OTHERWISE, SHALL THE PRODUCER OF THIS SOFTWARE, ITS RESPECTIVE LICENSORS, SUPPLIERS, NOR RESELLERS BE LIABLE TO YOU OR ANY OTHER PERSON FOR ANY INDIRECT, SPECIAL, INCIDENTAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES OF ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LEGAL FEES, DAMAGES FOR USE OR PERFORMANCE OF THE SOFTWARE, NOR FOR DAMAGES FOR LOSS OF PROFITS, GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, NOR ANY AND ALL OTHER COMMERCIAL DAMAGES OR LOSSES, EVEN IF THE POSSIBILITY OF DAMAGE WAS KNOWN OR SHOULD HAVE BEEN KNOWN. IN NO EVENT WILL THE TOTAL LIABILITY OF AI INTERNET SOLUTIONS LLC, AND ITS RESPECTIVE LICENSORS, IF ANY, EXCEED THE END USER FEE PAID FOR A LICENSE TO USE THE SOFTWARE, EVEN IF THE PRODUCER SHALL HAVE BEEN INFORMED OF THE POSSIBILITY OF SUCH DAMAGES, OR FOR ANY CLAIM BY ANY OTHER PARTY. THIS LIMITATION OF LIABILITY SHALL NOT APPLY TO LIABILITY FOR DEATH OR PERSONAL INJURY TO THE EXTENT APPLICABLE LAW PROHIBITS SUCH LIMITATION. FURTHERMORE, SOME STATES DO NOT ALLOW THE EXCLUSION OR LIMITATION OF INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THIS LIMITATION AND EXCLUSION MAY NOT APPLY TO YOU.
+
+--- GOVERNING LAW ---
+
+This agreement shall be governed by the laws of the state of Texas.

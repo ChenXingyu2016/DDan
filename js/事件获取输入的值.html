@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+<script>
+	function jiaodian(dd)
+	{
+		dd.style.backgroundColor="yellow";
+	}
+	function myFunction()
+	{
+	var a=document.getElementById("nn");//②找到id节点
+	var v=a.value;//③获取并赋值
+	/*
+		var a=document.getElementById("nn").value;//找到节点获取并赋值
+	*/
+	document.write(v);
+	}
+</script>
+</head>
+	<input type="text" name="name" id="nn" onfocus="jiaodian(this)" /><!--①定义id节点-->
+	<input type="button" name="button" value="获取" onclick="myFunction()" />
+</body>
+</html>

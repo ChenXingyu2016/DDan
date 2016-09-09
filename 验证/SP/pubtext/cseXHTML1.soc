@@ -1,0 +1,10 @@
+OVERRIDE YES
+SGMLDECL "xhtml1.dcl"
+DOCTYPE html xhtml1-transitional.dtd
+PUBLIC "-//W3C//DTD XHTML 1.0//EN" xhtml1-strict.dtd
+PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" xhtml1-strict.dtd
+PUBLIC "-//W3C//DTD HTML 1.0 Transitional//EN" xhtml1-transitional.dtd
+PUBLIC "-//W3C//DTD HTML 1.0 Frameset//EN" xhtml1-frameset.dtd
+PUBLIC "-//W3C//ENTITIES Latin1//EN//HTML" HTMLlat1.ent
+PUBLIC "-//W3C//ENTITIES Special//EN//HTML" HTMLspec.ent
+PUBLIC "-//W3C//ENTITIES Symbols//EN//HTML" HTMLsym.ent

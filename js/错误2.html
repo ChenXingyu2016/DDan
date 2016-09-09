@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		var txt="";
+		function myFunction()
+		{
+			try
+			{
+				var x=document.getElementById("demo").value;
+				if(x=="")	throw"值为空";
+				if(isNaN(x))throw"值不为数值";
+				if(x>10)	throw"太大";
+				if(x<5)		throw"太小";
+			}
+			catch(err)
+			{
+				var y=document.getElementById("mess");
+				y.innerHTML="错误"+err+"。";
+			}
+		}
+	</script>
+</head>
+<body>
+	<p>请输入一个5到10的数字：</p>
+	<input id="demo" type="text" />
+	<button type="button" onclick="myFunction()">测试输入值</button>
+	<p id="mess"></p>
+</body>
+</html>

@@ -1,0 +1,84 @@
+﻿
+/*
+Default style sheet for Batch Wizard v10.9910+ reports
+Copyright (C) 2002-2012 by AI Internet Solutions LLC
+
+If you modify this file, be sure to save a backup because this file may be overwritten if HTML Validator is reinstalled.
+
+2012-02-28 - added td.linkloc for optional new Line:Char column in link reports
+2011-12-26 - added "new for v11.01" section (at the bottom) with 2 new span[class="mlr_status"] definitions for MLR report improvements, added td.msgdesccell, updated td.msgtypecell with vertical-align property
+2011-06-30 - added "new for v11.00" section (at the bottom)
+2010-11-09 - major changes for improved Batch Wizard report style
+2010-03-01 - changed .docsourcehighlight, added universal selectors, updated copyright years
+2008-06-05 - changed "htmlsource" to "docsource"
+2008-02-05 - now a UTF-8 file with byte sequence EF BB BF at the beginning of the file
+*/
+
+
+body { background-color: white; font-family: arial, helvetica, sans-serif; font-size: small; color: black; }
+a:link:hover, a:visited:hover { color: red; }
+
+*.reportfooter { text-align: right; }
+
+h1 { font-weight: bold; font-size: x-large; }
+h1.title { font-weight: bold; font-size: x-large; color: #202070; }
+h2 { font-size: large; }
+h3 { font-size: medium; }
+h3.target, a.target { color: #202070; text-decoration: none; }
+
+th { padding: .3em; background-color: navy; color: white; font-weight: bold; text-align: left; font-size: 1.1em; }
+td { padding: .3em; background-color: #f2f2fd; color: black; }
+
+td.grandtotaldata1 { text-align: right; }
+td.grandtotaldata2 { text-align: right; font-weight: bold; }
+
+table.validatormsgs { width: 100%; }
+table.linkcheck { margin-top: 10px; width: 100%; }
+
+*.msgdescription { color: black; }
+*.docsource { margin-bottom: .1em; font-family: consolas, "courier new", monospace; color: blue; font-size:1.1em; }
+*.docsourcehighlight { padding: .1em; background-color: black; color: #88ff88; font-weight: bold; }
+
+/* Additional optional style rules (set & uncomment)
+th.msgdesccell { }
+*/
+th.locationcell { width: 5em; }
+th.msgtypecell { width: 12em; }
+td.locationcell { text-align: center; font-weight: bold; }
+td.msgtypecell { text-align: center; vertical-align: top; }
+td.msgdesccell { vertical-align: top; }
+td.linkordercell { text-align: center; }
+td.linkloc { text-align: center; }
+
+*.linkstatus { display: block; -moz-border-radius: .4em; border-radius: .4em; padding: .1em .2em; margin: .1em; font-weight: bold; font-size: 1em; text-align: center; }
+*.badlinkstatus { color: white; background-color: maroon; border: 1px solid black; }
+*.warninglinkstatus { color: black; background-color: yellow; border: 1px solid #bfbf00; }
+*.notcheckedlinkstatus { color: white; background-color: navy; border: 1px solid black; }
+*.oklinkstatus { color: white; background-color: darkgreen; border: 1px solid black; }
+
+*.msgtype { display: block; -moz-border-radius: .4em; border-radius: .4em; padding: .3em .5em; margin: .1em 0 .3em; font-weight: bold; font-size: 1.1em; text-align: center; }
+*.errormsgtype { color: white; background-color: maroon; border: 1px solid black; }
+*.warningmsgtype { color: black; background-color: yellow; border: 1px solid #bfbf00; }
+*.messagemsgtype { color: white; background-color: navy; border: 1px solid black; }
+*.commentmsgtype { color: white; background-color: darkgreen; border: 1px solid black; }
+
+p.cloud { font-family: consolas, arial, helvetica, sans-serif; margin: .8em 0; color: navy; }
+span.cloudword { padding: .1em .2em; }
+span.cloudword:hover { background-color: black; color: yellow; }
+
+p.navbar { font-weight: bold; background: #e6f6e6; padding: .3em .4em; line-height: 2em; }
+p.navbar a, p.navbar a:link, p.navbar a:visited { text-decoration: none; color: navy; }
+*.navbarlink { -moz-border-radius: .3em; border-radius: .3em; padding: .15em .4em; margin: 0em; color: navy; background-color: white; border: 1px solid #c4c4cc; }
+*.navbarlink:hover { -moz-border-radius: .3em; border-radius: .3em; padding: .15em .4em; margin: 0em; color: black; background-color: #fdfdbf; border: 1px solid #bbbb89; }
+*.navbarnolink { -moz-border-radius: .3em; border-radius: .3em; padding: .15em .4em; margin: 0em; color: white; background-color: #444444; border: 1px solid black; }
+
+*.footer { font-family: tahoma, verdana, sans-serif; font-size: small; }
+
+/* new for v11.00 */
+div.note { background-color: #EEEEEE; max-width: 50em; padding: 0 1em; border: 3px #36648B solid; -moz-border-radius: .4em; border-radius: .4em; box-shadow: .1em .2em .5em #aaaaaa; }
+span.dpt_title, span.dmd_desc { color: navy; font-weight: bold; }
+
+/* new for v11.01 */
+span[class="mlr_status"] { font-weight: bold }
+ul[class="mlr_errors"] li span[class="mlr_status"] { color: maroon; }
+ul[class="mlr_warnings"] li span[class="mlr_status"] { color: black; }

@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+CSE HTML Validator Standard/Professional/Lite CSS Inserter Configuration by AI Internet Solutions (http://www.htmlvalidator.com/)
+
+Updated: February, 2012 - updated CSS3 text module properties
+Updated: January, 2012 - added transform and transition properties and other updates
+Updated: October, 2011 - added box-shadow, font-kerning, font-synthesis, font-variant-caps properties and other updates
+Updated: July 19, 2011 - improved XML compatibility, minor grammar fixes
+Updated: Feb 3, 2010 - added media features for CSS3 media queries
+Updated: Nov 2009-Jan 2010 - added some new CSS3 properties, pseudo-classes, and more - and reorganized some properties into submenus
+Updated: May 1, 2009 - minor update to CSS margin hint
+Updated: June 11, 2008 - added @import
+
+IMPORTANT! If you modify or customize this file, then make a backup because it may be overwritten the next time you install or reinstall HTML Validator. If you want to customize this configuration file, then consider customizing the User Inserter instead, which is unlikely to be overwritten when updating or reinstalling.
+
+For detailed documentation about this file, see the "Text Inserters" topic in help.
+
+-->
+
+<csetaginserterconfiguration version="1">
+<tag menu='CSS' flags='16' inserttext='{ | }' hint='Declaration block.'/>
+<tag menu='CSS' flags='16' inserttext='/* | */' hint='CSS comment (cannot be nested).' image='41'/>
+
+<tag menu='CSS' flags='4'/>
+<tag menu='CSS' submenu="Attribute Selectors" flags='16' inserttext='[|]' hint='CSS2+: [att] Represents an element with the att attribute, whatever the value of the attribute.'/>
+<tag menu='CSS' submenu="Attribute Selectors" flags='16' inserttext='[|=]' hint='CSS2+: [att=val] Represents an element with the att attribute whose value is exactly "val".'/>
+<tag menu='CSS' submenu="Attribute Selectors" flags='16' inserttext='[|~=]' hint='CSS2+: [att~=val] Represents an element with the att attribute whose value is a whitespace-separated list of words, one of which is exactly "val".'/>
+<tag menu='CSS' submenu="Attribute Selectors" flags='16' inserttext='[||=]' hint='|CSS2+: [att|=val] Represents an element with the att attribute, its value either being exactly "val" or beginning with "val" immediately followed by "-" (U+002D).'/>
+<tag menu='CSS' submenu="Attribute Selectors" flags='16' inserttext='[|^=]' hint='CSS3+: [att^=val] Represents an element with the att attribute whose value begins with the prefix "val". If "val" is the empty string then the selector does not represent anything.'/>
+<tag menu='CSS' submenu="Attribute Selectors" flags='16' inserttext='[|$=]' hint='CSS3+: [att$=val] Represents an element with the att attribute whose value ends with the suffix "val". If "val" is the empty string then the selector does not represent anything.'/>
+<tag menu='CSS' submenu="Attribute Selectors" flags='16' inserttext='[|*=]' hint='CSS3+: [att*=val] Represents an element with the att attribute whose value contains at least one instance of the substring "val". If "val" is the empty string then the selector does not represent anything.'/>
+
+<tag menu='CSS' submenu="Combinators" flags='16' inserttext=' ' hint='CSS2+: Whitespace character. In E F, selects an F element descendant of an E element (descendant combinator).'/>
+<tag menu='CSS' submenu="Combinators" flags='16' inserttext='>' hint='CSS2+: In E>F, selects an F element child of an E element (child combinator).'/>
+<tag menu='CSS' submenu="Combinators" flags='16' inserttext='+' hint='CSS2+: In E+F, selects an F element immediately preceded by an E element (adjacent sibling combinator).'/>
+<tag menu='CSS' submenu="Combinators" flags='16' inserttext='~' hint='CSS3+: In E~F, selects an F element preceded by an E element (general sibling combinator).'/>
+
+<tag menu='CSS' submenu="Media Features (CSS3+)->aspect-ratio" flags='16' inserttext='aspect-ratio:' hint='CSS3+: The ratio of the value of the "width" media feature to the value of the "height" media feature (&lt;ratio>).'/>
+<tag menu='CSS' submenu="Media Features (CSS3+)->aspect-ratio" flags='16' inserttext='min-aspect-ratio:' hint='CSS3+: The minimum ratio of the value of the "width" media feature to the value of the "height" media feature (&lt;ratio>).'/>
+<tag menu='CSS' submenu="Media Features (CSS3+)->aspect-ratio" flags='16' inserttext='max-aspect-ratio:' hint='CSS3+: The maximum ratio of the value of the "width" media feature to the value of the "height" media feature (&lt;ratio>).'/>
+<tag menu='CSS' submenu="Media Features (CSS3+)->color" flags='16' inserttext='color:' hint='CSS3+: Describes the number of bits per color component of the output device (&lt;integer>).'/>
+<tag menu='CSS' submenu="Media Features (CSS3+)->color" flags='16' inserttext='min-color:' hint='CSS3+: Describes the minimum number of bits per color component of the output device (&lt;integer>).'/>
+<tag menu='CSS' submenu="Media Features (CSS3+)->color" flags='16' inserttext='max-color:' hint='CSS3+: Describes the maximum number of bits per color component of the output device (&lt;integer>).'/>
+<tag menu='CSS' submenu="Media Features (CSS3+)->color-index" flags='16' inserttext='color-index:' hint='CSS3+: Describes the number of entries in the color lookup table of the output device (&lt;integer>).'/>
+<tag menu='CSS' submenu="Media Features (CSS3+)->color-index" flags='16' inserttext='min-color-index:' hint='CSS3+: Describes the minimum number of entries in the color lookup table of the output device (&lt;integer>).'/>
+<tag menu='CSS' submenu="Media Features (CSS3+)->color-index" flags='16' inserttext='max-color-index:' hint='CSS3+: Describes the maximum number of entries in the color lookup table of the output device (&lt;integer>).'/>
+<tag menu='CSS' submenu="Media Features (CSS3+)->device-aspect-ratio" flags='16' inserttext='device-aspect-ratio:' hint='CSS3+: The ratio of the value of the "device-width" media feature to the value of the "device-height" media feature (&lt;ratio>).'/>
+<tag menu='CSS' submenu="Media Features (CSS3+)->device-aspect-ratio" flags='16' inserttext='min-device-aspect-ratio:' hint='CSS3+: The minimum ratio of the value of the "device-width" media feature to the value of the "device-height" media feature (&lt;ratio>).'/>
+<tag menu='CSS' submenu="Media Features (CSS3+)->device-aspect-ratio" flags='16' inserttext='max-device-aspect-ratio:' hint='CSS3+: The maximum ratio of the value of the "device-width" media feature to the value of the "device-height" media feature (&lt;ratio>).'/>
+<tag menu='CSS' submenu="Media Features (CSS3+)->device-height" flags='16' inserttext='device-height:' hint='CSS3+: Describes the height of the rendering surface of the output device (&lt;length>).'/>
+<tag menu='CSS' submenu="Media Features (CSS3+)->device-height" flags='16' inserttext='min-device-height:' hint='CSS3+: Describes the minimum height of the rendering surface of the output device (&lt;length>).'/>
+<tag menu='CSS' submenu="Media Features (CSS3+)->device-height" flags='16' inserttext='max-device-height:' hint='CSS3+: Describes the maximum height of the rendering surface of the output device (&lt;length>).'/>
+<tag menu='CSS' submenu="Media Features (CSS3+)->device-width" flags='16' inserttext='device-width:' hint='CSS3+: Describes the width of the rendering surface of the output device (&lt;length>).'/>
+<tag menu='CSS' submenu="Media Features (CSS3+)->device-width" flags='16' inserttext='min-device-width:' hint='CSS3+: Describes the minimum width of the rendering surface of the output device (&lt;length>).'/>
+<tag menu='CSS' submenu="Media Features (CSS3+)->device-width" flags='16' inserttext='max-device-width:' hint='CSS3+: Describes the maximum width of the rendering surface of the output device (&lt;length>).'/>
+<tag menu='CSS' submenu="Media Features (CSS3+)" flags='16' inserttext='grid:' hint='CSS3+: Used to query whether the output device is grid or bitmap (0, 1).'/>
+<tag menu='CSS' submenu="Media Features (CSS3+)->height" flags='16' inserttext='height:' hint='CSS3+: Describes the height of the targeted display are of the output device (&lt;length>).'/>
+<tag menu='CSS' submenu="Media Features (CSS3+)->height" flags='16' inserttext='min-height:' hint='CSS3+: Describes the minimum height of the targeted display are of the output device (&lt;length>).'/>
+<tag menu='CSS' submenu="Media Features (CSS3+)->height" flags='16' inserttext='max-height:' hint='CSS3+: Describes the maximum height of the targeted display are of the output device (&lt;length>).'/>
+<tag menu='CSS' submenu="Media Features (CSS3+)->monochrome" flags='16' inserttext='monochrome:' hint='CSS3+: Describes the number of bits per pixel in a monochrome frame buffer (&lt;integer>).'/>
+<tag menu='CSS' submenu="Media Features (CSS3+)->monochrome" flags='16' inserttext='min-monochrome:' hint='CSS3+: Describes the minimum number of bits per pixel in a monochrome frame buffer (&lt;integer>).'/>
+<tag menu='CSS' submenu="Media Features (CSS3+)->monochrome" flags='16' inserttext='max-monochrome:' hint='CSS3+: Describes the maximum number of bits per pixel in a monochrome frame buffer (&lt;integer>).'/>
+<tag menu='CSS' submenu="Media Features (CSS3+)" flags='16' inserttext='orientation:' hint='CSS3+: (portrait, landscape).'/>
+<tag menu='CSS' submenu="Media Features (CSS3+)->resolution" flags='16' inserttext='resolution:' hint='CSS3+: Describes the resolution (density of pixels) of the output device (&lt;resolution>).'/>
+<tag menu='CSS' submenu="Media Features (CSS3+)->resolution" flags='16' inserttext='min-resolution:' hint='CSS3+: Describes the minimum resolution (density of pixels) of the output device (&lt;resolution>).'/>
+<tag menu='CSS' submenu="Media Features (CSS3+)->resolution" flags='16' inserttext='max-resolution:' hint='CSS3+: Describes the maximum resolution (density of pixels) of the output device (&lt;resolution>).'/>
+<tag menu='CSS' submenu="Media Features (CSS3+)" flags='16' inserttext='scan:' hint='CSS3+: Describes the scanning process of the "tv" output device (progressive, interlace).'/>
+<tag menu='CSS' submenu="Media Features (CSS3+)->width" flags='16' inserttext='width:' hint='CSS3+: Describes the width of the targeted display are of the output device (&lt;length>).'/>
+<tag menu='CSS' submenu="Media Features (CSS3+)->width" flags='16' inserttext='min-width:' hint='CSS3+: Describes the minimum width of the targeted display are of the output device (&lt;length>).'/>
+<tag menu='CSS' submenu="Media Features (CSS3+)->width" flags='16' inserttext='max-width:' hint='CSS3+: Describes the maximum width of the targeted display are of the output device (&lt;length>).'/>
+<tag menu='CSS' flags='4'/>
+
+<tag menu='CSS' flags='0' caption='Edit Configuration' hint='Edit the configuration file to make your own changes to the Tag Inserter.' command='1' image='21'/>
+<tag menu='CSS' flags='0' caption='Reload Configuration' hint='Delete the Tag Inserter and recreate it to reread its configuration.' command='2'/>
+<tag menu='CSS' flags='4'/>
+<tag menu='CSS' caption='Close CSS Inserter' flags='8' image='1'/>
+
+<tag menu=':' submenu='User Interface' flags='16' inserttext=':active' hint='CSS1+: Pseudo-class for elements being activated by the user with the primary activation button (typically the left mouse button).'/>
+<tag menu=':' submenu='User Interface' flags='16' inserttext=':default' hint='CSS3+: Pseudo-class that applies to the one or more UI elements that are the default among a set of similar elements.'/>
+<tag menu=':' submenu='User Interface' flags='4' />
+<tag menu=':' submenu='User Interface' flags='16' inserttext=':checked' hint='CSS3+: Pseudo-class that represents user interface elements that are in a checked (or selected) state.'/>
+<tag menu=':' submenu='User Interface' flags='4' />
+<tag menu=':' submenu='User Interface' flags='16' inserttext=':enabled' hint='CSS3+: Pseudo-class that represents user interface elements that are in an enabled state.'/>
+<tag menu=':' submenu='User Interface' flags='16' inserttext=':disabled' hint='CSS3+: Pseudo-class that represents user interface elements that are in an disabled state.'/>
+<tag menu=':' submenu='User Interface' flags='4' />
+<tag menu=':' submenu='User Interface' flags='16' inserttext=':valid' hint='CSS3+: Pseudo-class that applies to valid data with regards to data validity semantics.'/>
+<tag menu=':' submenu='User Interface' flags='16' inserttext=':invalid' hint='CSS3+: Pseudo-class that applies to invalid data with regards to data validity semantics.'/>
+<tag menu=':' submenu='User Interface' flags='4' />
+<tag menu=':' submenu='User Interface' flags='16' inserttext=':in-range' hint='CSS3+: Pseudo-class that applies to data with range limitations that is in-range.'/>
+<tag menu=':' submenu='User Interface' flags='16' inserttext=':out-of-range' hint='CSS3+: Pseudo-class that applies to data with range limitations that is out-of-range.'/>
+<tag menu=':' submenu='User Interface' flags='4' />
+<tag menu=':' submenu='User Interface' flags='16' inserttext=':required' hint='CSS3+: Pseudo-class that applies to form elements that are required before submittal.'/>
+<tag menu=':' submenu='User Interface' flags='16' inserttext=':optional' hint='CSS3+: Pseudo-class that applies to form elements that are optional before submittal.'/>
+<tag menu=':' submenu='User Interface' flags='4' />
+<tag menu=':' submenu='User Interface' flags='16' inserttext=':read-only' hint='CSS3+: Pseudo-class that applies to elements whose contents are not user-alterable.'/>
+<tag menu=':' submenu='User Interface' flags='16' inserttext=':read-write' hint='CSS3+: Pseudo-class that applies to elements whose contents are user-alterable (like text input fields).'/>
+
+<tag menu=':' flags='4' />
+<tag menu=':' flags='16' inserttext=':after' hint="CSS2+: Pseudo-class that sets the content location to be after an element's document tree content."/>
+<tag menu=':' flags='16' inserttext=':before' hint="CSS2+: Pseudo-class that sets the content location to be before an element's document tree content."/>
+<tag menu=':' flags='16' inserttext=':empty' hint="CSS3+: Pseudo-class that represents an element that has no children at all."/>
+<tag menu=':' flags='16' inserttext=':first' hint="CSS2+: Pseudo-class that specifies styles for the first page of a document."/>
+<tag menu=':' flags='16' inserttext=':first-child' hint="CSS2+: Pseudo-class that matches an element that is the first child of some other element."/>
+<tag menu=':' flags='16' inserttext=':first-of-type' hint="CSS3+: Pseudo-class that represents an element that is the first sibling of its type in the list of children of its parent element."/>
+<tag menu=':' flags='16' inserttext=':first-letter' hint='CSS1+: Pseudo-class that applies styles to the first letter of an element.'/>
+<tag menu=':' flags='16' inserttext=':first-line' hint='CSS1+: Pseudo-class that applies styles to the first line of an element.'/>
+<tag menu=':' flags='16' inserttext=':focus' hint='CSS2+: Pseudo-class that sets styles when an element has the focus.'/>
+<tag menu=':' flags='16' inserttext=':hover' hint='CSS2+: Pseudo-class that sets styles when the user designates an element but does not activate it.'/>
+<tag menu=':' flags='16' inserttext=':lang(|)' hint='CSS2+: Pseudo-class that matches if the element is in the language.'/>
+<tag menu=':' flags='16' inserttext=':last-child' hint="CSS3+: Pseudo-class that represents an element that is the last child of some other element."/>
+<tag menu=':' flags='16' inserttext=':last-of-type' hint="CSS3+: Pseudo-class that represents an element that is the last sibling of its type in the list of children of its parent element."/>
+<tag menu=':' flags='16' inserttext=':left' hint="CSS2+: Pseudo-class that sets styles for the left page when printing double-sided documents."/>
+<tag menu=':' flags='16' inserttext=':link' hint='CSS1+: Pseudo-class that sets styles for an unvisited hyperlink.'/>
+<tag menu=':' flags='16' inserttext=':not(|)' hint='CSS3+: Negation pseudo-class that takes a simple selector as an argument.'/>
+
+<tag menu=':' flags='4' />
+<tag menu=':' submenu=':nth-* (CSS3+)' flags='16' inserttext=':nth-child(|)' hint='CSS3+: Pseudo-class that represents an element that has an+b-1 siblings *before* it in the document tree, for any positive integer or zero value of n, and has a parent element.'/>
+<tag menu=':' submenu=':nth-* (CSS3+)' flags='16' inserttext=':nth-last-child(|)' hint='CSS3+: Pseudo-class that represents an element that has an+b-1 siblings *after* it in the document tree, for any positive integer or zero value of n, and has a parent element.'/>
+<tag menu=':' submenu=':nth-* (CSS3+)' flags='16' inserttext=':nth-of-type(|)' hint='CSS3+: Pseudo-class that represents an element that has an+b-1 siblings with the same expanded element name *before* it in the document tree, for any zero or positive integer value of n, and has a parent element.'/>
+<tag menu=':' submenu=':nth-* (CSS3+)' flags='16' inserttext=':nth-last-of-type(|)' hint='CSS3+: Pseudo-class that represents an element that has an+b-1 siblings with the same expanded element name *after* it in the document tree, for any zero or positive integer value of n, and has a parent element.'/>
+<tag menu=':' flags='4' />
+
+<tag menu=':' flags='16' inserttext=':only-child' hint="CSS3+: Pseudo-class that represents an element that has a parent element and whose parent element has no other element children."/>
+<tag menu=':' flags='16' inserttext=':only-of-type' hint="CSS3+: Pseudo-class that represents an element that has a parent element and whose parent element has no other element children with the same expanded element name."/>
+<tag menu=':' flags='16' inserttext=':right' hint="CSS2+: Pseudo-class that sets styles for the right page when printing double-sided documents."/>
+<tag menu=':' flags='16' inserttext=':root' hint="CSS3+: Pseudo-class that represents an element that is the root of the document. In HTML 4, this is always the HTML element."/>
+<tag menu=':' flags='16' inserttext=':target' hint="CSS3+: Pseudo-class that represents a target element. If the document's URI has no fragment identifier, then the document has no target element."/>
+<tag menu=':' flags='16' inserttext=':visited' hint='CSS1+: Pseudo-class that sets styles for a visited hyperlink.'/>
+
+<tag menu='::' submenu='User Interface (CSS3+)' flags='16' inserttext='::value' hint='CSS3+: Pseudo-element that selects the representation of just the data value itself (not the label).'/>
+<tag menu='::' submenu='User Interface (CSS3+)' flags='16' inserttext='::choices' hint='CSS3+: Pseudo-element that selects the representation of just the list of choices themselves (not the label).'/>
+<tag menu='::' submenu='User Interface (CSS3+)' flags='16' inserttext='::repeat-item' hint='CSS3+: Pseudo-element represents a single item from a repeating sequence.'/>
+<tag menu='::' submenu='User Interface (CSS3+)' flags='16' inserttext='::repeat-index' hint='CSS3+: Pseudo-element represents the current item of a repeating sequence.'/>
+
+
+<tag menu='@' flags='16' inserttext='@charset "|";&#13;' hint='Specify the character encoding; must be at the very beginning of the style sheet.'/>
+<tag menu='@' flags='16' inserttext='@font-face {&#13;&#9;|&#13;\b}' hint='CSS2, CSS3+: Link to fonts that are automatically activated when needed. Not in CSS2.1.'/>
+<tag menu='@' flags='16' inserttext='@font-feature-values | {&#13;}' hint='CSS3+: Define named-values for a given font family.'/>
+<tag menu='@' flags='16' inserttext='@import "|";&#13;' hint='Import style rules from another style sheet.'/>
+<tag menu='@' flags='16' inserttext='@media | {&#13;}' hint='Specify media-dependent style sheets.'/>
+<tag menu='@' flags='16' inserttext='@namespace | "http://";&#13;' hint='Declares a namespace prefix and associates it with a given namespace name (a string).'/>
+<tag menu='@' flags='16' inserttext='@page {&#13;&#9;|&#13;\b}' hint='Specify page context.'/>
+
+<tag menu='!' flags='16' inserttext='!important' hint='CSS1: Make style declaration important (raise its weight in the cascade).'/>
+
+<tag menu='A' flags='16' inserttext='appearance: ' hint='CSS3+: Make an element look like a standard user interface element on the platform (normal, button, checkbox,.password, more).'/>
+<tag menu='A' flags='16' inserttext='azimuth: ' hint='CSS2: Spatial property for aural presentation.'/>
+
+<tag menu='B' submenu='background' flags='16' inserttext='background: ' hint='CSS1+: Shorthand way to express various background properties.'/>
+<tag menu='B' submenu='background' flags='16' inserttext='background-attachment: ' hint='CSS1+: Specify Whether or not the background image scrolls.'/>
+<tag menu='B' submenu='background' flags='16' inserttext='background-clip: ' hint='CSS3+: Sets the background painting area. (padding-box, border-box).'/>
+<tag menu='B' submenu='background' flags='16' inserttext='background-color: ' hint='CSS1+: Sets the background color of an element.'/>
+<tag menu='B' submenu='background' flags='16' inserttext='background-image: ' hint='CSS1+: Sets an image to be the background pattern.'/>
+<tag menu='B' submenu='background' flags='16' inserttext='background-origin: ' hint='CSS3+: Sets the background positioning area or which boxes "box-break" operates on (border-box, padding-box, content-box).'/>
+<tag menu='B' submenu='background' flags='16' inserttext='background-position: ' hint='CSS1+: Sets the starting position of a background image.'/>
+<tag menu='B' submenu='background' flags='16' inserttext='background-position-x: ' hint='MSIE40: (left, center, right).'/>
+<tag menu='B' submenu='background' flags='16' inserttext='background-position-y: ' hint='MSIE40: (top, center, bottom).'/>
+<tag menu='B' submenu='background' flags='16' inserttext='background-repeat: ' hint='CSS1+: Sets the repeat style for a background image.'/>
+<tag menu='B' submenu='background' flags='16' inserttext='background-size: ' hint='CSS3+: Sets the size of the background images.'/>
+<tag menu='B' flags='4'/>
+<tag menu='B' flags='16' inserttext='behavior: ' hint='MSIE50'/>
+<tag menu='B' flags='4'/>
+
+<tag menu='B' submenu='border' flags='16' inserttext='border: ' hint='CSS1+: Shorthand way to express various border properties.'/>
+
+<tag menu='B' submenu='border-color' flags='16' inserttext='border-color: ' hint='CSS1+: Sets the foreground color of the overall border.'/>
+<tag menu='B' submenu='border-color' flags='16' inserttext='border-bottom-color: ' hint='CSS2+: Sets the color of the bottom border.'/>
+<tag menu='B' submenu='border-color' flags='16' inserttext='border-left-color: ' hint='CSS2+: Sets the color of the left border.'/>
+<tag menu='B' submenu='border-color' flags='16' inserttext='border-right-color: ' hint='CSS2+: Sets the color of the right border.'/>
+<tag menu='B' submenu='border-color' flags='16' inserttext='border-top-color: ' hint='CSS2+: Sets the color of the top border.'/>
+
+<tag menu='B' submenu='border-image (CSS3+)' flags='16' inserttext='border-image: ' hint='CSS3+: Shorthand to set the "border-image" properties.'/>
+<tag menu='B' submenu='border-image (CSS3+)' flags='16' inserttext='border-image-outset: ' hint='CSS3+: Sets the amount by which the border image area extends beyond the border box on the top, right, bottom, and left sides respectively.'/>
+<tag menu='B' submenu='border-image (CSS3+)' flags='16' inserttext='border-image-repeat: ' hint='CSS3+: Sets how the images for the sides and the middle part of the border image are scaled and tiled (stretch, repeat, round, space).'/>
+<tag menu='B' submenu='border-image (CSS3+)' flags='16' inserttext='border-image-slice: ' hint='CSS3+: Set inward offsets from the top, right, bottom, and left edges of the border image respectively.'/>
+<tag menu='B' submenu='border-image (CSS3+)' flags='16' inserttext='border-image-source: ' hint='CSS3+: Sets an image to use instead of using the "border-style" properties and as an additional background layer.'/>
+<tag menu='B' submenu='border-image (CSS3+)' flags='16' inserttext='border-image-width: ' hint='CSS3+: Sets offsets that are used to divide the border image. Represents inward distances from the top, right, bottom, and left sides, respectively.'/>
+
+<tag menu='B' submenu='border-radius (CSS3+)' flags='16' inserttext='border-radius: ' hint='CSS3+: Sets the shape of the corners of the outer border edge.'/>
+<tag menu='B' submenu='border-radius (CSS3+)' flags='16' inserttext='border-bottom-left-radius: ' hint='CSS3+: Sets the shape of the bottom-left corner of the outer border edge.'/>
+<tag menu='B' submenu='border-radius (CSS3+)' flags='16' inserttext='border-bottom-right-radius: ' hint='CSS3+: Sets the shape of the bottom-right corner of the outer border edge.'/>
+<tag menu='B' submenu='border-radius (CSS3+)' flags='16' inserttext='border-top-left-radius: ' hint='CSS3+: Sets the shape of the top-left corner of the outer border edge.'/>
+<tag menu='B' submenu='border-radius (CSS3+)' flags='16' inserttext='border-top-right-radius: ' hint='CSS3+: Sets the shape of the top-right corner of the outer border edge.'/>
+
+<tag menu='B' submenu='border-style' flags='16' inserttext='border-style: ' hint='CSS1+: Sets the style of the overall border (none, hidden, dotted, dashed, solid, double, more).'/>
+<tag menu='B' submenu='border-style' flags='16' inserttext='border-bottom-style: ' hint='CSS2+: Sets the style of the bottom border.'/>
+<tag menu='B' submenu='border-style' flags='16' inserttext='border-left-style: ' hint='CSS2+: Sets the style of the left border.'/>
+<tag menu='B' submenu='border-style' flags='16' inserttext='border-right-style: ' hint='CSS2+: Sets the style of the right border.'/>
+<tag menu='B' submenu='border-style' flags='16' inserttext='border-top-style: ' hint='CSS2+: Sets the style of the top border.'/>
+
+<tag menu='B' submenu='border-width' flags='16' inserttext='border-width: ' hint='CSS1+: Sets the width of the overall border (thin, medium, thick, &lt;length>).'/>
+<tag menu='B' submenu='border-width' flags='16' inserttext='border-bottom-width: ' hint='CSS1+: Sets the width of the bottom border (thin, medium, thick, &lt;length>).'/>
+<tag menu='B' submenu='border-width' flags='16' inserttext='border-left-width: ' hint='CSS1+: Sets the width of the left border (thin, medium, thick, &lt;length>).'/>
+<tag menu='B' submenu='border-width' flags='16' inserttext='border-right-width: ' hint='CSS1+: Sets the width of the right border (thin, medium, thick, &lt;length>).'/>
+<tag menu='B' submenu='border-width' flags='16' inserttext='border-top-width: ' hint='CSS1+: Sets the width of the top border (thin, medium, thick, &lt;length>).'/>
+
+<tag menu='B' submenu='border' flags='16' inserttext='border-bottom: ' hint='CSS1+: Shorthand to define width, color, and style of the bottom border.'/>
+<tag menu='B' submenu='border' flags='16' inserttext='border-collapse: ' hint="CSS2: Sets a table's border model (collapse, separate)."/>
+<tag menu='B' submenu='border' flags='16' inserttext='border-left: ' hint='CSS1+: Shorthand to define width, color, and style of the left border.'/>
+<tag menu='B' submenu='border' flags='16' inserttext='border-right: ' hint='CSS1+: Shorthand to define width, color, and style of the right border.'/>
+<tag menu='B' submenu='border' flags='16' inserttext='border-spacing: ' hint='CSS2: Sets the distance that separates adjacent cell borders.'/>
+<tag menu='B' submenu='border' flags='16' inserttext='border-top: ' hint='CSS1+: Shorthand to define width, color, and style of the top border.'/>
+<tag menu='B' flags='4'/>
+
+<tag menu='B' flags='16' inserttext='bottom: ' hint="CSS2: Sets how far a box's bottom content edge is offset above the bottom edge of the box's containing block."/>
+<!--
+ <tag menu='B' flags='16' inserttext='box-break: ' hint="CSS3+: Sets how individual boxes are treated. (each-box, continuous)."/>
+-->
+<tag menu='B' flags='16' inserttext='box-decoration-break: ' hint="CSS3+: Sets how individual boxes are treated. (slice, clone)."/>
+<tag menu='B' flags='16' inserttext='box-shadow: ' hint='CSS3+: Attach one or more drop shadows to the box.'/>
+<tag menu='B' flags='16' inserttext='box-sizing: ' hint='CSS3+: Set how to apply the width and height (content-box, border-box).'/>
+
+<tag menu='B' flags='4'/>
+<tag menu='B' submenu='break (CSS3+)' flags='16' inserttext='break-after: ' hint='CSS3+: Sets page/column break behavior after the generated box.'/>
+<tag menu='B' submenu='break (CSS3+)' flags='16' inserttext='break-before: ' hint='CSS3+: Sets page/column break behavior before the generated box.'/>
+<tag menu='B' submenu='break (CSS3+)' flags='16' inserttext='break-inside: ' hint='CSS3+: Sets page/column break behavior inside the generated box.'/>
+
+<tag menu='C' flags='16' inserttext='caption-side: ' hint='CSS2: Sets the position of the caption box (top, bottom, left, right).'/>
+<tag menu='C' flags='16' inserttext='clear: ' hint='CSS1+: Defines the sides of an element where no floating images may be placed (none, left, right, both).'/>
+<tag menu='C' flags='16' inserttext='clip: ' hint='CSS2: Modify the clipping region of an element (&lt;shape>, auto).'/>
+<tag menu='C' flags='16' inserttext='color: ' hint='CSS1: Sets the foreground color of an element.'/>
+
+<tag menu='C' flags='4'/>
+<tag menu='C' flags='16' submenu='column (CSS3+)' inserttext='columns: ' hint="CSS3+: Shorthand property for setting 'column-width' and 'column-count'."/>
+<tag menu='C' flags='16' submenu='column (CSS3+)' inserttext='column-count: ' hint='CSS3+: Sets the number of columns of a multicol element (&lt;integer>, auto).'/>
+<tag menu='C' flags='16' submenu='column (CSS3+)' inserttext='column-fill: ' hint='CSS3+: Sets how to fill columns (auto, balance).'/>
+<tag menu='C' flags='16' submenu='column (CSS3+)' inserttext='column-gap: ' hint='CSS3+: Sets the gap between columns (&lt;length>, normal).'/>
+<tag menu='C' flags='16' submenu='column (CSS3+)' inserttext='column-span: ' hint='CSS3+: Sets how many columns an element spans across (1, all).'/>
+<tag menu='C' flags='16' submenu='column (CSS3+)' inserttext='column-width: ' hint='CSS3+: Sets the width of columns in multicol elements (&lt;length>, auto).'/>
+<tag menu='C'  flags='4' submenu='column (CSS3+)'/>
+<tag menu='C' flags='16' submenu='column (CSS3+)' inserttext='column-rule: ' hint="CSS3+: Shorthand property for setting 'column-rule-width', 'column-rule-style', and 'column-rule-color'."/>
+<tag menu='C' flags='16' submenu='column (CSS3+)' inserttext='column-rule-color: ' hint='CSS3+: Sets the color of the column rule (&lt;color>).'/>
+<tag menu='C' flags='16' submenu='column (CSS3+)' inserttext='column-rule-style: ' hint='CSS3+: Sets the style of the rule between columns of an element (none, hidden, dotted, dashed, solid, double, more).'/>
+<tag menu='C' flags='16' submenu='column (CSS3+)' inserttext='column-rule-width: ' hint='CSS3+: Sets the width of the rule between columns (thin, medium, thick, &lt;length>).'/>
+
+<tag menu='C' flags='4'/>
+<tag menu='C' flags='16' inserttext='content: ' hint='CSS2+: Used with the :before and :after pseudo-elements to generate content.'/>
+<tag menu='C' flags='16' inserttext='counter-increment: ' hint='CSS2: Indicate by how much the counter is incremented for every occurrence of the element.'/>
+<tag menu='C' flags='16' inserttext='counter-reset: ' hint='CSS2: Resets a list of counter names (each name can be optionally followed by an integer).'/>
+<tag menu='C' flags='4'/>
+<tag menu='C' submenu="cue (speech)" flags='16' inserttext='cue: ' hint='CSS2+: Shorthand way to set cue-before and cue-after.'/>
+<tag menu='C' submenu="cue (speech)" flags='16' inserttext='cue-after: ' hint='|CSS2+: Sets a sound to be played after the element to delimit it (&lt;uri> [&lt;number> | &lt;percentage> | silent | x-soft | soft | medium | loud | x-loud] | none | inherit).'/>
+<tag menu='C' submenu="cue (speech)" flags='16' inserttext='cue-before: ' hint='|CSS2+: Sets a sound to be played before the element to delimit it (&lt;uri> [&lt;number> | &lt;percentage> | silent | x-soft | soft | medium | loud | x-loud] | none | inherit).'/>
+<tag menu='C' flags='4'/>
+<tag menu='C' flags='16' inserttext='cursor: ' hint='CSS2+: Sets the type of cursor to be displayed for the pointing device (&lt;uri>, auto, crosshair, default, pointer, move, etc.).'/>
+
+<tag menu='D' flags='16' inserttext='direction: ' hint='CSS2: Sets the base writing direction of blocks (and more) (ltr, rtl).'/>
+<tag menu='D' flags='16' inserttext='display: ' hint='CSS1+: Classifies elements into broad categories (block, inline, list-item, none, and more for CSS2+).'/>
+
+<tag menu='E' flags='16' inserttext='elevation: ' hint='CSS2: Spatial property for aural presentation.'/>
+<tag menu='E' flags='16' inserttext='empty-cells: ' hint='CSS2: Controls the rendering of borders around cells with no visible content (show, hide).'/>
+
+<tag menu='F' flags='16' inserttext='float: ' hint='CSS1+: Sets the float direction for an element (left, right, none).'/>
+<tag menu='F' flags='4'/>
+<tag menu='F' flags='16' inserttext='font: ' hint='CSS1+: Shorthand way to express various font properties.'/>
+<tag menu='F' flags='16' inserttext='font-family: ' hint='CSS1+: Declares a specific font, generic font family, or both.'/>
+<tag menu='F' flags='16' inserttext='font-feature-settings: ' hint='CSS3+: Provides low-level control over OpenType font features (normal, &lt;feature-tag-value>).'/>
+<tag menu='F' flags='16' inserttext='font-kerning: ' hint='CSS3+: Sets the contextual adjustment of inter-glyph spacing (auto, normal, none).'/>
+<tag menu='F' flags='16' inserttext='font-language-override: ' hint='CSS3+: Sets language specific OpenType features when rendering (normal, inherit, <string>).'/>
+<tag menu='F' flags='16' inserttext='font-size: ' hint='CSS1+: Sets the font size.'/>
+<tag menu='F' flags='16' inserttext='font-size-adjust: ' hint='CSS2, CSS3+: Specify an aspect value for an element. Not in CSS2.1.'/>
+<tag menu='F' flags='16' inserttext='font-stretch: ' hint='CSS3+: Selects a normal, condensed, or extended face from a font family (normal, condensed, expanded, etc.).'/>
+<tag menu='F' flags='16' inserttext='font-style: ' hint='CSS1+: Sets the font style (normal, italic, oblique).'/>
+<tag menu='F' flags='16' inserttext='font-synthesis: ' hint='CSS3+: Sets whether user agents are allowed to synthesize font faces (normal, weight, style).'/>
+<tag menu='F' flags='16' inserttext='font-variant: ' hint='CSS1+: Sets the font variant (normal, small-caps).'/>
+<tag menu='F' flags='16' inserttext='font-variant-alternates: ' hint='CSS3+: Specifies control over alternate glyphs. (normal, stylistic(), styleset(), character-variant(), swash(), etc).'/>
+<tag menu='F' flags='16' inserttext='font-variant-caps: ' hint='CSS3+: Specifies control over capitalized forms (normal, small-caps, all-small-caps, petite-caps, unicase, etc).'/>
+<tag menu='F' flags='16' inserttext='font-variant-east-asian: ' hint='CSS3+: Specifies control over glyph substitution and positioning in East Asian text (normal, jis78, simplified, traditional, full-width, etc).'/>
+<tag menu='F' flags='16' inserttext='font-variant-numeric: ' hint='CSS3+: Specifies control over numerical forms (normal, lining-nums, proportional-nums, tabular-nums, diagonal-fractions, etc).'/>
+<!-- 2011-10-17: placeholder property name so don't include <tag menu='F' flags='16' inserttext='font-variant-position: ' hint='CSS3+: Sets the selection of alternate glyphs for use as subscripts, superscripts, and ordinals (normal, sub, super, ordinal).'/>-->
+<tag menu='F' flags='16' inserttext='font-weight: ' hint='CSS1+: Sets the font weight (normal, bold, bolder, lighter, 100, 200, etc.).'/>
+
+<tag menu='H' flags='16' inserttext='hanging-punctuation: ' hint='|CSS3+: (none | [ first || [ force-end | allow-end ] || last ]).'/>
+<tag menu='H' flags='16' inserttext='height: ' hint='CSS1+: Sets the height of an element (&lt;length>, &lt;percentage>, or auto).'/>
+<tag menu='H' flags='4'/>
+<tag menu='H' flags='16' inserttext='hsl(|)' hint="CSS3+: Specifies a color (hsl(hue [0,360), saturation (%), lightness (%)))."/>
+<tag menu='H' flags='16' inserttext='hsla(|)' hint="CSS3+: Specifies a color with an alpha value (hsla(hue [0,360), saturation (%), lightness (%), alpha [0.0,1.0]))."/>
+<tag menu='H' flags='4'/>
+<tag menu='H' flags='16' inserttext='hyphens: ' hint='CSS3+: Sets whether hyphenation is allowed to create more break opportunities (none, manual, auto).'/>
+
+<tag menu='I' flags='16' inserttext='icon: ' hint="CSS3+: Style any arbitrary element with an iconic equivalent; set 'content' property to 'icon' (auto,  &lt;uri> [, &lt;uri>]*)."/>
+<tag menu='I' flags='16' inserttext='ime-mode: ' hint='MSIE50: (auto, active, inactive, disabled).'/>
+
+<tag menu='L' flags='16' inserttext='layout-flow: ' hint='MSIE55: (horizontal, vertical-ideographic).'/>
+<tag menu='L' flags='16' inserttext='layout-grid: ' hint='MSIE50'/>
+<tag menu='L' flags='16' inserttext='layout-grid-char: ' hint='MSIE50'/>
+<tag menu='L' flags='16' inserttext='layout-grid-char-spacing: ' hint='MSIE50'/>
+<tag menu='L' flags='16' inserttext='layout-grid-line: ' hint='MSIE50'/>
+<tag menu='L' flags='16' inserttext='layout-grid-mode: ' hint='MSIE50'/>
+<tag menu='L' flags='16' inserttext='layout-grid-type: ' hint='MSIE50'/>
+<tag menu='L' flags='4'/>
+<tag menu='L' flags='16' inserttext='left: ' hint="CSS2: Specifies how far a box's left content edge is offset to the right of the left edge of the box's containing block."/>
+<tag menu='L' flags='16' inserttext='letter-spacing: ' hint='CSS1+: Sets the minimum, maximum, and optimal spacing between letters (normal, &lt;length>, &lt;percentage>).'/>
+<tag menu='L' flags='4'/>
+<tag menu='L' flags='16' inserttext='line-break: ' hint='CSS3+: Sets the strictness of line-breaking rules applied within an element (auto, loose, normal, strict).'/>
+<tag menu='L' flags='16' inserttext='line-height: ' hint='CSS1'/>
+<tag menu='L' flags='4'/>
+<tag menu='L' flags='16' inserttext='list-style: ' hint='CSS1: Shorthand way to express various list-style properties.'/>
+<tag menu='L' flags='16' inserttext='list-style-image: ' hint='CSS1: Declare an image to use as the "bullet" in an ordered or unordered list (&lt;url>, none).'/>
+<tag menu='L' flags='16' inserttext='list-style-position: ' hint='CSS1: Declare the position of the "bullet" or number in a list (inside, outside).'/>
+<tag menu='L' flags='16' inserttext='list-style-type: ' hint='CSS1: Declare the type of numbering system to use in a list (disc, circle, square, etc.).'/>
+
+<tag menu='M' flags='16' inserttext='margin: ' hint='|CSS1+: Sets the overall margin size of an element ([ &lt;length> | &lt;percentage> | auto ]{1,4}). Order: top, right, bottom, left.'/>
+<tag menu='M' flags='16' inserttext='margin-bottom: ' hint='CSS1+: Sets the size of the bottom margin (&lt;length>, &lt;percentage>, or auto).'/>
+<tag menu='M' flags='16' inserttext='margin-left: ' hint='CSS1+: Sets the size of the left margin (&lt;length>, &lt;percentage>, or auto).'/>
+<tag menu='M' flags='16' inserttext='margin-right: ' hint='CSS1+: Sets the size of the right margin (&lt;length>, &lt;percentage>, or auto).'/>
+<tag menu='M' flags='16' inserttext='margin-top: ' hint='CSS1+: Sets the size of the top margin (&lt;length>, &lt;percentage>, or auto).'/>
+<tag menu='M' flags='4'/>
+
+<tag menu='M' submenu="mark (speech) (CSS3+)" flags='16' inserttext='mark: ' hint='CSS3+: Shorthand for setting mark-before and mark-after.'/> 
+<tag menu='M' submenu="mark (speech) (CSS3+)" flags='16' inserttext='mark-after: ' hint='CSS3+: Sets named markers to be attached to the audio stream (&lt;string>).'/> 
+<tag menu='M' submenu="mark (speech) (CSS3+)" flags='16' inserttext='mark-before: ' hint='CSS3+: Sets named markers to be attached to the audio stream (&lt;string>).'/> 
+<tag menu='M' flags='4'/>
+<tag menu='M' flags='16' inserttext='marker-offset: ' hint='CSS2: Sets the distance between the nearest border edges of a marker box and its associated principal box.'/>
+<tag menu='M' flags='16' inserttext='marks: ' hint='CSS2: In printing, specifies whether cross marks or crop marks or both should be rendered just outside the page box edge.'/>
+<tag menu='M' flags='4'/>
+<tag menu='M' submenu="marquee (CSS3+)" flags='16' inserttext='marquee-direction: ' hint='CSS3+: Sets the initial direction in which the content moves if the marquee effect is used (forward, reverse).'/>
+<tag menu='M' submenu="marquee (CSS3+)" flags='16' inserttext='marquee-play-count: ' hint='CSS3+: Sets how many times the content moves (&lt;non-negative-integer> or infinite).'/>
+<tag menu='M' submenu="marquee (CSS3+)" flags='16' inserttext='marquee-speed: ' hint='CSS3+: Sets how fast the content scrolls (normal, fast, slow).'/>
+<tag menu='M' submenu="marquee (CSS3+)" flags='16' inserttext='marquee-style: ' hint='CSS3+: Sets how the marquee scrolls (alternate, scroll, slide).'/>
+<tag menu='M' flags='4'/>
+<tag menu='M' flags='16' inserttext='max-height: ' hint='CSS2+: Use max- and min-height to constrain box height to a certain range (&lt;length>, &lt;percentage>, or none).'/>
+<tag menu='M' flags='16' inserttext='max-width: ' hint='CSS2+: Use max- and min-width to constrain box width to a certain range (&lt;length>, &lt;percentage>, or none).'/>
+<tag menu='M' flags='4'/>
+<tag menu='M' flags='16' inserttext='min-height: ' hint='CSS2+: Use max- and min-height to constrain box height to a certain range (&lt;length> or &lt;percentage>).'/>
+<tag menu='M' flags='16' inserttext='min-width: ' hint='CSS2+: Use max- and min-width to constrain box width to a certain range (&lt;length> or &lt;percentage>).'/>
+
+<tag menu='N' flags='16' inserttext='nav-index: ' hint='CSS3+: Sets the sequential navigation order (auto, &lt;number>). &lt;number> is non-zero and positive.'/>
+<tag menu='N' flags='16' inserttext='nav-down: ' hint='CSS3+: Set how to respond to directional navigation keys.'/>
+<tag menu='N' flags='16' inserttext='nav-left: ' hint='CSS3+: Set how to respond to directional navigation keys.'/>
+<tag menu='N' flags='16' inserttext='nav-right: ' hint='CSS3+: Set how to respond to directional navigation keys.'/>
+<tag menu='N' flags='16' inserttext='nav-up: ' hint='CSS3+: Set how to respond to directional navigation keys.'/>
+
+<tag menu='O' flags='16' inserttext='opacity: ' hint='CSS3+: Sets how to blend the offscreen rendering into the current composite rendering. A number from 0.0 (fully transparent) to 1.0 (fully opaque), inclusive.'/>
+<tag menu='O' flags='16' inserttext='orphans: ' hint='CSS2: Sets the min number of lines of a paragraph that must be left at the bottom of a page.'/>
+<tag menu='O' flags='4'/>
+<tag menu='O' submenu="outline (CSS2+)" flags='16' inserttext='outline: ' hint='CSS2+: Shorthand way to express various outline properties.'/>
+<tag menu='O' submenu="outline (CSS2+)" flags='16' inserttext='outline-color: ' hint='CSS2+: Sets the foreground color of the overall outline.'/>
+<tag menu='O' submenu="outline (CSS2+)" flags='16' inserttext='outline-offset: ' hint='CSS3+: Set to offset the outline and draw it beyond the border edge.'/>
+<tag menu='O' submenu="outline (CSS2+)" flags='16' inserttext='outline-style: ' hint='CSS2+: Sets the style of the overall outline.'/>
+<tag menu='O' submenu="outline (CSS2+)" flags='16' inserttext='outline-width: ' hint='CSS2+: Sets the width of the overall outline.'/>
+<tag menu='O' flags='4'/>
+<tag menu='O' flags='16' inserttext='overflow: ' hint='CSS2+: Sets clipping when the content of a block-level element overflows (visible, hidden, scroll, auto).'/>
+<tag menu='O' flags='16' inserttext='overflow-style: ' hint='CSS3+: Sets the preferred scrolling method for elements that overflow.'/>
+<tag menu='O' flags='16' inserttext='overflow-wrap: ' hint='CSS3+: Sets whether the UA may break within a word to prevent overflow (normal, break-word).'/>
+<tag menu='O' flags='16' inserttext='overflow-x: ' hint='MSIE40+, CSS3+: Sets clipping at the left and right edges (visible, hidden, scroll, auto).'/>
+<tag menu='O' flags='16' inserttext='overflow-y: ' hint='MSIE40+, CSS3+: Sets clipping at the top and bottom edges (visible, hidden, scroll, auto).'/>
+
+<tag menu='P' submenu="padding" flags='16' inserttext='padding: ' hint='|CSS1+: Sets the overall padding size of an element ([ &lt;length> | &lt;percentage> ]{1,4}). Order: top, right, bottom, left.'/>
+<tag menu='P' submenu="padding" flags='16' inserttext='padding-bottom: ' hint='CSS1+: Sets the size of the bottom padding (&lt;length> or &lt;percentage>).'/>
+<tag menu='P' submenu="padding" flags='16' inserttext='padding-left: ' hint='CSS1+: Sets the size of the left padding (&lt;length> or &lt;percentage>).'/>
+<tag menu='P' submenu="padding" flags='16' inserttext='padding-right: ' hint='CSS1+: Sets the size of the right padding (&lt;length> or &lt;percentage>).'/>
+<tag menu='P' submenu="padding" flags='16' inserttext='padding-top: ' hint='CSS1+: Sets the size of the top padding (&lt;length> or &lt;percentage>).'/>
+
+<tag menu='P' submenu="page" flags='16' inserttext='page: ' hint='CSS2: Specifies a particular type of page where an element should be displayed.'/>
+<tag menu='P' submenu="page" flags='16' inserttext='page-break-after: ' hint='CSS2: Indicates where the user agent may or should break pages (auto, always, avoid, left, right).'/>
+<tag menu='P' submenu="page" flags='16' inserttext='page-break-before: ' hint='CSS2: Indicates where the user agent may or should break pages (auto, always, avoid, left, right).'/>
+<tag menu='P' submenu="page" flags='16' inserttext='page-break-inside: ' hint='CSS2: Indicates where the user agent may or should break pages (avoid, auto).'/>
+<tag menu='P' submenu="pause (speech)" flags='16' inserttext='pause: ' hint='CSS2+: Shorthand for setting pause-before and pause-after.'/>
+<tag menu='P' submenu="pause (speech)" flags='16' inserttext='pause-after: ' hint="CSS2+: Sets a pause or prosodic boundary to be observed after an element (&lt;time>, none, x-weak, weak, medium, strong, x-strong)."/>
+<tag menu='P' submenu="pause (speech)" flags='16' inserttext='pause-before: ' hint="CSS2+: Sets a pause or prosodic boundary to be observed before an element (&lt;time>, none, x-weak, weak, medium, strong, x-strong)."/>
+<tag menu='P' flags='4'/>
+<tag menu='P' flags='16' inserttext='phonemes: ' hint='CSS3+: Sets a phonetic pronunciation for the text contained by the corresponding element (&lt;string>).'/>
+<tag menu='P' flags='4'/>
+<tag menu='P' flags='16' inserttext='pitch: ' hint='CSS2: Sets the average pitch of the speaking voice (&lt;frequency>, x-low, low, medium, high, x-high).'/>
+<tag menu='P' flags='16' inserttext='pitch-range: ' hint='CSS2: Specifies variation in average pitch (&lt;number>).'/>
+<tag menu='P' flags='4'/>
+<tag menu='P' flags='16' inserttext='play-during: ' hint="CSS2: Specifies a sound to be played as background while an element's content is spoken."/>
+<tag menu='P' flags='16' inserttext='position: ' hint="CSS2: Determine which CSS2 algorithm is used to calculate the position of a box (static, relative, absolute, fixed)."/>
+<tag menu='P' flags='16' inserttext='punctuation-trim: ' hint="|CSS3+: Sets whether or not a fullwidth punctuation character should be trimmed (kerned) (none | [start || end || adjacent])."/>
+
+<tag menu='Q' flags='16' inserttext='quotes: ' hint="CSS2: Specifies quotation marks for any number of embedded quotations."/>
+
+<tag menu='R' flags='16' inserttext='rgb(|)' hint="CSS1+: Specifies a color (rgb(red, green, blue))."/>
+<tag menu='R' flags='16' inserttext='rgba(|)' hint="CSS3+: Specifies a color with an alpha value (rgba(red, green, blue, alpha [0.0,1.0]))."/>
+<tag menu='R' flags='4'/>
+<tag menu='R' flags='16' inserttext='resize: ' hint="CSS3+: Sets whether or not an element is resizable by the user, and if so, along which axis/axes (none, both, horizontal, vertical)."/>
+<tag menu='R' flags='4'/>
+
+<tag menu='R' submenu="rest (speech) (CSS3+)" flags='16' inserttext='rest: ' hint='CSS3+: Shorthand for setting rest-before and rest-after.'/>
+<tag menu='R' submenu="rest (speech) (CSS3+)" flags='16' inserttext='rest-after: ' hint="CSS3+: Sets a rest or prosodic boundary to be observed after speaking an element's content (&lt;time>, none, x-weak, weak, medium, strong, x-strong)."/>
+<tag menu='R' submenu="rest (speech) (CSS3+)" flags='16' inserttext='rest-before: ' hint="CSS3+: Sets a rest or prosodic boundary to be observed before speaking an element's content (&lt;time>, none, x-weak, weak, medium, strong, x-strong)."/>
+<tag menu='R' flags='4'/>
+
+<tag menu='R' flags='16' inserttext='richness: ' hint="CSS2: Sets the richness, or brightness, of the speaking voice (&lt;number>)."/>
+<tag menu='R' flags='16' inserttext='right: ' hint="CSS2: Specifies how far a box's right content edge is offset to the left of the right edge of the box's containing block."/>
+<tag menu='R' flags='4'/>
+
+<tag menu='R' submenu="rotation (CSS3+)" flags='16' inserttext='rotation: ' hint="CSS3+: Sets the counterclockwise rotation of a block-level element (&lt;angle>)."/>
+<tag menu='R' submenu="rotation (CSS3+)" flags='16' inserttext='rotation-point: ' hint="CSS3+: Sets the rotation point when rotating (&lt;bg-position>)."/>
+
+<tag menu='R' submenu="ruby (CSS3+)" flags='16' inserttext='ruby-align: ' hint='CSS3+: Sets the text alignment of the ruby text and ruby base contents relative to each other (auto, start, left, center, end, right, distribute-letter, distribute-space, line-edge).'/>
+<tag menu='R' submenu="ruby (CSS3+)" flags='16' inserttext='ruby-overhang: ' hint='CSS3+: Sets whether, and on which side, ruby text is allowed to partially overhang any adjacent text in addition to its own base (auto, start, end, none).'/>
+<tag menu='R' submenu="ruby (CSS3+)" flags='16' inserttext='ruby-position: ' hint='CSS3+: Sets the position of the ruby text with respect to its base (before, after, right).'/>
+<tag menu='R' submenu="ruby (CSS3+)" flags='16' inserttext='ruby-span: ' hint='CSS3+: Sets the spanning behavior of annotation elements (attr(x), none).'/>
+
+<tag menu='S' flags='16' inserttext='scrollbar-3dlight-color: ' hint='MSIE55'/>
+<tag menu='S' flags='16' inserttext='scrollbar-arrow-color: ' hint='MSIE55'/>
+<tag menu='S' flags='16' inserttext='scrollbar-base-color: ' hint='MSIE55'/>
+<tag menu='S' flags='16' inserttext='scrollbar-darkshadow-color: ' hint='MSIE55'/>
+<tag menu='S' flags='16' inserttext='scrollbar-face-color: ' hint='MSIE55'/>
+<tag menu='S' flags='16' inserttext='scrollbar-highlight-color: ' hint='MSIE55'/>
+<tag menu='S' flags='16' inserttext='scrollbar-shadow-color: ' hint='MSIE55'/>
+<tag menu='S' flags='16' inserttext='scrollbar-track-color: ' hint='MSIE55'/>
+<tag menu='S' flags='4'/>
+<tag menu='S' flags='16' inserttext='size: ' hint='CSS2: Sets the size and orientation of a page box (&lt;length>{1,2}, auto, portrait, landscape).'/>
+<tag menu='S' flags='4'/>
+<tag menu='S' flags='16' inserttext='speak: ' hint='CSS2+: Sets whether to render text aurally and in what manner. (none, normal, spell-out, digits, literal-punctuation, no-punctuation).'/>
+<tag menu='S' flags='16' inserttext='speak-header: ' hint='CSS2: Specifies when table headers are spoken (once, always).'/>
+<tag menu='S' flags='16' inserttext='speak-numeral: ' hint='CSS2: Specifies how numerals are spoken (digits, continuous).'/>
+<tag menu='S' flags='16' inserttext='speak-punctuation: ' hint='CSS2: Specifies how punctuation is spoken (code, none).'/>
+<tag menu='S' flags='4'/>
+<tag menu='S' flags='16' inserttext='speech-rate: ' hint='CSS2: Sets the speaking rate (&lt;number>, x-slow, slow, medium, fast, x-fast, faster, slower).'/>
+<tag menu='S' flags='16' inserttext='stress: ' hint='CSS2: Sets the height of "local peaks" in the intonation contour of a voice. (&lt;number>).'/>
+
+<tag menu='T' flags='16' inserttext='tab-size: ' hint='CSS3+: Sets the size (must be non-negative) of the tab character when rendered (&lt;integer>, &lt;length>).'/>
+<tag menu='T' flags='16' inserttext='table-layout: ' hint='CSS2: Controls the algorithm used to lay out the table (auto, fixed).'/>
+
+<tag menu='T' flags='4'/>
+<tag menu='T' submenu='text' flags='16' inserttext='text-align: ' hint='CSS1+: Sets how inline contents of a block are horizontally aligned (start, end, left, right, center, justify, &lt;string>).'/>
+<tag menu='T' submenu='text' flags='16' inserttext='text-align-last: ' hint="CSS3+: Sets the alignment of the last line of a block or a line right before a forced line break (auto, start, end, left, right, center, justify)."/>
+<tag menu='T' submenu='text' flags='16' inserttext='text-autospace: ' hint='MSIE50: (none, ideograph-alpha, ideograph-numeric, ideograph-parenthesis, ideograph-space).'/>
+<tag menu='T' submenu='text' flags='16' inserttext='text-indent: ' hint='|CSS1+: Sets the indentation applied to lines of inline content ([ &lt;length> | &lt;percentage> ] && [ hanging || each-line ]?).'/>
+<tag menu='T' submenu='text' flags='16' inserttext='text-justify: ' hint="CSS3+: Sets the justification method used when 'text-align' is set to 'justify' (auto, inter-word, inter-ideograph, inter-cluster, distribute, kashida)."/>
+<tag menu='T' submenu='text' flags='16' inserttext='text-kashida-space: ' hint='MSIE55: (&lt;percentage>).'/>
+<!--<tag menu='T' flags='16' inserttext='text-outline: ' hint='CSS3+: Sets a text outline.'/>-->
+<tag menu='T' submenu='text' flags='16' inserttext='text-overflow: ' hint='MSIE60: (ellipsis, clip).'/>
+<tag menu='T' submenu='text' flags='16' inserttext='text-shadow: ' hint='|CSS3+: Sets shadow effects to the text of the element (none | [ <length>{2,3} && <color>? ]#).'/>
+<tag menu='T' submenu='text' flags='16' inserttext='text-space-collapse: ' hint='|CSS3+: Sets whether (and how) white space inside the element is collapsed (collapse, preserve, preserve-breaks).'/>
+<tag menu='T' submenu='text' flags='16' inserttext='text-transform: ' hint='CSS1: Sets the capitalization of text for styling purposes (none, capitalize, uppercase, lowercase, full-width).'/>
+<tag menu='T' submenu='text' flags='16' inserttext='text-underline-position: ' hint='|CSS3+: Sets the position of an underline (auto | alphabetic | [ below || [ left | right ] ]).'/>
+<tag menu='T' submenu='text' flags='16' inserttext='text-wrap: ' hint='CSS3+: Sets the mode for text wrapping (normal, none, avoid).'/>
+
+<tag menu='T' submenu='text-decoration' flags='16' inserttext='text-decoration: ' hint='CSS1+: Sets certain effects (none, underline, overline, line-through, blink).'/>
+<tag menu='T' submenu='text-decoration' flags='16' inserttext='text-decoration-color: ' hint='CSS3+: Sets the color of the text decoration (&lt;color>).'/>
+<tag menu='T' submenu='text-decoration' flags='16' inserttext='text-decoration-line: ' hint='CSS3+: Sets what decorations, if any, are added to the element (none, underline, overline, line-through).'/>
+<tag menu='T' submenu='text-decoration' flags='16' inserttext='text-decoration-skip: ' hint='CSS3+: Sets what parts any text decoration must skip over (none, objects, spaces, ink, edges).'/>
+<tag menu='T' submenu='text-decoration' flags='16' inserttext='text-decoration-style: ' hint='CSS3+: Sets the style of the line(s) drawn for the text decoration (solid, double, dotted, dashed, wavy).'/>
+
+<tag menu='T' submenu='text-emphasis' flags='16' inserttext='text-emphasis: ' hint='CSS3+: Sets how to emphasis text (&lt;color>, none, filled, open, dot, circle, triangle, &lt;string>).'/>
+<tag menu='T' submenu='text-emphasis' flags='16' inserttext='text-emphasis-color: ' hint='CSS3+: Sets the foreground color of the emphasis marks (&lt;color>).'/>
+<tag menu='T' submenu='text-emphasis' flags='16' inserttext='text-emphasis-position: ' hint='CSS3+: Sets where emphasis marks are drawn (above, below, right, left).'/>
+<tag menu='T' submenu='text-emphasis' flags='16' inserttext='text-emphasis-style: ' hint='CSS3+: Sets the style of emphasis marks to apply (none, filled, open, dot, circle, triangle, &lt;string>).'/>
+
+<tag menu='T' flags='4'/>
+<tag menu='T' flags='16' inserttext='top: ' hint="CSS2: Specifies how far a box's top content edge is offset below the top edge of the box's containing block."/>
+
+<tag menu='T' flags='4'/>
+<tag menu='T' submenu='transforms' flags='16' inserttext='transform: ' hint="CSS3+: Apply a transformation by using one or more transform functions (matrix(), matrix3d(), rotate(), scale(), etc)."/>
+<tag menu='T' submenu='transforms' flags='16' inserttext='transform-origin: ' hint="CSS3+: Set the origin of transformation for a coordinate system."/>
+<tag menu='T' submenu='transforms' flags='16' inserttext='transform-style: ' hint="CSS3+: Sets how nested elements are rendered in 3D space (flat, preserve-3d)."/>
+<tag menu='T' submenu='transitions' flags='16' inserttext='transition: ' hint="CSS3+: Shorthand property to set up to 4 transition properties."/>
+<tag menu='T' submenu='transitions' flags='16' inserttext='transition-delay: ' hint="CSS3+: Sets when the transition will start, allowing for a delay from the time when the property is applied or changed."/>
+<tag menu='T' submenu='transitions' flags='16' inserttext='transition-duration: ' hint="CSS3+: Sets the length of time that the transition takes. Times should not be negative."/>
+<tag menu='T' submenu='transitions' flags='16' inserttext='transition-property: ' hint="CSS3+: Sets the name of the CSS property (or properties) to which the transition applies (all, none, IDENT)."/>
+<tag menu='T' submenu='transitions' flags='16' inserttext='transition-timing-function: ' hint="CSS3+: Sets how the intermediate values used during a transition will be calculated (ease, linear, ease-in, cubic-bezier())."/>
+
+<tag menu='U' flags='16' inserttext='unicode-bidi: ' hint="CSS2: (normal, embed, bidi-override)."/>
+<tag menu='U' flags='16' inserttext='url(|)' hint="CSS1: Specifies a url."/>
+
+<tag menu='V' flags='16' inserttext='vertical-align: ' hint='CSS1: Sets the baseline vertical alignment with respect to line-height (baseline, sub, super, etc.).'/>
+<tag menu='V' flags='16' inserttext='visibility: ' hint='CSS2+: Sets whether the boxes generated by an element are rendered (visible, hidden, collapse).'/>
+<tag menu='V' flags='16' inserttext='volume: ' hint='CSS2: Sets the median volume of the waveform (&lt;number>, &lt;percentage>, silent, x-soft, soft, medium, loud, x-loud).'/>
+<tag menu='V' flags='4'/>
+<tag menu='V' submenu="voice (speech)" flags='16' inserttext='voice-balance: ' hint='CSS3+: Sets the balance between left and right channels (&lt;number>, left, center, right, leftwards, rightwards).'/>
+<tag menu='V' submenu="voice (speech)" flags='16' inserttext='voice-duration: ' hint="CSS3+: Sets how long it should take to render the selected element's content (&lt;time>)."/>
+<tag menu='V' submenu="voice (speech)" flags='16' inserttext='voice-family: ' hint='CSS2+: Comma-separated, prioritized list of voice family names.'/>
+<tag menu='V' submenu="voice (speech)" flags='16' inserttext='voice-pitch: ' hint='CSS3+: Sets the average pitch (a frequency) of the speaking voice (&lt;number>, &lt;percentage>, x-low, low, medium, high, x-high).'/>
+<tag menu='V' submenu="voice (speech)" flags='16' inserttext='voice-pitch-range: ' hint='CSS3+: Sets the variation in average pitch (&lt;number>, &lt;percentage>, x-low, low, medium, high, x-high).'/>
+<tag menu='V' submenu="voice (speech)" flags='16' inserttext='voice-rate: ' hint='CSS3+: Sets the speaking rate (&lt;percentage>, x-slow, slow, medium, fast, x-fast).'/>
+<tag menu='V' submenu="voice (speech)" flags='16' inserttext='voice-stress: ' hint='CSS3+: Sets the strength of emphasis to be applied (strong, moderate, none, reduced).'/>
+<tag menu='V' submenu="voice (speech)" flags='16' inserttext='voice-volume: ' hint='CSS3+: Sets the amplitude of the waveform output by the speech synthesiser (&lt;number>, &lt;percentage>, silent, x-soft, soft, medium, loud, x-loud).'/>
+
+<tag menu='W' flags='16' inserttext='white-space: ' hint='CSS1+: Defines how to treat whitespace in the element (normal, pre, nowrap, pre-wrap, pre-line).'/>
+<tag menu='W' flags='16' inserttext='widows: ' hint='CSS2: Sets the min number of lines of a paragraph that must be left at the top of a page.'/>
+<tag menu='W' flags='16' inserttext='width: ' hint='CSS1+: Sets the width of an element (&lt;length>, &lt;percentage>, or auto).'/>
+<tag menu='W' flags='4'/>
+<tag menu='W' flags='16' inserttext='word-break: ' hint='CSS3+: Set line breaking restrictions (normal, keep-all, break-all).'/>
+<tag menu='W' flags='16' inserttext='word-spacing: ' hint='CSS1+: Sets the minimum, maximum, and optimal spacing between words (normal, &lt;length>, &lt;percentage>).'/>
+<tag menu='W' flags='16' inserttext='word-wrap: ' hint='MSIE55+, CSS3+: Sets whether the UA may break within a word to prevent overflow (normal, break-word).'/>
+<tag menu='W' flags='4'/>
+<tag menu='W' flags='16' inserttext='writing-mode: ' hint='MSIE55: (lr-tb, tb-rl).'/>
+
+<tag menu='Z' flags='16' inserttext='z-index: ' hint='CSS2: Sets the stack level of the box (auto, &lt;integer>).'/>
+<tag menu='Z' flags='16' inserttext='zoom: ' hint='MSIE55: (normal, &lt;float>, &lt;percentage>).'/>
+</csetaginserterconfiguration>

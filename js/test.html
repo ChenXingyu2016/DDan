@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		function myFunction()
+		{
+			document.getElementById("demo").innerHTML="My First HTML";
+			document.getElementById("demo1").innerHTML="My Last HTML"
+		}
+		function myFunction1(){
+			var i;
+			var cars=new Array("A","B","C");
+			for (i=0;i<cars.length;i++)
+			{
+				document.write(cars[i]+"<br>");
+			}
+		}
+		function myFunction2()
+		{
+			var person={
+				firstname:	"Chen",
+				lastname:	"Xingyu",
+				id:			"2013211175",
+				days:		"1994/04/18"
+			};
+			document.write(person.firstname+"<br />");
+			document.write(person["days"]+"<br />");
+		}
+	</script>
+</head>
+<body>
+	<h1 id="demo1">My Web Page</h1>
+	<p id="demo">A Paragraph.</p>	
+	<button type="button" onclick="myFunction()">点击这里</button>
+	<button type="button" onclick="myFunction1()">数组</button>
+	<button type="button" onclick="myFunction2()">寻址</button>
+</body>
+</html>

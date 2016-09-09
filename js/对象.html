@@ -1,0 +1,60 @@
+<!DOCYTPE html>
+<html>
+<head>
+	<script>//对象构造器
+		function myFunction(firstname,lastname,age)
+		{
+			this.firstname=firstname;
+			this.lastname=lastname;
+			this.age=age;
+		}	
+		Me=new myFunction("Chen","Xingyu",22);
+		document.write(Me.firstname + Me.lastname + " is " + Me.age+" years old."+"<br>");
+	</script>
+	<script>//直接创建一个实例的对象
+		person={firstname:"Luo",lastname:"Shuai",age:22}
+		document.write(person.firstname + person.lastname + " is " + person.age + " years old."+"<br>")
+	</script>
+	<script>//在对象构造器内部定义对象的方法
+		function person(firstname,lastname,age)
+		{
+			this.firstname=firstname;
+			this.lastname=lastname;
+			this.age=age;
+			this.changename=changename;
+		function changename(name)//对象的方法
+		{
+			this.lastname=name;
+		}
+		}
+		myName=new person("Chen","Xingyu",22)
+		document.write(myName.firstname+myName.lastname+" is "+myName.age+" years old."+"<br>")
+		myName.changename("Cheng")
+		document.write(myName.firstname+myName.lastname+" is "+myName.age+" years old.")
+	</script>
+	<script>
+		function my()//遍历对象中的属性
+		{
+			var x;
+			var txt="";
+			var person={firstname:"Chen",lastname:"Xingyu",age:22}
+			for (x in person)//对象中的属性
+			{
+				txt=txt+person[x];//person[x] 属性所对应的值
+			}
+			document.getElementById("demo").innerHTML=txt;
+		}
+	</script>
+</head>
+<body>
+	<button type="button" onclick="my()">点击</button>
+	<p id="demo"></p>
+</body>
+</html>
+
+
+
+
+
+
+

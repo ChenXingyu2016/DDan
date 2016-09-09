@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		
+		function Xh1()
+		{
+			var i=0;
+			var x="";
+			while (i<5)
+			{
+				x=x+"The number is "+i+"<br>";
+				i++;
+			}
+			document.getElementById("demo1").innerHTML=x;
+		}
+		function Xh2()
+		{
+			var i=0;
+			var x="";
+			do
+			{
+				x=x+"The number are " +i+"<br>";
+				i++;
+			}
+			while (i<5)
+			document.getElementById("demo2").innerHTML=x;
+		}	
+			cars=["BMW","Saab","Ford"];
+			var i=0;
+			while (cars[i])
+			{
+				document.write(cars[i]+"<br>");
+				i++;
+			}
+	</script>
+</head>
+<body>
+	<button type="button" onclick="Xh1()">demo1</button>
+	<p id="demo1"></p>
+	<button type="button" onclick="Xh2()">demo2</button>
+	<p id="demo2"></p>
+</body>
+</html>

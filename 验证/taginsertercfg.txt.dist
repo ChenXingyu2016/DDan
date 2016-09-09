@@ -1,0 +1,693 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+CSE HTML Validator HTML Tag Inserter Configuration by AI Internet Solutions (http://www.htmlvalidator.com/)
+
+Updated: May-Sept, 2012 - minor updates include some to the meta tags, new 'Inst' menu
+Updated: April, 2012 - minor updates & fixes
+Updated: February, 2012 - added the "lang" attribute to HTML templates, commented out 'iso-8859-1' related entries 
+Updated: August, 2011 - added new HTML5 elements
+Updated: July 25, 2011 - renamed 'Tag' to 'HTML'
+Updated: July 19, 2011 - improved XML compatibility
+Updated: December 27, 2010 - Moved frame tags under new "FR" menu and added a "font color" item under "F"
+Updated: November 12, 2010 - Added new 'Att' menu with common attributes
+Updated: November 10, 2010 - Added new textarea option and input options for all input types
+Updated: November 4, 2010 - Added fieldset with legend option
+Updated: June 9, 2010 - Added HTML5 declaration
+Updated: February 17, 2010 - XHTML DOCTYPEs now also insert the XML declarations and html start tag
+Updated: November 17, 2008 - for the character entities, now displays the actual character in parenthesis in the caption - requires v9.02 or later
+
+IMPORTANT! If you modify or customize this file, then make a backup because it may be overwritten the next time you install or reinstall HTML Validator. If you want to customize this configuration file, then consider customizing the User Inserter instead, which is unlikely to be overwritten when updating or reinstalling.
+
+For detailed documentation about this file, see the "Text Inserters" topic in help.
+
+-->
+
+<csetaginserterconfiguration version="1">
+<tag flags='0' menu='HTML' inserttext='"|"' hint='Enclose text in double quotes.'/>
+<tag flags='0' menu='HTML' inserttext="&apos;|&apos;" hint='Enclose text in single quotes.'/>
+<tag menu='HTML' flags='4'/>
+<tag flags='0' menu='HTML' inserttext='&lt;|>' hint='Start tag.'/>
+<tag flags='0' menu='HTML' inserttext='&lt;|/>' caption='&lt;|/> (XML)' hint='XML compatible empty tag.'/>
+<tag flags='0' menu='HTML' inserttext='&lt;/|>' hint='Close/end tag.'/>
+<tag menu='HTML' flags='4'/>
+
+<!--
+<tag flags='0' menu='HTML' submenu='Blank HTML Document (iso-8859-1)' hint='Insert template for a blank HTML document (iso-8859-1 encoded) into the current document.' image='2'/>
+<tag menu='HTML' submenu='Blank HTML Document (iso-8859-1)' flags='2' inserttext='&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">\r&lt;html lang=&quot;en&quot;>\r&lt;head>\r\t&lt;title>|&lt;/title>\r&lt;meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">\r&lt;meta name="generator" content="CSE HTML Validator Professional (http://www.htmlvalidator.com/)">\r\b&lt;/head>\r\r&lt;body>\r\r&lt;/body>\r&lt;/html>' caption='Blank HTML Document (strict)' hint='Blank HTML 4.01 document with declaration and head, title, meta, and body elements.' image='2'/>
+<tag menu='HTML' submenu='Blank HTML Document (iso-8859-1)' flags='2' inserttext='&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">\r&lt;html lang=&quot;en&quot;>\r&lt;head>\r\t&lt;title>|&lt;/title>\r&lt;meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">\r&lt;meta name="generator" content="CSE HTML Validator Professional (http://www.htmlvalidator.com/)">\r\b&lt;/head>\r\r&lt;body>\r\r&lt;/body>\r&lt;/html>' caption='Blank HTML Document (transitional)' hint='Blank HTML 4.01 document with declaration and head, title, meta, and body elements.' image='2'/>
+<tag menu='HTML' submenu='Blank HTML Document (iso-8859-1)' flags='2' inserttext='&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">\r&lt;html lang=&quot;en&quot;>\r&lt;head>\r\t&lt;title>|&lt;/title>\r&lt;meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">\r&lt;meta name="generator" content="CSE HTML Validator Professional (http://www.htmlvalidator.com/)">\r\b&lt;/head>\r\r&lt;frameset>\r\t\r&lt;noframes>\r&lt;body>\r\r&lt;/body>\r&lt;/noframes>\r\b&lt;/frameset>\r&lt;/html>' caption='Blank HTML Document (frameset)' hint='Blank HTML 4.01 frameset document with declaration and head, title, meta, frameset, and body elements.' image='2'/>
+-->
+
+<tag flags='0' menu='HTML' submenu='Blank HTML Document (UTF-8)' hint='Insert template for a blank HTML document (UTF-8 encoded) into the current document.' image='2'/>
+<tag menu='HTML' submenu='Blank HTML Document (UTF-8)' flags='258' inserttext='&lt;!DOCTYPE html>\r&lt;html lang=&quot;en&quot;>\r&lt;head>\r\t&lt;meta charset="utf-8">\r&lt;title>|&lt;/title>\r&lt;meta name="generator" content="CSE HTML Validator Professional (http://www.htmlvalidator.com/)">\r\b&lt;/head>\r\r&lt;body>\r\r&lt;/body>\r&lt;/html>' caption='Blank HTML5 Document' hint='Blank HTML5 document with declaration and head, title, meta, and body elements.' image='2'/>
+<tag flags='4' menu='HTML' submenu='Blank HTML Document (UTF-8)' />
+<tag menu='HTML' submenu='Blank HTML Document (UTF-8)' flags='258' inserttext='&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">\r&lt;html lang=&quot;en&quot;>\r&lt;head>\r\t&lt;title>|&lt;/title>\r&lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8">\r&lt;meta name="generator" content="CSE HTML Validator Professional (http://www.htmlvalidator.com/)">\r\b&lt;/head>\r\r&lt;body>\r\r&lt;/body>\r&lt;/html>' caption='Blank HTML 4.01 Document (strict)' hint='Blank HTML 4.01 document with declaration and head, title, meta, and body elements.' image='2'/>
+<tag menu='HTML' submenu='Blank HTML Document (UTF-8)' flags='258' inserttext='&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">\r&lt;html lang=&quot;en&quot;>\r&lt;head>\r\t&lt;title>|&lt;/title>\r&lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8">\r&lt;meta name="generator" content="CSE HTML Validator Professional (http://www.htmlvalidator.com/)">\r\b&lt;/head>\r\r&lt;body>\r\r&lt;/body>\r&lt;/html>' caption='Blank HTML 4.01 Document (transitional)' hint='Blank HTML 4.01 document with declaration and head, title, meta, and body elements.' image='2'/>
+<tag menu='HTML' submenu='Blank HTML Document (UTF-8)' flags='258' inserttext='&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">\r&lt;html lang=&quot;en&quot;>\r&lt;head>\r\t&lt;title>|&lt;/title>\r&lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8">\r&lt;meta name="generator" content="CSE HTML Validator Professional (http://www.htmlvalidator.com/)">\r\b&lt;/head>\r\r&lt;frameset>\r\t\r&lt;noframes>\r&lt;body>\r\r&lt;/body>\r&lt;/noframes>\r\b&lt;/frameset>\r&lt;/html>' caption='Blank HTML 4.01 Document (frameset)' hint='Blank HTML 4.01 frameset document with declaration and head, title, meta, frameset, and body elements.' image='2'/>
+
+<tag flags='0' menu='HTML' submenu='Blank XHTML Document (UTF-8)' hint='Insert template for a blank XHTML document (UTF-8 encoded) into the current document.' image='2'/>
+<tag menu='HTML' submenu='Blank XHTML Document (UTF-8)' flags='258' inserttext='&lt;?xml version="1.0" encoding="UTF-8"?>\r&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">\r&lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">\r&lt;head>\r\t&lt;title>|&lt;/title>\r&lt;meta name="generator" content="CSE HTML Validator Professional (http://www.htmlvalidator.com/)" />\r\b&lt;/head>\r\r&lt;body>\r\r&lt;/body>\r&lt;/html>' caption='Blank XHTML Document (strict)' hint='Blank XHTML 1.0 document with declaration and head, title, meta, and body elements.' image='2'/>
+<tag menu='HTML' submenu='Blank XHTML Document (UTF-8)' flags='258' inserttext='&lt;?xml version="1.0" encoding="UTF-8"?>\r&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">\r&lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">\r&lt;head>\r\t&lt;title>|&lt;/title>\r&lt;meta name="generator" content="CSE HTML Validator Professional (http://www.htmlvalidator.com/)" />\r\b&lt;/head>\r\r&lt;body>\r\r&lt;/body>\r&lt;/html>' caption='Blank XHTML Document (transitional)' hint='Blank XHTML 1.0 document with declaration and head, title, meta, and body elements.' image='2'/>
+<tag menu='HTML' submenu='Blank XHTML Document (UTF-8)' flags='258' inserttext='&lt;?xml version="1.0" encoding="UTF-8"?>\r&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">\r&lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">\r&lt;head>\r\t&lt;title>|&lt;/title>\r&lt;meta name="generator" content="CSE HTML Validator Professional (http://www.htmlvalidator.com/)" />\r\b&lt;/head>\r\r&lt;frameset>\r\t\r&lt;noframes>\r&lt;body>\r\r&lt;/body>\r&lt;/noframes>\r\b&lt;/frameset>\r&lt;/html>' caption='Blank XHTML Document (frameset)' hint='Blank XHTML 1.0 frameset document with declaration and head, title, meta, frameset, and body elements.' image='2'/>
+
+<tag menu='HTML' submenu='Blank XHTML Document (UTF-8)' flags='4' image='2'/>
+<tag menu='HTML' submenu='Blank XHTML Document (UTF-8)' flags='258' inserttext='&lt;?xml version="1.0" encoding="UTF-8"?>\r&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.0//EN" "http://www.w3.org/TR/xhtml-basic/xhtml-basic10.dtd">\r&lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">\r&lt;head>\r\t&lt;title>|&lt;/title>\r&lt;meta name="generator" content="CSE HTML Validator Professional (http://www.htmlvalidator.com/)" />\r\b&lt;/head>\r\r&lt;body>\r\r&lt;/body>\r&lt;/html>' caption='Blank XHTML Basic 1.0 Document' hint='Blank XHTML Basic 1.0 document with declaration and head, title, meta, and body elements. For simpler documents for simpler devices (like mobile devices).' image='2'/>
+<tag menu='HTML' submenu='Blank XHTML Document (UTF-8)' flags='258' inserttext='&lt;?xml version="1.0" encoding="UTF-8"?>\r&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">\r&lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">\r&lt;head>\r\t&lt;title>|&lt;/title>\r&lt;meta name="generator" content="CSE HTML Validator Professional (http://www.htmlvalidator.com/)" />\r\b&lt;/head>\r\r&lt;body>\r\r&lt;/body>\r&lt;/html>' caption='Blank XHTML 1.1 Document' hint='Blank XHTML 1.1 document with declaration and head, title, meta, and body elements.' image='2'/>
+
+<tag menu='HTML' flags='4'/>
+<tag flags='0' menu='HTML' caption='Edit Configuration' hint='Edit the configuration file to make your own changes to the Tag Inserter.' image='21' command='1'/>
+<tag flags='0' menu='HTML' caption='Reload Configuration' hint='Delete the Tag Inserter and recreate it to reread its configuration.' command='2'/>
+<tag menu='HTML' flags='4'/>
+<tag menu='HTML' caption='Close Tag Inserter' image='1' flags='8'/>
+
+<tag flags='0' menu='!' inserttext='&lt;!-- | -->' hint='Enclose comment text so that it is not rendered. Encloses text on a single line.' image='41'/>
+<tag flags='0' menu='!' inserttext='&lt;!--\r|\r-->' caption='&lt;!--\n|\n--> for style/script content' hint='Enclose style or script content in comments. Creates two new lines (new line is \n).' image='41'/>
+<tag menu='!' flags='16' inserttext='/* | */' hint='CSS comment (cannot be nested).' image='41'/>
+<tag flags='0' menu='!' inserttext='&lt;![CDATA[ | ]]>' hint='CDATA (character data) section for XHTML and XML documents.'/>
+<tag menu='!' flags='4'/>
+<tag menu='!' submenu='HTML 4.01 Declaration' inserttext='&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">' flags='3' caption='HTML 4.01 Strict Declaration' hint="Declaration for HTML documents that don&apos;t contain deprecated elements and attributes and do not use frames."/>
+<tag menu='!' submenu='HTML 4.01 Declaration' inserttext='&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">' flags='3' caption='HTML 4.01 Transitional Declaration' hint='Declaration for HTML documents that contain deprecated elements and attributes but not frames.'/>
+<tag menu='!' submenu='HTML 4.01 Declaration' inserttext='&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">' flags='3' caption='HTML 4.01 Frameset Declaration' hint='Declaration for everything in the transitional HTML DTD plus frames. Includes deprecated elements and attributes.'/>
+<tag menu='!' submenu='XHTML 1.0 Declaration' inserttext='&lt;?xml version="1.0" encoding="UTF-8"?>\r&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">\r&lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">' flags='259' caption='XHTML 1.0 Strict Declaration' hint="Declaration for XHTML documents that don&apos;t contain deprecated elements and attributes and do not use frames."/>
+<tag menu='!' submenu='XHTML 1.0 Declaration' inserttext='&lt;?xml version="1.0" encoding="UTF-8"?>\r&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">\r&lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">' flags='259' caption='XHTML 1.0 Transitional Declaration' hint='Declaration for XHTML documents that contain deprecated elements and attributes but not frames.'/>
+<tag menu='!' submenu='XHTML 1.0 Declaration' inserttext='&lt;?xml version="1.0" encoding="UTF-8"?>\r&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">\r&lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">' flags='259' caption='XHTML 1.0 Frameset Declaration' hint='Declaration for everything in the transitional XHTML DTD plus frames. Includes deprecated elements and attributes.'/>
+<tag menu='!' inserttext='&lt;!DOCTYPE html>' flags='3' caption='HTML5 Declaration' hint="Declaration for HTML5 documents."/>
+<tag menu='!' inserttext='&lt;?xml version="1.0" encoding="UTF-8"?>\r&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.0//EN" "http://www.w3.org/TR/xhtml-basic/xhtml-basic10.dtd">\r&lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">' flags='259' caption='XHTML Basic 1.0 Declaration' hint='Declaration for XHTML Basic 1.0. For simpler documents for simpler devices (like mobile devices).'/>
+<tag menu='!' inserttext='&lt;?xml version="1.0" encoding="UTF-8"?>\r&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">\r&lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">' flags='259' caption='XHTML 1.1 Declaration' hint='Declaration for XHTML 1.1. XHTML 1.1 removes deprecated elements and attributes from XHTML 1.0.'/>
+<tag menu='!' flags='4'/>
+<tag menu='!' flags='3' inserttext='&lt;?xml version="1.0"?>' caption='XML Declaration' hint='XML declaration.'/>
+<tag menu='!' flags='259' inserttext='&lt;?xml version="1.0" encoding="UTF-8"?>' caption='XML Declaration (UTF-8)' hint='XML declaration with UTF-8 encoding specified.'/>
+<tag menu='!' flags='4'/>
+<tag menu='!' inserttext='&lt;!-- TEMPLATESTART\r TEMPLATE=|\rVARIABLE1=value\r\b-->\r' flags='1' caption='TEMPLATESTART' hint='TEMPLATESTART comment for template tool.'/>
+<tag menu='!' inserttext='&lt;!-- TEMPLATEEND -->' flags='3' caption='TEMPLATEEND' hint='TEMPLATEEND comment for template tool.'/>
+
+<tag menu='Ent' submenu='Arrows' inserttext='&amp;crarr;' caption='(↵) - &amp;&amp;crarr;' hint='Downwards arrow with corner leftwards, carriage return.' flags='2'/>
+<tag menu='Ent' submenu='Arrows' inserttext='&amp;darr;' caption='(↓) - &amp;&amp;darr;' hint='Downwards arrow.' flags='2'/>
+<tag menu='Ent' submenu='Arrows' inserttext='&amp;dArr;' caption='(⇓) - &amp;&amp;dArr;' hint='Downwards double arrow.' flags='2'/>
+<tag menu='Ent' submenu='Arrows' inserttext='&amp;harr;' caption='(↔) - &amp;&amp;harr;' hint='Left right arrow.' flags='2'/>
+<tag menu='Ent' submenu='Arrows' inserttext='&amp;hArr;' caption='(⇔) - &amp;&amp;hArr;' hint='Left right double arrow.' flags='2'/>
+<tag menu='Ent' submenu='Arrows' inserttext='&amp;larr;' caption='(←) - &amp;&amp;larr;' hint='Leftwards arrow.' flags='2'/>
+<tag menu='Ent' submenu='Arrows' inserttext='&amp;lArr;' caption='(⇐) - &amp;&amp;lArr;' hint='Leftwards double arrow.' flags='2'/>
+<tag menu='Ent' submenu='Arrows' inserttext='&amp;rarr;' caption='(→) - &amp;&amp;rarr;' hint='Rightwards arrow.' flags='2'/>
+<tag menu='Ent' submenu='Arrows' inserttext='&amp;rArr;' caption='(⇒) - &amp;&amp;rArr;' hint='Rightwards double arrow.' flags='2'/>
+<tag menu='Ent' submenu='Arrows' inserttext='&amp;uarr;' caption='(↑) - &amp;&amp;uarr;' hint='Upwards arrow.' flags='2'/>
+<tag menu='Ent' submenu='Arrows' inserttext='&amp;uArr;' caption='(⇑) - &amp;&amp;uArr;' hint='Upwards double arrow.' flags='2'/>
+
+<tag menu='Ent' submenu='Greek->A-O' inserttext='&amp;Alpha;' caption='(Α) - &amp;&amp;Alpha;' hint='Greek capital letter alpha.' flags='2'/>
+<tag menu='Ent' submenu='Greek->A-O' inserttext='&amp;alpha;' caption='(α) - &amp;&amp;alpha;' hint='Greek small letter alpha.' flags='2'/>
+<tag menu='Ent' submenu='Greek->A-O' inserttext='&amp;Beta;' caption='(Β) - &amp;&amp;Beta;' hint='Greek capital letter beta.' flags='2'/>
+<tag menu='Ent' submenu='Greek->A-O' inserttext='&amp;beta;' caption='(β) - &amp;&amp;beta;' hint='Greek small letter beta.' flags='2'/>
+<tag menu='Ent' submenu='Greek->A-O' inserttext='&amp;Chi;' caption='(Χ) - &amp;&amp;Chi;' hint='Greek capital letter chi.' flags='2'/>
+<tag menu='Ent' submenu='Greek->A-O' inserttext='&amp;chi;' caption='(χ) - &amp;&amp;chi;' hint='Greek small letter chi.' flags='2'/>
+<tag menu='Ent' submenu='Greek->A-O' inserttext='&amp;Delta;' caption='(Δ) - &amp;&amp;Delta;' hint='Greek capital letter delta.' flags='2'/>
+<tag menu='Ent' submenu='Greek->A-O' inserttext='&amp;delta;' caption='(δ) - &amp;&amp;delta;' hint='Greek small letter delta.' flags='2'/>
+<tag menu='Ent' submenu='Greek->A-O' inserttext='&amp;Epsilon;' caption='(Ε) - &amp;&amp;Epsilon;' hint='Greek capital letter epsilon.' flags='2'/>
+<tag menu='Ent' submenu='Greek->A-O' inserttext='&amp;epsilon;' caption='(ε) - &amp;&amp;epsilon;' hint='Greek small letter epsilon.' flags='2'/>
+<tag menu='Ent' submenu='Greek->A-O' inserttext='&amp;Eta;' caption='(Η) - &amp;&amp;Eta;' hint='Greek capital letter eta.' flags='2'/>
+<tag menu='Ent' submenu='Greek->A-O' inserttext='&amp;eta;' caption='(η) - &amp;&amp;eta;' hint='Greek small letter eta.' flags='2'/>
+<tag menu='Ent' submenu='Greek->A-O' inserttext='&amp;Gamma;' caption='(Γ) - &amp;&amp;Gamma;' hint='Greek capital letter gamma.' flags='2'/>
+<tag menu='Ent' submenu='Greek->A-O' inserttext='&amp;gamma;' caption='(γ) - &amp;&amp;gamma;' hint='Greek small letter gamma.' flags='2'/>
+<tag menu='Ent' submenu='Greek->A-O' inserttext='&amp;Iota;' caption='(Ι) - &amp;&amp;Iota;' hint='Greek capital letter iota.' flags='2'/>
+<tag menu='Ent' submenu='Greek->A-O' inserttext='&amp;iota;' caption='(ι) - &amp;&amp;iota;' hint='Greek small letter iota.' flags='2'/>
+<tag menu='Ent' submenu='Greek->A-O' inserttext='&amp;Kappa;' caption='(Κ) - &amp;&amp;Kappa;' hint='Greek capital letter kappa.' flags='2'/>
+<tag menu='Ent' submenu='Greek->A-O' inserttext='&amp;kappa;' caption='(κ) - &amp;&amp;kappa;' hint='Greek small letter kappa.' flags='2'/>
+<tag menu='Ent' submenu='Greek->A-O' inserttext='&amp;Lambda;' caption='(Λ) - &amp;&amp;Lambda;' hint='Greek capital letter lambda.' flags='2'/>
+<tag menu='Ent' submenu='Greek->A-O' inserttext='&amp;lambda;' caption='(λ) - &amp;&amp;lambda;' hint='Greek small letter lambda.' flags='2'/>
+<tag menu='Ent' submenu='Greek->A-O' inserttext='&amp;Mu;' caption='(Μ) - &amp;&amp;Mu;' hint='Greek capital letter mu.' flags='2'/>
+<tag menu='Ent' submenu='Greek->A-O' inserttext='&amp;mu;' caption='(μ) - &amp;&amp;mu;' hint='Greek small letter mu.' flags='2'/>
+<tag menu='Ent' submenu='Greek->A-O' inserttext='&amp;Nu;' caption='(Ν) - &amp;&amp;Nu;' hint='Greek capital letter nu.' flags='2'/>
+<tag menu='Ent' submenu='Greek->A-O' inserttext='&amp;nu;' caption='(ν) - &amp;&amp;nu;' hint='Greek small letter nu.' flags='2'/>
+<tag menu='Ent' submenu='Greek->A-O' inserttext='&amp;Omega;' caption='(Ω) - &amp;&amp;Omega;' hint='Greek capital letter omega.' flags='2'/>
+<tag menu='Ent' submenu='Greek->A-O' inserttext='&amp;omega;' caption='(ω) - &amp;&amp;omega;' hint='Greek small letter omega.' flags='2'/>
+<tag menu='Ent' submenu='Greek->A-O' inserttext='&amp;Omicron;' caption='(Ο) - &amp;&amp;Omicron;' hint='Greek capital letter omicron.' flags='2'/>
+<tag menu='Ent' submenu='Greek->A-O' inserttext='&amp;omicron;' caption='(ο) - &amp;&amp;omicron;' hint='Greek small letter omicron.' flags='2'/>
+<tag menu='Ent' submenu='Greek->P-Z' inserttext='&amp;Phi;' caption='(Φ) - &amp;&amp;Phi;' hint='Greek capital letter phi.' flags='2'/>
+<tag menu='Ent' submenu='Greek->P-Z' inserttext='&amp;phi;' caption='(φ) - &amp;&amp;phi;' hint='Greek small letter phi.' flags='2'/>
+<tag menu='Ent' submenu='Greek->P-Z' inserttext='&amp;Pi;' caption='(Π) - &amp;&amp;Pi;' hint='Greek capital letter pi.' flags='2'/>
+<tag menu='Ent' submenu='Greek->P-Z' inserttext='&amp;pi;' caption='(π) - &amp;&amp;pi;' hint='Greek small letter pi.' flags='2'/>
+<tag menu='Ent' submenu='Greek->P-Z' inserttext='&amp;piv;' caption='(ϖ) - &amp;&amp;piv;' hint='Greek pi symbol.' flags='2'/>
+<tag menu='Ent' submenu='Greek->P-Z' inserttext='&amp;Psi;' caption='(Ψ) - &amp;&amp;Psi;' hint='Greek capital letter psi.' flags='2'/>
+<tag menu='Ent' submenu='Greek->P-Z' inserttext='&amp;psi;' caption='(ψ) - &amp;&amp;psi;' hint='Greek small letter psi.' flags='2'/>
+<tag menu='Ent' submenu='Greek->P-Z' inserttext='&amp;Rho;' caption='(Ρ) - &amp;&amp;Rho;' hint='Greek capital letter rho.' flags='2'/>
+<tag menu='Ent' submenu='Greek->P-Z' inserttext='&amp;rho;' caption='(ρ) - &amp;&amp;rho;' hint='Greek small letter rho.' flags='2'/>
+<tag menu='Ent' submenu='Greek->P-Z' inserttext='&amp;Sigma;' caption='(Σ) - &amp;&amp;Sigma;' hint='Greek capital letter sigma.' flags='2'/>
+<tag menu='Ent' submenu='Greek->P-Z' inserttext='&amp;sigma;' caption='(σ) - &amp;&amp;sigma;' hint='Greek small letter sigma.' flags='2'/>
+<tag menu='Ent' submenu='Greek->P-Z' inserttext='&amp;sigmaf;' caption='(ς) - &amp;&amp;sigmaf;' hint='Greek small letter final sigma.' flags='2'/>
+<tag menu='Ent' submenu='Greek->P-Z' inserttext='&amp;Tau;' caption='(Τ) - &amp;&amp;Tau;' hint='Greek capital letter tau.' flags='2'/>
+<tag menu='Ent' submenu='Greek->P-Z' inserttext='&amp;tau;' caption='(τ) - &amp;&amp;tau;' hint='Greek small letter tau.' flags='2'/>
+<tag menu='Ent' submenu='Greek->P-Z' inserttext='&amp;Theta;' caption='(Θ) - &amp;&amp;Theta;' hint='Greek capital letter theta.' flags='2'/>
+<tag menu='Ent' submenu='Greek->P-Z' inserttext='&amp;theta;' caption='(θ) - &amp;&amp;theta;' hint='Greek small letter theta.' flags='2'/>
+<tag menu='Ent' submenu='Greek->P-Z' inserttext='&amp;thetasym;' caption='(ϑ) - &amp;&amp;thetasym;' hint='Greek small letter theta symbol.' flags='2'/>
+<tag menu='Ent' submenu='Greek->P-Z' inserttext='&amp;upsih;' caption='(ϒ) - &amp;&amp;upsih;' hint='Greek upsilon with hook symbol.' flags='2'/>
+<tag menu='Ent' submenu='Greek->P-Z' inserttext='&amp;Upsilon;' caption='(Υ) - &amp;&amp;Upsilon;' hint='Greek capital letter upsilon.' flags='2'/>
+<tag menu='Ent' submenu='Greek->P-Z' inserttext='&amp;upsilon;' caption='(υ) - &amp;&amp;upsilon;' hint='Greek small letter upsilon.' flags='2'/>
+<tag menu='Ent' submenu='Greek->P-Z' inserttext='&amp;Xi;' caption='(Ξ) - &amp;&amp;Xi;' hint='Greek capital letter xi.' flags='2'/>
+<tag menu='Ent' submenu='Greek->P-Z' inserttext='&amp;xi;' caption='(ξ) - &amp;&amp;xi;' hint='Greek small letter xi.' flags='2'/>
+<tag menu='Ent' submenu='Greek->P-Z' inserttext='&amp;Zeta;' caption='(Ζ) - &amp;&amp;Zeta;' hint='Greek capital letter zeta.' flags='2'/>
+<tag menu='Ent' submenu='Greek->P-Z' inserttext='&amp;zeta;' caption='(ζ) - &amp;&amp;zeta;' hint='Greek small letter zeta.' flags='2'/>
+
+<tag menu='Ent' submenu='Latin 1->A-E' inserttext='&amp;Aacute;' caption='(Á) - &amp;&amp;Aacute;' hint='Latin capital letter A with acute.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->A-E' inserttext='&amp;aacute;' caption='(á) - &amp;&amp;aacute;' hint='Latin small letter a with acute.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->A-E' inserttext='&amp;Acirc;' caption='(Â) - &amp;&amp;Acirc;' hint='Latin capital letter A with circumflex.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->A-E' inserttext='&amp;acirc;' caption='(â) - &amp;&amp;acirc;' hint='Latin small letter a with circumflex.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->A-E' inserttext='&amp;acute;' caption='(´) - &amp;&amp;acute;' hint='Acute accent, spacing acute.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->A-E' inserttext='&amp;AElig;' caption='(Æ) - &amp;&amp;AElig;' hint='Latin capital letter AE, latin capital ligature AE.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->A-E' inserttext='&amp;aelig;' caption='(æ) - &amp;&amp;aelig;' hint='Latin small letter ae, latin small ligature ae.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->A-E' inserttext='&amp;Agrave;' caption='(À) - &amp;&amp;Agrave;' hint='Latin capital letter A with grave, latin capital letter A grave.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->A-E' inserttext='&amp;agrave;' caption='(à) - &amp;&amp;agrave;' hint='Latin small letter a with grave, latin small letter a grave.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->A-E' inserttext='&amp;Aring;' caption='(Å) - &amp;&amp;Aring;' hint='Latin capital letter A with ring above, latin capital letter A ring.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->A-E' inserttext='&amp;aring;' caption='(å) - &amp;&amp;aring;' hint='Latin small letter a with ring above, latin small letter a ring.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->A-E' inserttext='&amp;Atilde;' caption='(Ã) - &amp;&amp;Atilde;' hint='Latin capital letter A with tilde.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->A-E' inserttext='&amp;atilde;' caption='(ã) - &amp;&amp;atilde;' hint='Latin small letter a with tilde.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->A-E' inserttext='&amp;Auml;' caption='(Ä) - &amp;&amp;Auml;' hint='Latin capital letter A with diaeresis.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->A-E' inserttext='&amp;auml;' caption='(ä) - &amp;&amp;auml;' hint='Latin small letter a with diaeresis.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->A-E' inserttext='&amp;brvbar;' caption='(¦) - &amp;&amp;brvbar;' hint='Broken bar, broken vertical bar.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->A-E' inserttext='&amp;Ccedil;' caption='(Ç) - &amp;&amp;Ccedil;' hint='Latin capital letter C with cedilla.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->A-E' inserttext='&amp;ccedil;' caption='(ç) - &amp;&amp;ccedil;' hint='Latin small letter c with cedilla.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->A-E' inserttext='&amp;cedil;' caption='(¸) - &amp;&amp;cedil;' hint='Cedilla, spacing cedilla.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->A-E' inserttext='&amp;cent;' caption='(¢) - &amp;&amp;cent;' hint='Cent sign.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->A-E' inserttext='&amp;copy;' caption='(©) - &amp;&amp;copy;' hint='Copyright sign (©).' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->A-E' inserttext='&amp;curren;' caption='(¤) - &amp;&amp;curren;' hint='Currency sign.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->A-E' inserttext='&amp;deg;' caption='(°) - &amp;&amp;deg;' hint='Degree sign.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->A-E' inserttext='&amp;divide;' caption='(÷) - &amp;&amp;divide;' hint='Division sign.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->A-E' inserttext='&amp;Eacute;' caption='(É) - &amp;&amp;Eacute;' hint='Latin capital letter E with acute.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->A-E' inserttext='&amp;eacute;' caption='(é) - &amp;&amp;eacute;' hint='Latin small letter e with acute.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->A-E' inserttext='&amp;Ecirc;' caption='(Ê) - &amp;&amp;Ecirc;' hint='Latin capital letter E with circumflex.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->A-E' inserttext='&amp;ecirc;' caption='(ê) - &amp;&amp;ecirc;' hint='Latin small letter e with circumflex.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->A-E' inserttext='&amp;Egrave;' caption='(È) - &amp;&amp;Egrave;' hint='Latin capital letter E with grave.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->A-E' inserttext='&amp;egrave;' caption='(è) - &amp;&amp;egrave;' hint='Latin small letter e with grave.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->A-E' inserttext='&amp;ETH;' caption='(Ð) - &amp;&amp;ETH;' hint='Latin capital letter ETH.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->A-E' inserttext='&amp;eth;' caption='(ð) - &amp;&amp;eth;' hint='Latin small letter eth.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->A-E' inserttext='&amp;Euml;' caption='(Ë) - &amp;&amp;Euml;' hint='Latin capital letter E with diaeresis.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->A-E' inserttext='&amp;euml;' caption='(ë) - &amp;&amp;euml;' hint='Latin small letter e with diaeresis.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->F-O' inserttext='&amp;frac12;' caption='(½) - &amp;&amp;frac12;' hint='Vulgar fraction one half, fraction one half.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->F-O' inserttext='&amp;frac14;' caption='(¼) - &amp;&amp;frac14;' hint='Vulgar fraction one quarter, fraction one quarter.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->F-O' inserttext='&amp;frac34;' caption='(¾) - &amp;&amp;frac34;' hint='Vulgar fraction three quarters, fraction three quarters.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->F-O' inserttext='&amp;Iacute;' caption='(Í) - &amp;&amp;Iacute;' hint='Latin capital letter I with acute.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->F-O' inserttext='&amp;iacute;' caption='(í) - &amp;&amp;iacute;' hint='Latin small letter i with acute.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->F-O' inserttext='&amp;Icirc;' caption='(Î) - &amp;&amp;Icirc;' hint='Latin capital letter I with circumflex.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->F-O' inserttext='&amp;icirc;' caption='(î) - &amp;&amp;icirc;' hint='Latin small letter i with circumflex.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->F-O' inserttext='&amp;iexcl;' caption='(¡) - &amp;&amp;iexcl;' hint='Inverted exclamation mark.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->F-O' inserttext='&amp;Igrave;' caption='(Ì) - &amp;&amp;Igrave;' hint='Latin capital letter I with grave.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->F-O' inserttext='&amp;igrave;' caption='(ì) - &amp;&amp;igrave;' hint='Latin small letter i with grave.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->F-O' inserttext='&amp;iquest;' caption='(¿) - &amp;&amp;iquest;' hint='Inverted question mark, turned question mark.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->F-O' inserttext='&amp;Iuml;' caption='(Ï) - &amp;&amp;Iuml;' hint='Latin capital letter I with diaeresis.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->F-O' inserttext='&amp;iuml;' caption='(ï) - &amp;&amp;iuml;' hint='Latin small letter i with diaeresis.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->F-O' inserttext='&amp;laquo;' caption='(«) - &amp;&amp;laquo;' hint='Left-pointing double angle quotation mark, left pointing guillemet.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->F-O' inserttext='&amp;macr;' caption='(¯) - &amp;&amp;macr;' hint='Macron, spacing macron, overline, APL overbar.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->F-O' inserttext='&amp;micro;' caption='(µ) - &amp;&amp;micro;' hint='Micro sign.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->F-O' inserttext='&amp;middot;' caption='(·) - &amp;&amp;middot;' hint='Middle dot, Georgian comma, Greek middle dot.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->F-O' inserttext='&amp;nbsp;' caption='( ) - &amp;&amp;nbsp;' hint='No-break space, non-breaking space ( ).' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->F-O' inserttext='&amp;not;' caption='(¬) - &amp;&amp;not;' hint='Not sign.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->F-O' inserttext='&amp;Ntilde;' caption='(Ñ) - &amp;&amp;Ntilde;' hint='Latin capital letter N with tilde.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->F-O' inserttext='&amp;ntilde;' caption='(ñ) - &amp;&amp;ntilde;' hint='Latin small letter n with tilde.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->F-O' inserttext='&amp;Oacute;' caption='(Ó) - &amp;&amp;Oacute;' hint='Latin capital letter O with acute.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->F-O' inserttext='&amp;oacute;' caption='(ó) - &amp;&amp;oacute;' hint='Latin small letter o with acute.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->F-O' inserttext='&amp;Ocirc;' caption='(Ô) - &amp;&amp;Ocirc;' hint='Latin capital letter O with circumflex.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->F-O' inserttext='&amp;ocirc;' caption='(ô) - &amp;&amp;ocirc;' hint='Latin small letter o with circumflex.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->F-O' inserttext='&amp;Ograve;' caption='(Ò) - &amp;&amp;Ograve;' hint='Latin capital letter O with grave.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->F-O' inserttext='&amp;ograve;' caption='(ò) - &amp;&amp;ograve;' hint='Latin small letter o with grave.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->F-O' inserttext='&amp;ordf;' caption='(ª) - &amp;&amp;ordf;' hint='Feminine ordinal indicator.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->F-O' inserttext='&amp;ordm;' caption='(º) - &amp;&amp;ordm;' hint='Masculine ordinal indicator.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->F-O' inserttext='&amp;Oslash;' caption='(Ø) - &amp;&amp;Oslash;' hint='Latin capital letter O with stroke, latin capital letter O slash.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->F-O' inserttext='&amp;oslash;' caption='(ø) - &amp;&amp;oslash;' hint='Latin small letter o with stroke,, latin small letter o slash.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->F-O' inserttext='&amp;Otilde;' caption='(Õ) - &amp;&amp;Otilde;' hint='Latin capital letter O with tilde.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->F-O' inserttext='&amp;otilde;' caption='(õ) - &amp;&amp;otilde;' hint='Latin small letter o with tilde.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->F-O' inserttext='&amp;Ouml;' caption='(Ö) - &amp;&amp;Ouml;' hint='Latin capital letter O with diaeresis.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->F-O' inserttext='&amp;ouml;' caption='(ö) - &amp;&amp;ouml;' hint='Latin small letter o with diaeresis.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->P-Z' inserttext='&amp;para;' caption='(¶) - &amp;&amp;para;' hint='Pilcrow sign, paragraph sign.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->P-Z' inserttext='&amp;plusmn;' caption='(±) - &amp;&amp;plusmn;' hint='Plus-minus sign, plus-or-minus sign.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->P-Z' inserttext='&amp;pound;' caption='(£) - &amp;&amp;pound;' hint='Pound sign.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->P-Z' inserttext='&amp;raquo;' caption='(») - &amp;&amp;raquo;' hint='Right-pointing double angle quotation mark, right pointing guillemet.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->P-Z' inserttext='&amp;reg;' caption='(®) - &amp;&amp;reg;' hint='Registered sign, registered trade mark sign.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->P-Z' inserttext='&amp;sect;' caption='(§) - &amp;&amp;sect;' hint='Section sign.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->P-Z' inserttext='&amp;shy;' caption='(­) - &amp;&amp;shy;' hint='Soft hyphen, discretionary hyphen.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->P-Z' inserttext='&amp;sup1;' caption='(¹) - &amp;&amp;sup1;' hint='Superscript one, superscript digit one.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->P-Z' inserttext='&amp;sup2;' caption='(²) - &amp;&amp;sup2;' hint='Superscript two, superscript digit two, squared.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->P-Z' inserttext='&amp;sup3;' caption='(³) - &amp;&amp;sup3;' hint='Superscript three, superscript digit three, cubed.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->P-Z' inserttext='&amp;szlig;' caption='(ß) - &amp;&amp;szlig;' hint='Latin small letter sharp s, ess-zed.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->P-Z' inserttext='&amp;THORN;' caption='(Þ) - &amp;&amp;THORN;' hint='Latin capital letter THORN.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->P-Z' inserttext='&amp;thorn;' caption='(þ) - &amp;&amp;thorn;' hint='Latin small letter thorn.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->P-Z' inserttext='&amp;times;' caption='(×) - &amp;&amp;times;' hint='Multiplication sign.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->P-Z' inserttext='&amp;Uacute;' caption='(Ú) - &amp;&amp;Uacute;' hint='Latin capital letter U with acute.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->P-Z' inserttext='&amp;uacute;' caption='(ú) - &amp;&amp;uacute;' hint='Latin small letter u with acute.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->P-Z' inserttext='&amp;Ucirc;' caption='(Û) - &amp;&amp;Ucirc;' hint='Latin capital letter U with circumflex.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->P-Z' inserttext='&amp;ucirc;' caption='(û) - &amp;&amp;ucirc;' hint='Latin small letter u with circumflex.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->P-Z' inserttext='&amp;Ugrave;' caption='(Ù) - &amp;&amp;Ugrave;' hint='Latin capital letter U with grave.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->P-Z' inserttext='&amp;ugrave;' caption='(ù) - &amp;&amp;ugrave;' hint='Latin small letter u with grave.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->P-Z' inserttext='&amp;uml;' caption='(¨) - &amp;&amp;uml;' hint='Diaeresis, spacing diaeresis.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->P-Z' inserttext='&amp;Uuml;' caption='(Ü) - &amp;&amp;Uuml;' hint='Latin capital letter U with diaeresis.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->P-Z' inserttext='&amp;uuml;' caption='(ü) - &amp;&amp;uuml;' hint='Latin small letter u with diaeresis.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->P-Z' inserttext='&amp;Yacute;' caption='(Ý) - &amp;&amp;Yacute;' hint='Latin capital letter Y with acute.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->P-Z' inserttext='&amp;yacute;' caption='(ý) - &amp;&amp;yacute;' hint='Latin small letter y with acute.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->P-Z' inserttext='&amp;yen;' caption='(¥) - &amp;&amp;yen;' hint='Yen sign, yuan sign.' flags='2'/>
+<tag menu='Ent' submenu='Latin 1->P-Z' inserttext='&amp;yuml;' caption='(ÿ) - &amp;&amp;yuml;' hint='Latin small letter y with diaeresis.' flags='2'/>
+
+<tag menu='Ent' submenu='Mathematical' inserttext='&amp;and;' caption='(∧) - &amp;&amp;and;' hint='Logical and, wedge.' flags='2'/>
+<tag menu='Ent' submenu='Mathematical' inserttext='&amp;ang;' caption='(∠) - &amp;&amp;ang;' hint='Angle.' flags='2'/>
+<tag menu='Ent' submenu='Mathematical' inserttext='&amp;asymp;' caption='(≈) - &amp;&amp;asymp;' hint='Almost equal to, asymptotic to.' flags='2'/>
+<tag menu='Ent' submenu='Mathematical' inserttext='&amp;cap;' caption='(∩) - &amp;&amp;cap;' hint='Intersection, cap.' flags='2'/>
+<tag menu='Ent' submenu='Mathematical' inserttext='&amp;cong;' caption='(≅) - &amp;&amp;cong;' hint='Approximately equal to.' flags='2'/>
+<tag menu='Ent' submenu='Mathematical' inserttext='&amp;cup;' caption='(∪) - &amp;&amp;cup;' hint='Union, cup.' flags='2'/>
+<tag menu='Ent' submenu='Mathematical' inserttext='&amp;empty;' caption='(∅) - &amp;&amp;empty;' hint='Empty set, null set, diameter.' flags='2'/>
+<tag menu='Ent' submenu='Mathematical' inserttext='&amp;equiv;' caption='(≡) - &amp;&amp;equiv;' hint='Identical to.' flags='2'/>
+<tag menu='Ent' submenu='Mathematical' inserttext='&amp;exist;' caption='(∃) - &amp;&amp;exist;' hint='There exists.' flags='2'/>
+<tag menu='Ent' submenu='Mathematical' inserttext='&amp;forall;' caption='(∀) - &amp;&amp;forall;' hint='For all.' flags='2'/>
+<tag menu='Ent' submenu='Mathematical' inserttext='&amp;ge;' caption='(≥) - &amp;&amp;ge;' hint='Greater-than or equal to.' flags='2'/>
+<tag menu='Ent' submenu='Mathematical' inserttext='&amp;infin;' caption='(∞) - &amp;&amp;infin;' hint='Infinity.' flags='2'/>
+<tag menu='Ent' submenu='Mathematical' inserttext='&amp;int;' caption='(∫) - &amp;&amp;int;' hint='Integral.' flags='2'/>
+<tag menu='Ent' submenu='Mathematical' inserttext='&amp;isin;' caption='(∈) - &amp;&amp;isin;' hint='Element of.' flags='2'/>
+<tag menu='Ent' submenu='Mathematical' inserttext='&amp;le;' caption='(≤) - &amp;&amp;le;' hint='Less-than or equal to.' flags='2'/>
+<tag menu='Ent' submenu='Mathematical' inserttext='&amp;lowast;' caption='(∗) - &amp;&amp;lowast;' hint='Asterisk operator.' flags='2'/>
+<tag menu='Ent' submenu='Mathematical' inserttext='&amp;minus;' caption='(−) - &amp;&amp;minus;' hint='Minus sign.' flags='2'/>
+<tag menu='Ent' submenu='Mathematical' inserttext='&amp;nabla;' caption='(∇) - &amp;&amp;nabla;' hint='Nabla, backward difference.' flags='2'/>
+<tag menu='Ent' submenu='Mathematical' inserttext='&amp;ne;' caption='(≠) - &amp;&amp;ne;' hint='Not equal to.' flags='2'/>
+<tag menu='Ent' submenu='Mathematical' inserttext='&amp;ni;' caption='(∋) - &amp;&amp;ni;' hint='Contains as member.' flags='2'/>
+<tag menu='Ent' submenu='Mathematical' inserttext='&amp;notin;' caption='(∉) - &amp;&amp;notin;' hint='Not an element of.' flags='2'/>
+<tag menu='Ent' submenu='Mathematical' inserttext='&amp;nsub;' caption='(⊄) - &amp;&amp;nsub;' hint='Not a subset of.' flags='2'/>
+<tag menu='Ent' submenu='Mathematical' inserttext='&amp;oplus;' caption='(⊕) - &amp;&amp;oplus;' hint='Circled plus, direct sum.' flags='2'/>
+<tag menu='Ent' submenu='Mathematical' inserttext='&amp;or;' caption='(∨) - &amp;&amp;or;' hint='Logical or, vee.' flags='2'/>
+<tag menu='Ent' submenu='Mathematical' inserttext='&amp;otimes;' caption='(⊗) - &amp;&amp;otimes;' hint='Circled times, vector product.' flags='2'/>
+<tag menu='Ent' submenu='Mathematical' inserttext='&amp;part;' caption='(∂) - &amp;&amp;part;' hint='Partial differential.' flags='2'/>
+<tag menu='Ent' submenu='Mathematical' inserttext='&amp;perp;' caption='(⊥) - &amp;&amp;perp;' hint='Up tack, orthogonal to, perpendicular.' flags='2'/>
+<tag menu='Ent' submenu='Mathematical' inserttext='&amp;prod;' caption='(∏) - &amp;&amp;prod;' hint='N-ary product, product sign.' flags='2'/>
+<tag menu='Ent' submenu='Mathematical' inserttext='&amp;prop;' caption='(∝) - &amp;&amp;prop;' hint='Proportional to.' flags='2'/>
+<tag menu='Ent' submenu='Mathematical' inserttext='&amp;radic;' caption='(√) - &amp;&amp;radic;' hint='Square root, radical sign.' flags='2'/>
+<tag menu='Ent' submenu='Mathematical' inserttext='&amp;sdot;' caption='(⋅) - &amp;&amp;sdot;' hint='Dot operator.' flags='2'/>
+<tag menu='Ent' submenu='Mathematical' inserttext='&amp;sim;' caption='(∼) - &amp;&amp;sim;' hint='Tilde operator, varies with, similar to.' flags='2'/>
+<tag menu='Ent' submenu='Mathematical' inserttext='&amp;sub;' caption='(⊂) - &amp;&amp;sub;' hint='Subset of.' flags='2'/>
+<tag menu='Ent' submenu='Mathematical' inserttext='&amp;sube;' caption='(⊆) - &amp;&amp;sube;' hint='Subset of or equal to.' flags='2'/>
+<tag menu='Ent' submenu='Mathematical' inserttext='&amp;sum;' caption='(∑) - &amp;&amp;sum;' hint='N-ary sumation.' flags='2'/>
+<tag menu='Ent' submenu='Mathematical' inserttext='&amp;sup;' caption='(⊃) - &amp;&amp;sup;' hint='Superset of.' flags='2'/>
+<tag menu='Ent' submenu='Mathematical' inserttext='&amp;supe;' caption='(⊇) - &amp;&amp;supe;' hint='Superset of or equal to.' flags='2'/>
+<tag menu='Ent' submenu='Mathematical' inserttext='&amp;there4;' caption='(∴) - &amp;&amp;there4;' hint='Therefore.' flags='2'/>
+
+<tag menu='Ent' submenu='Other' inserttext='&amp;alefsym;' caption='(ℵ) - &amp;&amp;alefsym;' hint='Alef symbol, first transfinite cardinal.' flags='2'/>
+<tag menu='Ent' submenu='Other' inserttext='&amp;bull;' caption='(•) - &amp;&amp;bull;' hint='Bullet, black small circle.' flags='2'/>
+<tag menu='Ent' submenu='Other' inserttext='&amp;clubs;' caption='(♣) - &amp;&amp;clubs;' hint='Black club suit, shamrock.' flags='2'/>
+<tag menu='Ent' submenu='Other' inserttext='&amp;diams;' caption='(♦) - &amp;&amp;diams;' hint='Black diamond suit.' flags='2'/>
+<tag menu='Ent' submenu='Other' inserttext='&amp;fnof;' caption='(ƒ) - &amp;&amp;fnof;' hint='Latin small f with hook, function, florin.' flags='2'/>
+<tag menu='Ent' submenu='Other' inserttext='&amp;frasl;' caption='(⁄) - &amp;&amp;frasl;' hint='Fraction slash.' flags='2'/>
+<tag menu='Ent' submenu='Other' inserttext='&amp;hearts;' caption='(♥) - &amp;&amp;hearts;' hint='Black heart suit, valentine.' flags='2'/>
+<tag menu='Ent' submenu='Other' inserttext='&amp;hellip;' caption='(…) - &amp;&amp;hellip;' hint='Horizontal ellipsis, three dot leader.' flags='2'/>
+<tag menu='Ent' submenu='Other' inserttext='&amp;image;' caption='(ℑ) - &amp;&amp;image;' hint='Blackletter capital I, imaginary part.' flags='2'/>
+<tag menu='Ent' submenu='Other' inserttext='&amp;lang;' caption='(〈) - &amp;&amp;lang;' hint='Left-pointing angle bracket, bra.' flags='2'/>
+<tag menu='Ent' submenu='Other' inserttext='&amp;lceil;' caption='(⌈) - &amp;&amp;lceil;' hint='Left ceiling, apl upstile.' flags='2'/>
+<tag menu='Ent' submenu='Other' inserttext='&amp;lfloor;' caption='(⌊) - &amp;&amp;lfloor;' hint='Left floor, apl downstile.' flags='2'/>
+<tag menu='Ent' submenu='Other' inserttext='&amp;loz;' caption='(◊) - &amp;&amp;loz;' hint='Lozenge.' flags='2'/>
+<tag menu='Ent' submenu='Other' inserttext='&amp;oline;' caption='(‾) - &amp;&amp;oline;' hint='Overline, spacing overscore.' flags='2'/>
+<tag menu='Ent' submenu='Other' inserttext='&amp;Prime;' caption='(″) - &amp;&amp;Prime;' hint='Double prime, seconds, inches.' flags='2'/>
+<tag menu='Ent' submenu='Other' inserttext='&amp;prime;' caption='(′) - &amp;&amp;prime;' hint='Prime, minutes, feet.' flags='2'/>
+<tag menu='Ent' submenu='Other' inserttext='&amp;rang;' caption='(〉) - &amp;&amp;rang;' hint='Right-pointing angle bracket, ket.' flags='2'/>
+<tag menu='Ent' submenu='Other' inserttext='&amp;rceil;' caption='(⌉) - &amp;&amp;rceil;' hint='Right ceiling.' flags='2'/>
+<tag menu='Ent' submenu='Other' inserttext='&amp;real;' caption='(ℜ) - &amp;&amp;real;' hint='Blackletter capital R, real part symbol.' flags='2'/>
+<tag menu='Ent' submenu='Other' inserttext='&amp;rfloor;' caption='(⌋) - &amp;&amp;rfloor;' hint='Right floor.' flags='2'/>
+<tag menu='Ent' submenu='Other' inserttext='&amp;spades;' caption='(♠) - &amp;&amp;spades;' hint='Black spade suit.' flags='2'/>
+<tag menu='Ent' submenu='Other' inserttext='&amp;trade;' caption='(™) - &amp;&amp;trade;' hint='Trademark sign. Also &amp;#8482;.' flags='2'/>
+<tag menu='Ent' submenu='Other' inserttext='&amp;weierp;' caption='(℘) - &amp;&amp;weierp;' hint='Script capital P, power set, Weierstrass p.' flags='2'/>
+
+<tag menu='Ent' submenu='Special' inserttext='&amp;amp;' caption='(&amp;&amp;) - &amp;&amp;amp;' hint='Ampersand (&amp;).' flags='2'/>
+<tag menu='Ent' submenu='Special' inserttext='&amp;bdquo;' caption='(„) - &amp;&amp;bdquo;' hint='Double low-9 quotation mark.' flags='2'/>
+<tag menu='Ent' submenu='Special' inserttext='&amp;circ;' caption='(ˆ) - &amp;&amp;circ;' hint='Modifier letter circumflex accent.' flags='2'/>
+<tag menu='Ent' submenu='Special' inserttext='&amp;dagger;' caption='(†) - &amp;&amp;dagger;' hint='Dagger.' flags='2'/>
+<tag menu='Ent' submenu='Special' inserttext='&amp;Dagger;' caption='(‡) - &amp;&amp;Dagger;' hint='Double dagger.' flags='2'/>
+<tag menu='Ent' submenu='Special' inserttext='&amp;emsp;' caption='( ) - &amp;&amp;emsp;' hint='Em space.' flags='2'/>
+<tag menu='Ent' submenu='Special' inserttext='&amp;ensp;' caption='( ) - &amp;&amp;ensp;' hint='En space.' flags='2'/>
+<tag menu='Ent' submenu='Special' inserttext='&amp;euro;' caption='(€) - &amp;&amp;euro;' hint='Euro sign. Also &amp;#8364; or &amp;#x20AC;.' flags='2'/>
+<tag menu='Ent' submenu='Special' inserttext='&amp;gt;' caption='(>) - &amp;&amp;gt;' hint='Greater-than sign (>).' flags='2'/>
+<tag menu='Ent' submenu='Special' inserttext='&amp;ldquo;' caption='(“) - &amp;&amp;ldquo;' hint='Left double quotation mark.' flags='2'/>
+<tag menu='Ent' submenu='Special' inserttext='&amp;lrm;' caption='(‎) - &amp;&amp;lrm;' hint='Left-to-right mark.' flags='2'/>
+<tag menu='Ent' submenu='Special' inserttext='&amp;lsaquo;' caption='(‹) - &amp;&amp;lsaquo;' hint='Single left-pointing angle quotation mark.' flags='2'/>
+<tag menu='Ent' submenu='Special' inserttext='&amp;lsquo;' caption='(‘) - &amp;&amp;lsquo;' hint='Left single quotation mark.' flags='2'/>
+<tag menu='Ent' submenu='Special' inserttext='&amp;lt;' caption='(&lt;) - &amp;&amp;lt;' hint='Less-than sign (&lt;).' flags='2'/>
+<tag menu='Ent' submenu='Special' inserttext='&amp;mdash;' caption='(—) - &amp;&amp;mdash;' hint='Em dash.' flags='2'/>
+<tag menu='Ent' submenu='Special' inserttext='&amp;ndash;' caption='(–) - &amp;&amp;ndash;' hint='En dash.' flags='2'/>
+<tag menu='Ent' submenu='Special' inserttext='&amp;OElig;' caption='(Œ) - &amp;&amp;OElig;' hint='Latin capital ligature OE.' flags='2'/>
+<tag menu='Ent' submenu='Special' inserttext='&amp;oelig;' caption='(œ) - &amp;&amp;oelig;' hint='Latin small ligature oe.' flags='2'/>
+<tag menu='Ent' submenu='Special' inserttext='&amp;permil;' caption='(‰) - &amp;&amp;permil;' hint='Per mille sign.' flags='2'/>
+<tag menu='Ent' submenu='Special' inserttext='&amp;quot;' caption='(") - &amp;&amp;quot;' hint='Quotation mark, APL quote (").' flags='2'/>
+<tag menu='Ent' submenu='Special' inserttext='&amp;rdquo;' caption='(”) - &amp;&amp;rdquo;' hint='Right double quotation mark.' flags='2'/>
+<tag menu='Ent' submenu='Special' inserttext='&amp;rlm;' caption='(‏) - &amp;&amp;rlm;' hint='Right-to-left mark.' flags='2'/>
+<tag menu='Ent' submenu='Special' inserttext='&amp;rsaquo;' caption='(›) - &amp;&amp;rsaquo;' hint='Single right-pointing angle quotation mark.' flags='2'/>
+<tag menu='Ent' submenu='Special' inserttext='&amp;rsquo;' caption='(’) - &amp;&amp;rsquo;' hint='Right single quotation mark.' flags='2'/>
+<tag menu='Ent' submenu='Special' inserttext='&amp;sbquo;' caption='(‚) - &amp;&amp;sbquo;' hint='Single low-9 quotation mark.' flags='2'/>
+<tag menu='Ent' submenu='Special' inserttext='&amp;Scaron;' caption='(Š) - &amp;&amp;Scaron;' hint='Latin capital letter S with caron.' flags='2'/>
+<tag menu='Ent' submenu='Special' inserttext='&amp;scaron;' caption='(š) - &amp;&amp;scaron;' hint='Latin small letter s with caron.' flags='2'/>
+<tag menu='Ent' submenu='Special' inserttext='&amp;thinsp;' caption='( ) - &amp;&amp;thinsp;' hint='Thin space.' flags='2'/>
+<tag menu='Ent' submenu='Special' inserttext='&amp;tilde;' caption='(˜) - &amp;&amp;tilde;' hint='Small tilde.' flags='2'/>
+<tag menu='Ent' submenu='Special' inserttext='&amp;Yuml;' caption='(Ÿ) - &amp;&amp;Yuml;' hint='Latin capital letter Y with diaeresis.' flags='2'/>
+<tag menu='Ent' submenu='Special' inserttext='&amp;zwj;' caption='(‍) - &amp;&amp;zwj;' hint='Zero width joiner.' flags='2'/>
+<tag menu='Ent' submenu='Special' inserttext='&amp;zwnj;' caption='(‌) - &amp;&amp;zwnj;' hint='Zero width non-joiner.' flags='2'/>
+
+<tag menu='Ent' flags='4'/>
+<tag menu='Ent' inserttext='&amp;amp;' caption='(&amp;&amp;) - &amp;&amp;amp;' hint='Ampersand (&amp;).' flags='2'/>
+<tag menu='Ent' inserttext='&amp;copy;' caption='(©) - &amp;&amp;copy;' hint='Copyright sign (©).' flags='2'/>
+<tag menu='Ent' inserttext='&amp;euro;' caption='(€) - &amp;&amp;euro;' hint='Euro sign. Also &amp;#8364; or &amp;#x20AC;.' flags='2'/>
+<tag menu='Ent' inserttext='&amp;gt;' caption='(>) - &amp;&amp;gt;' hint='Greater-than sign (>).' flags='2'/>
+<tag menu='Ent' inserttext='&amp;lt;' caption='(&lt;) - &amp;&amp;lt;' hint='Less-than sign (&lt;).' flags='2'/>
+<tag menu='Ent' inserttext='&amp;nbsp;' caption='( ) - &amp;&amp;nbsp;' hint='No-break space, non-breaking space ( ).' flags='2'/>
+<tag menu='Ent' inserttext='&amp;quot;' caption='(") - &amp;&amp;quot;' hint='Quotation mark, APL quote (").' flags='2'/>
+<tag menu='Ent' inserttext='&amp;trade;' caption='(™) - &amp;&amp;trade;' hint='Trademark sign. Also &amp;#8482;.' flags='2'/>
+
+<tag menu='Att' flags='160' inserttext='accesskey="|"' hint="Assign an accesskey (or set of accesskeys separated by white space) to an element."/>
+<tag menu='Att' flags='160' inserttext='class="|"' hint="Assign a class name or set of class names (separated by white space) to an element."/>
+<tag menu='Att' flags='160' inserttext='data-|=""' hint="HTML5+: Sets a custom data attribute that can pass data to scripts."/>
+<tag menu='Att' flags='160' inserttext='id="|"' hint='Specify a unique id.'/>
+<tag menu='Att' flags='160' inserttext='lang="|"' hint="Specify an element&apos;s base language. Applies to its attributes and text content."/>
+<tag menu='Att' flags='160' inserttext='name="|"' hint="Name attribute for elements like a, button, form, img, input, meta, textarea, etc."/>
+<tag menu='Att' flags='160' inserttext='role="|"' hint="HTML5+: ARIA role attribute for accessibility."/>
+<tag menu='Att' flags='160' inserttext='style="|"' hint="Associates style information (like CSS) with the element."/>
+<tag menu='Att' flags='160' inserttext='title="|"' hint='Set an advisory title.'/>
+
+<tag menu='Att' flags='4'/>
+
+<tag menu='Att' flags='160' inserttext='alt="|"' hint='Specify alternate text or a short text description. For "img", "input", "area", etc.'/>
+<tag menu='Att' flags='160' inserttext='href="|"' hint='Specify a URI/URL. For "a", "area", "link", etc.'/>
+<tag menu='Att' flags='160' inserttext='src="|"' hint='Specify a URI/URL. For "img", "input", "script", etc.'/>
+
+<tag menu='Att' flags='4'/>
+
+<tag menu='Att' submenu='Form Events' flags='160' inserttext='onblur="|"' hint='Run when the element loses focus.'/>
+<tag menu='Att' submenu='Form Events' flags='160' inserttext='onchange="|"' hint="Run when the element&apos;s value changes."/>
+<tag menu='Att' submenu='Form Events' flags='160' inserttext='onfocus="|"' hint='Run when the element gets focus.'/>
+<tag menu='Att' submenu='Form Events' flags='160' inserttext='onreset="|"' hint='Run when the form is reset.'/>
+<tag menu='Att' submenu='Form Events' flags='160' inserttext='onselect="|"' hint='Run when the element or some text is selected.'/>
+<tag menu='Att' submenu='Form Events' flags='160' inserttext='onsubmit="|"' hint='Run when the form is submitted.'/>
+
+<tag menu='Att' submenu='Keyboard Events' flags='160' inserttext='onkeydown="|"' hint='Run when a key is pressed.'/>
+<tag menu='Att' submenu='Keyboard Events' flags='160' inserttext='onkeypress="|"' hint='Run when a key is pressed and released.'/>
+<tag menu='Att' submenu='Keyboard Events' flags='160' inserttext='onkeyup="|"' hint='Run when a key is released.'/>
+
+<tag menu='Att' submenu='Mouse Events' flags='160' inserttext='onclick="|"' hint='Run on mouse click.'/>
+<tag menu='Att' submenu='Mouse Events' flags='160' inserttext='ondblclick="|"' hint='Run on mouse double-click.'/>
+<tag menu='Att' submenu='Mouse Events' flags='160' inserttext='onmousedown="|"' hint='Run when a mouse button is pressed.'/>
+<tag menu='Att' submenu='Mouse Events' flags='160' inserttext='onmousemove="|"' hint='Run when the mouse pointer moves.'/>
+<tag menu='Att' submenu='Mouse Events' flags='160' inserttext='onmouseout="|"' hint='Run when mouse pointer moves out of an element.'/>
+<tag menu='Att' submenu='Mouse Events' flags='160' inserttext='onmouseover="|"' hint='Run when mouse pointer moves over element.'/>
+<tag menu='Att' submenu='Mouse Events' flags='160' inserttext='onmouseup="|"' hint='Run when mouse button is released.'/>
+
+<tag menu='Att' submenu='Other Events' flags='160' inserttext='onload="|"' hint='Run when the document or all frames have been loaded.'/>
+<tag menu='Att' submenu='Other Events' flags='160' inserttext='onunload="|"' hint='Run when the document or all frames have been removed/unloaded.'/>
+
+<tag menu='Att' submenu='Other HTML5+ Global' flags='160' inserttext='contenteditable="|"' hint="HTML5+: Set whether the element is editable (true, false, or empty string which maps to true)."/>
+<tag menu='Att' submenu='Other HTML5+ Global' flags='160' inserttext='contextmenu="|"' hint="HTML5+: Sets the element's context menu; the value must be the ID of a menu element in the DOM."/>
+<tag menu='Att' submenu='Other HTML5+ Global' flags='160' inserttext='draggable="|"' hint="HTML5+: Set whether the element is draggable (true, false)."/>
+<tag menu='Att' submenu='Other HTML5+ Global' flags='160' inserttext='hidden="|"' hint="HTML5+: Set whether the element is hidden (boolean); must not be used to hide content that could legitimately be shown in another presentation, like a tabbed dialog (boolean)."/>
+<tag menu='Att' submenu='Other HTML5+ Global' flags='160' inserttext='spellcheck="|"' hint="HTML5+: Set whether the element is to have its spelling and grammar checked (true, false, or empty string which maps to true)."/>
+<tag menu='Att' submenu='Other HTML5+ Global' flags='160' inserttext='tabindex="|"' hint="HTML5+: Specifies whether the element is focusable, how it can be reached, and the relative order of the element when navigating focus (integer)."/>
+
+<tag menu='Inst' flags='32' caption='Instant ol list' prependeachline="<li>" appendeachline="</li>" inserttext='<ol>\r\t|\r\b</ol>' hint='Creates an "ol" list from the selected text (each selected line is a list item).'/>
+<tag menu='Inst' flags='32' caption='Instant ul list' prependeachline="<li>" appendeachline="</li>" inserttext='<ul>\r\t|\r\b</ul>' hint='Creates a "ul" list from the selected text (each selected line is a list item).'/>
+<tag menu='Inst' flags='32' caption='Instant list items' prependeachline="<li>" appendeachline="</li>" inserttext='|' hint='Creates list items from the selected text (each selected line is a list item).'/>
+<tag menu='Inst' flags='4'/>
+<tag menu='Inst' flags='32' caption='Instant td cells' prependeachline="<td>" appendeachline="</td>" inserttext='|' hint='Creates table data cells from the selected text (each selected line is a td cell).'/>
+<tag menu='Inst' flags='32' caption='Instant th cells' prependeachline="<th>" appendeachline="</th>" inserttext='|' hint='Creates table header cells from the selected text (each selected line is a th cell).'/>
+<tag menu='Inst' flags='32' caption='Instant tr, one td per line' prependeachline="<td>" appendeachline="</td>" inserttext='<tr>\r\t|\r\b</tr>' hint='Creates a "tr" row from the selected text (each selected line is a td cell).'/>
+
+<tag menu='A' flags='32' inserttext='&lt;a href="|">&lt;/a>' hint='Anchor.'/>
+<tag menu='A' flags='32' inserttext='&lt;a href="">|&lt;/a>' hint='Anchor.'/>
+<tag menu='A' flags='32' inserttext='&lt;a href="ftp://|">&lt;/a>' hint='FTP anchor.'/>
+<tag menu='A' flags='32' inserttext='&lt;a href="http://|">&lt;/a>' hint='HTTP anchor.'/>
+<tag menu='A' flags='32' inserttext='&lt;a href="mailto:|">&lt;/a>' hint='Mailto anchor.'/>
+<tag menu='A' flags='32' inserttext='&lt;a name="|">&lt;/a>' hint='Anchor with name.'/>
+<tag menu='A' flags='4'/>
+<tag menu='A' flags='32' inserttext='&lt;abbr>|&lt;/abbr>' hint='Indicate an abbreviated form (e.g., WWW, HTTP, URI, Mass., etc.).'/>
+<tag menu='A' flags='32' inserttext='&lt;acronym>|&lt;/acronym>' hint='Indicate an acronym (e.g., WAC, radar, etc.).'/>
+<tag menu='A' flags='32' inserttext='&lt;address>|&lt;/address>' hint='Specify author, credit, reference, and/or contact information.'/>
+<tag menu='A' flags='32' inserttext='&lt;applet>|&lt;/applet>' hint='Deprecated in HTML 4.01. Insert Java applet.'/>
+<tag menu='A' flags='96' inserttext='&lt;area alt="|">' hint='Specify a geometric region of an image map and the link associated with it.'/>
+<tag menu='A' flags='32' inserttext='&lt;article>\r|\r&lt;/article>' hint='HTML5+: Contains a self-contained composition in a document, page, application, or site and that is, in principle, independently distributable or reusable, e.g. in syndication.'/>
+<tag menu='A' flags='32' inserttext='&lt;aside>\r|\r&lt;/aside>' hint='HTML5+: Contains content that is tangentially related to the nearby content, and which could be considered separate from that content (like sidebar content).'/>
+<tag menu='A' flags='32' inserttext='&lt;audio>|&lt;/audio>' hint='HTML5+: For playing audio, sounds, and audio streams.'/>
+
+
+<tag menu='B' flags='32' inserttext='&lt;b>|&lt;/b>' hint='Specify text to which attention is being drawn for utilitarian purposes without conveying any extra importance and with no implication of an alternate voice or mood.'/>
+<tag menu='B' flags='96' inserttext='&lt;base href="|">' hint='Specify an absolute URI that acts as the base URI for resolving relative URIs.'/>
+<tag menu='B' flags='96' inserttext='&lt;basefont face="|">' hint='Deprecated in HTML 4.01.'/>
+<tag menu='B' flags='32' inserttext='&lt;bdi>|&lt;/bdi>' hint='HTML5+: Specify text that is isolated from its surroundings for the purposes of bidirectional text formatting.'/>
+<tag menu='B' flags='32' inserttext='&lt;bdo dir="|">\r\r&lt;/bdo>' hint='Override bidirectional algorithm.'/>
+<tag menu='B' flags='96' inserttext='&lt;bgsound src="|">' hint='Play music or sound (Internet Explorer specific).'/>
+<tag menu='B' flags='32' inserttext='&lt;big>|&lt;/big>' hint='Render text in a "big" text style.'/>
+<tag menu='B' flags='32' inserttext='&lt;blink>|&lt;/blink>' hint='Blink or flash text (Netscape specific).'/>
+<tag menu='B' flags='32' inserttext='&lt;blockquote>|&lt;/blockquote>' hint='Specify a long block-level quotation. Use "q" for a short inline quotation.'/>
+<tag menu='B' flags='4'/>
+<tag menu='B' flags='32' inserttext='&lt;body>\r|\r&lt;/body>'/>
+<tag menu='B' flags='32' inserttext='&lt;body background="|">\r\r&lt;/body>'/>
+<tag menu='B' flags='32' inserttext='&lt;body background="|" text="" link="" vlink="" alink="">\r\r&lt;/body>'/>
+<tag menu='B' flags='4'/>
+<tag menu='B' flags='96' inserttext='&lt;br>' hint='Forcibly break (end) the current line of text.'/>
+<tag menu='B' flags='97' inserttext='&lt;br>' caption='&lt;br>+Newline' hint='Forcibly break (end) the current line of text.'/>
+<tag menu='B' flags='4'/>
+<tag menu='B' flags='32' inserttext='&lt;button>|&lt;/button>' hint='Push button.'/>
+
+<tag menu='C' flags='32' inserttext='&lt;canvas>|&lt;/canvas>' hint='HTML5+: A resolution-dependent bitmap canvas for scripts.'/>
+<tag menu='C' flags='32' inserttext='&lt;caption>|&lt;/caption>' hint='Describe the nature of a table. Use immediately after the "table" start tag.'/>
+<tag menu='C' flags='32' inserttext='&lt;center>|&lt;/center>' hint='Deprecated in HTML 4.01. Center text.'/>
+<tag menu='C' flags='32' inserttext='&lt;cite>|&lt;/cite>' hint="Specify the title of a work (like a book, paper, song, etc.). Not for quotes or a person's name."/>
+<tag menu='C' flags='32' inserttext='&lt;code>|&lt;/code>' hint='Specify a fragment of computer code.'/>
+<tag menu='C' flags='96' inserttext='&lt;col>' hint='Group together attribute specifications for table columns.'/>
+<tag menu='C' flags='32' inserttext='&lt;colgroup>|&lt;/colgroup>' hint='Create an explicit column group. Insert with optional end tag.'/>
+<tag menu='C' flags='32' inserttext='&lt;command |>' hint='HTML5+: Represents a command that the user can invoke.'/>
+<tag menu='C' flags='4'/>
+<tag menu='C' flags='32' inserttext='&lt;cseignore>|&lt;/cseignore>' hint='HTML Validator ignores the contents of this special tag.'/>
+
+<tag menu='D' flags='32' inserttext='&lt;datalist>\r|\r&lt;/datalist>' hint='HTML5+: Contains a set of option elements that represent predefined options for other controls.'/>
+<tag menu='D' flags='4'/>
+<tag menu='D' flags='32' inserttext='&lt;dd>|&lt;/dd>' hint='Definition description.'/>
+<tag menu='D' flags='32' inserttext='&lt;dl>\r|\r&lt;/dl>' hint='Definition list.'/>
+<tag menu='D' flags='32' inserttext='&lt;dt>|&lt;/dt>' hint='Definition term.'/>
+<tag menu='D' flags='4'/>
+<tag menu='D' flags='32' inserttext='&lt;del>|&lt;/del>' hint='Specify deleted text.'/>
+<tag menu='D' flags='32' inserttext='&lt;details>\r|\r&lt;/details>' hint='HTML5+: Contains a disclosure widget from which the user can obtain additional information or controls.'/>
+<tag menu='D' flags='32' inserttext='&lt;dfn>|&lt;/dfn>' hint='Specifies the defining instance of a term.'/>
+<tag menu='D' flags='32' inserttext='&lt;dir>|&lt;/dir>' hint='Deprecated in HTML 4.01. You should use a "ul" list instead.'/>
+<tag menu='D' flags='4'/>
+<tag menu='D' flags='32' inserttext='&lt;div>\r|\r&lt;/div>' hint='Generic language and/or style container.'/>
+<tag menu='D' flags='32' inserttext='&lt;div class="|">\r\r&lt;/div>' hint='Generic language and/or style container.'/>
+<tag menu='D' flags='32' inserttext='&lt;div id="|">\r\r&lt;/div>' hint='Generic language and/or style container.'/>
+<tag menu='D' flags='32' inserttext='&lt;div class="|" id="">\r\r&lt;/div>' hint='Generic language and/or style container.'/>
+<tag menu='D' flags='32' inserttext='&lt;div style="|">\r\r&lt;/div>' hint='Generic language and/or style container.'/>
+<tag menu='D' flags='4'/>
+<tag menu='D' flags='32' inserttext='&lt;div align="left">\r|\r&lt;/div>'/>
+<tag menu='D' flags='32' inserttext='&lt;div align="right">\r|\r&lt;/div>'/>
+<tag menu='D' flags='32' inserttext='&lt;div align="center">\r|\r&lt;/div>'/>
+<tag menu='D' flags='4'/>
+
+<tag menu='E' flags='32' inserttext='&lt;em>|&lt;/em>' hint='Indicate emphasis. Not a generic "italic" element. Use "strong" to indicate importance.'/>
+<tag menu='E' flags='32' inserttext='&lt;embed>|&lt;/embed>' hint='Embed an object (not an HTML 4.01 element but widely supported and in HTML5).'/>
+
+<tag menu='F' flags='32' inserttext='&lt;fieldset>\r|\r&lt;/fieldset>' hint='Group thematically related controls and labels.'/>
+<tag menu='F' flags='32' inserttext='&lt;fieldset>\r\t&lt;legend>|&lt;/legend>\r\b&lt;/fieldset>' hint='Group thematically related controls and labels with a legend.'/>
+<tag menu='F' flags='4'/>
+<tag menu='F' flags='32' inserttext='&lt;figcaption>|&lt;/figcaption>' hint='HTML5+: Specifies a caption or legend for the rest of the contents of figcaption&apos;s parent "figure" element.'/>
+<tag menu='F' flags='32' inserttext='&lt;figure>\r|\r&lt;/figure>' hint='HTML5+: Use to annotate illustrations, diagrams, photos, code listings, etc. May contain a "figcaption" element to represent a caption.'/>
+<tag menu='F' flags='4'/>
+<tag menu='F' flags='32' inserttext='&lt;font>|&lt;/font>' hint='Deprecated in HTML 4.01. Change font. Consider using CSS instead.'/>
+<tag menu='F' flags='32' inserttext='&lt;font color="|">&lt;/font>' hint='Deprecated in HTML 4.01. Change font color. Consider using CSS instead.'/>
+<tag menu='F' flags='32' inserttext='&lt;font face="">|&lt;/font>' hint='Deprecated in HTML 4.01. Change font. Consider using CSS instead.'/>
+<tag menu='F' flags='32' inserttext='&lt;font size="">|&lt;/font>' hint='Deprecated in HTML 4.01. Change font. Consider using CSS instead.'/>
+<tag menu='F' flags='32' inserttext='&lt;font face="" size="">|&lt;/font>' hint='Deprecated in HTML 4.01. Change font. Consider using CSS instead.'/>
+<tag menu='F' flags='4'/>
+<tag menu='F' flags='32' inserttext='&lt;font size="+1">|&lt;/font>' hint='Deprecated in HTML 4.01. Increase font size. Consider using CSS instead.'/>
+<tag menu='F' flags='32' inserttext='&lt;font size="-1">|&lt;/font>' hint='Deprecated in HTML 4.01. Decrease font size. Consider using CSS instead.'/>
+<tag menu='F' flags='4'/>
+<tag menu='F' flags='32' inserttext='&lt;footer>\r|\r&lt;/footer>' hint='HTML5+: Contains a footer section.'/>
+<tag menu='F' flags='4'/>
+<tag menu='F' flags='32' inserttext='&lt;form action="|">\r\r&lt;/form>' hint='Use to contain an interactive form. HTML 4.01 requires "action" attribute.'/>
+
+<tag menu='FR' flags='96' inserttext='&lt;frame |>' hint='Define the contents and appearance of a single frame in a frameset.'/>
+<tag menu='FR' flags='96' inserttext='&lt;frame src="|">' hint='Define the contents and appearance of a single frame in a frameset.'/>
+<tag menu='FR' flags='96' inserttext='&lt;frame src="http://|">' hint='Define the contents and appearance of a single frame in a frameset.'/>
+<tag menu='FR' flags='96' inserttext='&lt;frame src="|" name="">' hint='Define the contents and appearance of a single frame in a frameset.'/>
+<tag menu='FR' flags='96' inserttext='&lt;frame src="http://|" name="">' hint='Define the contents and appearance of a single frame in a frameset.'/>
+<tag menu='FR' flags='4'/>
+<tag menu='FR' flags='32' inserttext='&lt;frameset>\r|\r&lt;/frameset>' hint='Specify the layout of frames in the main user window in terms of rectangular subspaces.'/>
+<tag menu='FR' flags='32' inserttext='&lt;frameset cols="|">&lt;/frameset>' hint='Specify the layout of the main user window in terms of rectangular subspaces.'/>
+<tag menu='FR' flags='32' inserttext='&lt;frameset rows="|">&lt;/frameset>' hint='Specify the layout of the main user window in terms of rectangular subspaces.'/>
+<tag menu='FR' flags='32' inserttext='&lt;frameset cols="|" rows="">&lt;/frameset>' hint='Specify the layout of the main user window in terms of rectangular subspaces.'/>
+
+<tag menu='H' flags='32' inserttext='&lt;h1>|&lt;/h1>' hint='Heading 1. Most important heading (largest heading font).'/>
+<tag menu='H' flags='32' inserttext='&lt;h2>|&lt;/h2>' hint='Heading 2.'/>
+<tag menu='H' flags='32' inserttext='&lt;h3>|&lt;/h3>' hint='Heading 3.'/>
+<tag menu='H' flags='32' inserttext='&lt;h4>|&lt;/h4>' hint='Heading 4.'/>
+<tag menu='H' flags='32' inserttext='&lt;h5>|&lt;/h5>' hint='Heading 5.'/>
+<tag menu='H' flags='32' inserttext='&lt;h6>|&lt;/h6>' hint='Heading 6. Least important heading (smallest heading font).'/>
+<tag menu='H' flags='4'/>
+<tag menu='H' flags='32' inserttext='&lt;head>\r|\r&lt;/head>' hint="Use to contain the document&apos;s head. Insert with optional end tag."/>
+<tag menu='H' flags='32' inserttext='&lt;head>\r\t&lt;title>|&lt;/title>\r\b&lt;/head>' hint="Use to contain the document&apos;s head. Insert with &quot;title&quot; and optional end tag."/>
+<tag menu='H' flags='4'/>
+<tag menu='H' flags='32' inserttext='&lt;header>\r|\r&lt;/header>' hint='HTML5+: Contains a group of introductory or navigational aids.'/>
+<tag menu='H' flags='32' inserttext='&lt;hgroup>\r|\r&lt;/hgroup>' hint='HTML5+: Groups a set of h1–h6 elements when the heading has multiple levels, such as subheadings, alternative titles, or taglines.'/>
+<tag menu='H' flags='96' inserttext='&lt;hr>' hint='Represents a paragraph-level thematic break. In HTML4, a horizontal rule.'/>
+<tag menu='H' flags='4'/>
+<tag menu='H' flags='32' inserttext='&lt;html>\r|\r&lt;/html>' hint='Document root element.'/>
+<tag menu='H' flags='32' inserttext='&lt;html>\r&lt;head>\r\t&lt;title>|&lt;/title>\r&lt;/head>\r\r&lt;body>\r\r&lt;/body>\r&lt;/html>' caption='&lt;html> with head, title, and body'/>
+
+<tag menu='I' flags='32' inserttext='&lt;i>|&lt;/i>' hint='Specify text in an alternate voice or mood, or otherwise offset from the normal prose. Not a generic "italic" element.'/>
+<tag menu='I' flags='32' inserttext='&lt;iframe>\r|\r&lt;/iframe>' hint='Inline subwindow (floating frame).'/>
+<tag menu='I' flags='4'/>
+<tag menu='I' flags='96' inserttext='&lt;img src="|" alt="">' hint='Embed an image.'/>
+<tag menu='I' flags='96' inserttext='&lt;img src="http://|" alt="">' hint='Embed an image.'/>
+<tag menu='I' flags='96' inserttext='&lt;img src="|" width="" height="" alt="">' hint='Embed an image.'/>
+<tag menu='I' flags='96' inserttext='&lt;img src="http://|" width="" height="" alt="">' hint='Embed an image.'/>
+<tag menu='I' flags='4'/>
+<tag menu='I' flags='96' inserttext='&lt;input type="|">' hint='Specify a field (usually in a form), such as a textbox, checkbox, or radio button field.'/>
+<tag menu='I' flags='96' submenu='&lt;input type="..."> (HTML4)' inserttext='&lt;input type="button">' hint='A push button control; the "value" attribute should specify the label.'/>
+<tag menu='I' flags='96' submenu='&lt;input type="..."> (HTML4)' inserttext='&lt;input type="checkbox">' hint='A checkbox control.'/>
+<tag menu='I' flags='96' submenu='&lt;input type="..."> (HTML4)' inserttext='&lt;input type="checkbox" checked="checked">' hint='A checked checkbox control.'/>
+<tag menu='I' flags='96' submenu='&lt;input type="..."> (HTML4)' inserttext='&lt;input type="file">' hint='A file select control; the "value" attribute can specify the initial filename.'/>
+<tag menu='I' flags='96' submenu='&lt;input type="..."> (HTML4)' inserttext='&lt;input type="hidden">' hint='A hidden control.'/>
+<tag menu='I' flags='96' submenu='&lt;input type="..."> (HTML4)' inserttext='&lt;input type="image">' hint='A graphical submit button; the "src" attribute specifies the image.'/>
+<tag menu='I' flags='96' submenu='&lt;input type="..."> (HTML4)' inserttext='&lt;input type="password">' hint='A single-line password input control (characters are hidden).'/>
+<tag menu='I' flags='96' submenu='&lt;input type="..."> (HTML4)' inserttext='&lt;input type="radio">' hint='A radio button control.'/>
+<tag menu='I' flags='96' submenu='&lt;input type="..."> (HTML4)' inserttext='&lt;input type="radio" checked="checked">' hint='A selected radio button control.'/>
+<tag menu='I' flags='96' submenu='&lt;input type="..."> (HTML4)' inserttext='&lt;input type="reset">' hint='A reset control.'/>
+<tag menu='I' flags='96' submenu='&lt;input type="..."> (HTML4)' inserttext='&lt;input type="submit">' hint='A submit button.'/>
+<tag menu='I' flags='96' submenu='&lt;input type="..."> (HTML4)' inserttext='&lt;input type="text">' hint='A single-line text input control.'/>
+<tag menu='I' flags='96' submenu='&lt;input type="..."> (New in HTML5)' inserttext='&lt;input type="color">' hint='HTML5+: A color well.'/>
+<tag menu='I' flags='96' submenu='&lt;input type="..."> (New in HTML5)' inserttext='&lt;input type="date">' hint='HTML5+: A date control.'/>
+<tag menu='I' flags='96' submenu='&lt;input type="..."> (New in HTML5)' inserttext='&lt;input type="datetime">' hint='HTML5+: A date and time control with time zone set to UTC.'/>
+<tag menu='I' flags='96' submenu='&lt;input type="..."> (New in HTML5)' inserttext='&lt;input type="datetime-local">' hint='HTML5+: A date and time control with no time zone.'/>
+<tag menu='I' flags='96' submenu='&lt;input type="..."> (New in HTML5)' inserttext='&lt;input type="email">' hint='HTML5+: A text field for email addresses.'/>
+<tag menu='I' flags='96' submenu='&lt;input type="..."> (New in HTML5)' inserttext='&lt;input type="month">' hint='HTML5+: A month control.'/>
+<tag menu='I' flags='96' submenu='&lt;input type="..."> (New in HTML5)' inserttext='&lt;input type="number">' hint='HTML5+: A text field or spinner control.'/>
+<tag menu='I' flags='96' submenu='&lt;input type="..."> (New in HTML5)' inserttext='&lt;input type="range">' hint='HTML5+: A slider control (or similar).'/>
+<tag menu='I' flags='96' submenu='&lt;input type="..."> (New in HTML5)' inserttext='&lt;input type="search">' hint='HTML5+: A search field.'/>
+<tag menu='I' flags='96' submenu='&lt;input type="..."> (New in HTML5)' inserttext='&lt;input type="tel">' hint='HTML5+: A text field for telephone numbers.'/>
+<tag menu='I' flags='96' submenu='&lt;input type="..."> (New in HTML5)' inserttext='&lt;input type="time">' hint='HTML5+: A time control.'/>
+<tag menu='I' flags='96' submenu='&lt;input type="..."> (New in HTML5)' inserttext='&lt;input type="url">' hint='HTML5+: A text field for URLs.'/>
+<tag menu='I' flags='96' submenu='&lt;input type="..."> (New in HTML5)' inserttext='&lt;input type="week">' hint='HTML5+: A week control.'/>
+<tag menu='I' flags='4'/>
+<tag menu='I' flags='32' inserttext='&lt;ins>|&lt;/ins>' hint='Specify inserted text.'/>
+<tag menu='I' flags='96' inserttext='&lt;isindex>' hint='Deprecated in HTML 4.01. Create a single-line text input control. You should use "input" instead.'/>
+
+<tag menu='K' flags='32' inserttext='&lt;kbd>|&lt;/kbd>' hint='Specify text to be entered by the user (user input, typically keyboard input).'/>
+<tag menu='K' flags='32' inserttext='&lt;keygen |>' hint='HTML5+: Represents a key pair generator control.'/>
+
+<tag menu='L' flags='32' inserttext='&lt;label>|&lt;/label>' hint='Specify form field label text. Use to attach information to controls.'/>
+<tag menu='L' flags='32' inserttext='&lt;label for="">|&lt;/label>' hint='Specify form field label text. Use to attach information to controls.'/>
+<tag menu='L' flags='4'/>
+<tag menu='L' flags='32' inserttext='&lt;legend>|&lt;/legend>' hint='Assign a caption to a "fieldset".'/>
+<tag menu='L' flags='4'/>
+<tag menu='L' flags='32' inserttext='&lt;li>' hint='Specify a list item in a list. Insert without optional end tag (not recommended).'/>
+<tag menu='L' flags='32' inserttext='&lt;li>|&lt;/li>' hint='Specify a list item in a list. Insert with optional end tag.'/>
+<tag menu='L' flags='4'/>
+<tag menu='L' flags='96' inserttext='&lt;link>' hint='Define a link. Can only be used in a "head" section.'/>
+<tag menu='L' flags='96' inserttext='&lt;link href="|" type="text/css" rel="stylesheet">\r' hint='Link document to a style sheet. Can only be used in a "head" section.'/>
+
+<tag menu='M' flags='32' inserttext='&lt;map name="|">&lt;/map>' hint='Specify a client-side image map or other navigation mechanism.'/>
+<tag menu='M' flags='32' inserttext='&lt;map id="|">&lt;/map>' hint='Specify a client-side image map or other navigation mechanism.'/>
+<tag menu='M' flags='4'/>
+<tag menu='M' flags='32' inserttext='&lt;mark>|&lt;/mark>' hint='HTML5+: Specifies a run of text marked or highlighted for reference purposes, due to its relevance in another context. In main prose, can indicate the part of the document that is relevant to the user&apos;s current activity.'/>
+<tag menu='M' flags='32' inserttext='&lt;marquee>|&lt;/marquee>' hint='This element is used to scroll text and is Internet Explorer specific.'/>
+<tag menu='M' flags='32' inserttext='&lt;menu>\r|\r&lt;/menu>' hint='HTML5+: Represents a list of commands.'/>
+<tag menu='M' flags='4'/>
+<tag menu='M' flags='96' inserttext='&lt;meta name="|" content="">\r' hint='Generic metainformation.'/>
+<tag menu='M' submenu='&lt;meta name="ROBOTS" ...>' flags='96' inserttext='&lt;meta name="ROBOTS" content="NOINDEX">\r' hint='Tells robots not to index this page but to follow its links.'/>
+<tag menu='M' submenu='&lt;meta name="ROBOTS" ...>' flags='96' inserttext='&lt;meta name="ROBOTS" content="NOFOLLOW">\r' hint='Tells robots not to follow links but to index this page.'/>
+<tag menu='M' submenu='&lt;meta name="ROBOTS" ...>' flags='96' inserttext='&lt;meta name="ROBOTS" content="NOINDEX,NOFOLLOW">\r' hint='Tells robots not to index this page nor to follow its links.'/>
+<tag menu='M' submenu='&lt;meta name="ROBOTS" ...>' flags='96' inserttext='&lt;meta name="ROBOTS" content="INDEX,FOLLOW">\r' hint="Tells robots both to index this page and to follow its links. This is the default behavior so you don&apos;t have to include this tag."/>
+<tag menu='M' submenu='Other common meta tags' flags='96' inserttext='&lt;meta name="author" content="|">\r' hint='Author information.'/>
+<tag menu='M' submenu='Other common meta tags' flags='96' inserttext='&lt;meta name="contact" content="|">\r' hint='A contact email address, but beware of spam robots sending spam.'/>
+<tag menu='M' submenu='Other common meta tags' flags='96' inserttext='&lt;meta name="copyright" content="|">\r' hint='Copyright metainformation.'/>
+<tag menu='M' submenu='Other common meta tags' flags='96' inserttext='&lt;meta name="description" content="|">\r' hint='Description about the page (in 3-4 sentences). Used by many search engines when indexing a site.'/>
+<tag menu='M' submenu='Other common meta tags' flags='96' inserttext='&lt;meta name="expires" content="|">\r' hint='Tells search engines when the content on the page expires. The content should be in RFC1123 format (day, dd mm yyyy) or 0 to delete the page.'/>
+<tag menu='M' submenu='Other common meta tags' flags='96' inserttext='&lt;meta name="generator" content="CSE HTML Validator Professional (http://www.htmlvalidator.com/)">\r' caption='&lt;meta name="generator" content="CSE ...">' hint='Generator metainformation.'/>
+<tag menu='M' submenu='Other common meta tags' flags='96' inserttext='&lt;meta name="keywords" content="|">\r' hint='Keyword and key phrases for the page. Used by some search engines when indexing a site.'/>
+<tag menu='M' submenu='Other common meta tags' flags='96' inserttext='&lt;meta name="PICS-Label" content=&apos;|&apos;>\r' hint="Content rating metainformation. Used to rate a document&apos;s content (see http://www.icra.org/)"/>
+<tag menu='M' submenu='Other common meta tags' flags='96' inserttext='&lt;meta name="revisit-after" content="|">\r' hint='Suggests to search engines and spiders how often to revisit the page.'/>
+<tag menu='M' flags='4'/>
+<tag menu='M' flags='96' inserttext='&lt;meta http-equiv="|" content="">\r' hint='Generic (http-equiv) metainformation.'/>
+<tag menu='M' flags='96' inserttext='&lt;meta http-equiv="Content-Script-Type" content="text/javascript">\r' hint='Specify the default script language as text/javascript.'/>
+<tag menu='M' flags='96' inserttext='&lt;meta http-equiv="Content-Style-Type" content="text/css">\r' hint='Specify the default style sheet language as text/css.'/>
+<tag menu='M' flags='96' inserttext='&lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8">\r' hint='Document is HTML and encoded with the UTF-8 character set (universal, but not commonly used in legacy documents).'/>
+<tag menu='M' flags='96' inserttext='&lt;meta http-equiv="refresh" content="|">\r' hint='Example content: content="x;url=(url)" where x is in seconds, (url) is URL to redirect to. Or just use content="x" to refresh page in x seconds. Use to refresh or redirect web pages.'/>
+<tag menu='M' flags='4'/>
+<tag menu='M' flags='32' inserttext='&lt;meter>|&lt;/meter>' hint='HTML5+: Represents a scalar measurement within a known range, or a fractional value.'/>
+<tag menu='N' flags='32' inserttext='&lt;nav>\r|\r&lt;/nav>' hint='HTML5+: Contains navigational links; links to other pages or to parts within the page.'/>
+<tag menu='N' flags='32' inserttext='&lt;noframes>\r|\r&lt;/noframes>' hint='Specify content to display when frames are not used or available.'/>
+<tag menu='N' flags='32' inserttext='&lt;noscript>\r|\r&lt;/noscript>' hint='Specify alternate content for non script-based rendering.'/>
+
+<tag menu='O' flags='32' inserttext='&lt;object>|&lt;/object>' hint='Insert a generic embedded object.'/>
+<tag menu='O' flags='4'/>
+<tag menu='O' flags='32' inserttext='&lt;ol>\r\t|\r\b&lt;/ol>' hint='Ordered (numbered) list.'/>
+<tag menu='O' flags='32' inserttext='&lt;ol>\r\t&lt;li>|&lt;/li>\r\b&lt;/ol>' hint='Ordered (numbered) list with one list item.'/>
+<tag menu='O' flags='4'/>
+<tag menu='O' flags='32' inserttext='&lt;optgroup>\r\t|\r\b&lt;/optgroup>' hint='Use to group options logically in a "select" tag. Insert with optional end tag.'/>
+<tag menu='O' flags='32' inserttext='&lt;option>|&lt;/option>' hint='Specify a selectable choice in a "select" tag. Insert with optional end tag.'/>
+<tag menu='O' flags='4'/>
+<tag menu='O' flags='32' inserttext='&lt;output>|&lt;/output>' hint='HTML5+: Contains the result of a calculation. Often used with script.'/>
+
+<tag menu='P' flags='32' inserttext='&lt;p>' hint='Start a new paragraph. Insert without optional end tag (not recommended).'/>
+<tag menu='P' flags='32' inserttext='&lt;p>|&lt;/p>' hint='Start a new paragraph. Insert with optional end tag.'/>
+<tag menu='P' flags='4'/>
+<tag menu='P' flags='96' inserttext='&lt;param name="|">' hint='Specify a value that may be required at run-time.'/>
+<tag menu='P' flags='32' inserttext='&lt;pre>\r|\r&lt;/pre>' hint='Specify preformatted text.'/>
+<tag menu='P' flags='32' inserttext='&lt;progress>|&lt;/progress>' hint='HTML5+: Represents the completion progress of a task.'/>
+
+<tag menu='Q' flags='32' inserttext='&lt;q>|&lt;/q>' hint='Specify a short inline quotation. Use "blockquote" for a long quotation.'/>
+
+<tag menu='R' flags='32' inserttext='&lt;rp>|&lt;/rp>' hint='HTML5+: Used to provide parentheses around a ruby text component of a ruby annotation, to be shown by user agents that don&apos;t support ruby annotations.'/>
+<tag menu='R' flags='32' inserttext='&lt;rt>|&lt;/rt>' hint='HTML5+: Marks the ruby text component of a ruby annotation.'/>
+<tag menu='R' flags='32' inserttext='&lt;ruby>|&lt;/ruby>' hint='HTML5+: Specify one or more spans of phrasing content to be marked with ruby annotations.'/>
+
+<tag menu='S' flags='32' inserttext='&lt;s>|&lt;/s>' hint='Specify content that is no longer accurate or no longer relevant. Deprecated in HTML 4.01 but back in HTML5. Typically renders strike-through style text.'/>
+<tag menu='S' flags='32' inserttext='&lt;samp>|&lt;/samp>' hint='Specify sample output from programs, scripts, computing systems, etc.'/>
+<tag menu='S' flags='4'/>
+<tag menu='S' flags='32' inserttext='&lt;script>\r|\r&lt;/script>' hint='Place a script within a document. Insert without comments.'/>
+<tag menu='S' flags='32' inserttext='&lt;script type="text/javascript">\r|\r&lt;/script>' hint='Place a script within a document. Insert without comments.'/>
+<tag menu='S' flags='32' inserttext='&lt;script type="text/javascript">&lt;!--\r|\r-->&lt;/script>' hint='Place a script within a document. Insert with comments to help prevent rendering as text.'/>
+<tag menu='S' flags='32' inserttext='&lt;script type="|">\r\r&lt;/script>' hint='Place a script within a document. Insert without comments.'/>
+<tag menu='S' flags='32' inserttext='&lt;script type="|">&lt;!--\r\r-->&lt;/script>' hint='Place a script within a document. Insert with comments to help prevent rendering as text.'/>
+<tag menu='S' flags='4'/>
+<tag menu='S' flags='32' inserttext='&lt;section>\r|\r&lt;/section>' hint='HTML5+: A generic section of a document or application; a thematic grouping of content, typically with a heading.'/>
+<tag menu='S' flags='32' inserttext='&lt;select>\r|\r&lt;/select>' hint='Option selector. Must contain at least one "option" element.'/>
+<tag menu='S' flags='32' inserttext='&lt;small>|&lt;/small>' hint='Render text in a "small" text style; typically features disclaimers, caveats, legal restrictions, or copyrights.'/>
+<tag menu='S' flags='4'/>
+<tag menu='S' flags='32' inserttext='&lt;span>|&lt;/span>' hint='Generic language and/or style container.'/>
+<tag menu='S' flags='32' inserttext='&lt;span class="|">&lt;/span>' hint='Generic language and/or style container.'/>
+<tag menu='S' flags='32' inserttext='&lt;span id="|">&lt;/span>' hint='Generic language and/or style container.'/>
+<tag menu='S' flags='32' inserttext='&lt;span class="|" id="">&lt;/span>' hint='Generic language and/or style container.'/>
+<tag menu='S' flags='4'/>
+<!--<tag menu='S' flags='32' inserttext='&lt;strike>|&lt;/strike>' hint='Deprecated in HTML 4.01 & obsolete in HTML5. Render strike-through style text.'/>-->
+<tag menu='S' flags='32' inserttext='&lt;strong>|&lt;/strong>' hint='Indicate importance. Not a generic "bold" element. Use "em" to stress emphasis.'/>
+<tag menu='S' flags='4'/>
+<tag menu='S' flags='32' inserttext='&lt;style>\r|\r&lt;/style>' hint='Place a script within a document. Insert without comments.'/>
+<tag menu='S' flags='32' inserttext='&lt;style type="text/css">\r|\r&lt;/style>' hint='Specify style sheet rules. Insert without comments.'/>
+<tag menu='S' flags='32' inserttext='&lt;style type="text/css">&lt;!--\r|\r-->&lt;/style>' hint='Specify style sheet rules. Insert with comments to help prevent rendering as text.'/>
+<tag menu='S' flags='4'/>
+<tag menu='S' flags='32' inserttext='&lt;sub>|&lt;/sub>' hint='Render text as subscript (smaller and slightly lowered).'/>
+<tag menu='S' flags='32' inserttext='&lt;sup>|&lt;/sup>' hint='Render text as superscript (smaller and slightly raised).'/>
+<tag menu='S' flags='4'/>
+<tag menu='S' flags='32' inserttext='&lt;summary>|&lt;/summary>' hint='HTML5+: Represents the summary, caption, or legend for its parent "details" element.'/>
+
+<tag menu='T' flags='32' inserttext='&lt;table>\r\t|\r\b&lt;/table>' hint='Insert a table.'/>
+<tag menu='T' flags='32' inserttext='&lt;table>\r\t&lt;tr>\r\t&lt;td>|&lt;/td>\r\b&lt;/tr>\r\b&lt;/table>' hint='Insert a table with one row and one cell.'/>
+<tag menu='T' flags='4'/>
+<tag menu='T' flags='32' inserttext='&lt;tbody>\r\t|\r\b&lt;/tbody>' hint='Use to contain table body rows.'/>
+<tag menu='T' flags='32' inserttext='&lt;td>|&lt;/td>' hint='Table data cell.'/>
+<tag menu='T' flags='32' inserttext='&lt;tfoot>\r\t|\r\b&lt;/tfoot>' hint='Use to contain table footer rows.'/>
+<tag menu='T' flags='32' inserttext='&lt;th>|&lt;/th>' hint='Table header cell. Usually rendered in bold with a center alignment.'/>
+<tag menu='T' flags='32' inserttext='&lt;thead>\r\t|\r\b&lt;/thead>' hint='Use to contain table header rows.'/>
+<tag menu='T' flags='4'/>
+<tag menu='T' flags='32' inserttext='&lt;tr>\r\t|\r\b&lt;/tr>' hint='Specify a table row to contain table cells.'/>
+<tag menu='T' flags='32' inserttext='&lt;tr>\r\t&lt;td>|&lt;/td>\r\b&lt;/tr>' hint='Specify a table row with a table data cell.'/>
+<tag menu='T' flags='4'/>
+<tag menu='T' flags='32' inserttext='&lt;textarea>|&lt;/textarea>' hint='Multi-line text field.'/>
+<tag menu='T' flags='32' inserttext='&lt;textarea rows="|" cols="">&lt;/textarea>' hint='Multi-line text field.'/>
+<tag menu='T' flags='4'/>
+<tag menu='T' flags='32' inserttext='&lt;time>|&lt;/time>' hint='HTML5+: Represent either a time on a 24 hour clock, or a precise date in the proleptic Gregorian calendar, optionally with a time and a time-zone offset.'/>
+<tag menu='T' flags='32' inserttext='&lt;title>|&lt;/title>' hint='Specify a document title.'/>
+<tag menu='T' flags='32' inserttext='&lt;track |>' hint='HTML5+: Specify explicit external timed text tracks for media elements.'/>
+<tag menu='T' flags='32' inserttext='&lt;tt>|&lt;/tt>' hint='Render as teletype or monospaced font. For example, use for computer output.'/>
+
+<tag menu='U' flags='32' inserttext='&lt;u>|&lt;/u>' hint='Specify text with an unarticulated, though explicitly rendered, non-textual annotation. Not a generic "underline" element.'/>
+<tag menu='U' flags='4'/>
+<tag menu='U' flags='32' inserttext='&lt;ul>\r\t|\r\b&lt;/ul>' hint='Unordered (bulleted) list.'/>
+<tag menu='U' flags='32' inserttext='&lt;ul>\r\t&lt;li>|&lt;/li>\r\b&lt;/ul>' hint='Unordered (bulleted) list.'/>
+
+<tag menu='V' flags='32' inserttext='&lt;var>|&lt;/var>' hint='Specify a variable or program argument.'/>
+<tag menu='V' flags='32' inserttext='&lt;video>|&lt;/video>' hint='HTML5+: For playing videos or movies, and audio files with captions.'/>
+
+</csetaginserterconfiguration>

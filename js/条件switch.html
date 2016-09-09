@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+			function myswitch(){
+				var x;
+				var time=new Date().getDay();
+				switch (time)
+				{
+					case 0:
+						x="今天是周末";
+						break;
+					case 1:
+						x="今天是周一";
+						break;
+					case 2:
+						x="今天是周二";
+						break;
+					case 3:
+						x="今天是周三";
+						break;
+					case 4:
+						x="今天是周四";
+						break;
+					case 5:
+						x="今天是周五";
+						break;
+					case 6:
+						x="今天是周六";
+						break;
+				}
+				document.getElementById("demo1").innerHTML=x;
+				switch (time)
+				{
+					case 6:
+						x="周六愉快";
+					case 0:
+						x="周末愉快";
+					default:
+						x="等着放假吧";
+				}
+				document.getElementById("demo").innerHTML=x;
+			}
+	</script>
+</head>
+<body>
+	<button type="button" onclick="myswitch()">看看今天是周几</button>
+	<p id="demo1"></p>
+	<p id="demo"></p>
+</body>
+</html>

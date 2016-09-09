@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<script>
+			window.onload=function()
+			{
+			var par=document.createElement("h1");
+			var note=document.createTextNode("这是一个追加标题");
+			par.appendChild(note);
+			var yuan=document.getElementById("d1");
+			yuan.appendChild(par);
+			var parent=document.getElementById("div1");
+			var child=document.getElementById("p1");
+			parent.removeChild(child);
+			}
+		</script>
+</head>
+<body>
+	<div id="d1">
+		<p>第一个段落</p>
+		<p>第二个段落</p>
+	</div>
+	<div id="div1">
+		<p id="p1">第三个段落</p>
+	</div>
+</body>
+</html>

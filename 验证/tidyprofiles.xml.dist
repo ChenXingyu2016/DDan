@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+
+ Updated: 2006-04-14
+
+ For help on how to add your own HTML Tidy profiles to this file, please see the CSE HTML Validator documentation about editing HTML Tidy profiles.
+
+-->
+<tidyprofiles>
+ <profile name="Default" args="" hint="Uses HTML Tidy's default options, so no arguments are used." />
+ <profile name="Indent 1" args="--indent 1 --indent-spaces 1" hint="Indents element content 1 space." />
+</tidyprofiles>

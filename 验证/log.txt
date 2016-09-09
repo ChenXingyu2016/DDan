@@ -1,0 +1,5 @@
+
+CSE HTML Validator Log File
+http://www.htmlvalidator.com/
+
+Enable logging to log all validations and their results to this log file.

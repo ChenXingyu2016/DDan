@@ -1,0 +1,757 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+CSE HTML Validator Standard/Professional/Lite JavaScript Inserter Configuration by AI Internet Solutions (http://www.htmlvalidator.com/)
+
+Updated: July 19, 2011 - improved XML compatibility, minor grammar fixes
+Updated: November 18, 2010
+
+IMPORTANT! If you modify or customize this file, then make a backup because it may be overwritten the next time you install or reinstall HTML Validator. If you want to customize this configuration file, then consider customizing the User Inserter instead, which is unlikely to be overwritten when updating or reinstalling.
+
+For detailed documentation about this file, see the "Text Inserters" topic in help.
+
+-->
+
+<csetaginserterconfiguration version="1">
+<tag menu='JS' inserttext='"|"' hint='Enclose text in double quotes.' flags='2'/>
+<tag menu='JS' inserttext="'|'" hint='Enclose text in single quotes.' flags='2'/>
+<tag menu='JS' inserttext='(|)' hint='Enclose text in parenthesis.' flags='2'/>
+<tag menu='JS' inserttext='[|]' hint='Enclose text in square brackets.' flags='2'/>
+<tag menu='JS' inserttext='/|/' hint='Enclose text in forward slashes. Indicates a regular expression literal.' flags='2'/>
+<tag menu='JS' flags='4'/>
+<tag menu='JS' caption='Edit Configuration' hint='Edit the configuration file to make your own additions and changes to the JavaScript Inserter.' command='1' flags='0' image='21'/>
+<tag menu='JS' caption='Reload Configuration' hint='Delete the JavaScript Inserter and recreate it to reread its configuration.' command='2' flags='0'/>
+<tag menu='JS' flags='4'/>
+<tag menu='JS' caption='Close JavaScript Inserter' flags='8' image='1'/>
+
+<tag menu='A' submenu='Anchor' hint='Created with &lt;a name="name">.' flags='2'/>
+<tag menu='A' submenu='Anchor' inserttext='.name' hint='The name of the anchor element.' flags='2'/>
+
+<tag menu='A' submenu='Applet' hint='Represents a Java applet embedded in an HTML document.' flags='2'/>
+<tag menu='A' submenu='Applet' inserttext='.applets[|]' hint='document.applets[i] Array of Applet objects.' flags='2'/>
+
+<tag menu='A' submenu='Arguments' inserttext='arguments' flags='2'/>
+<tag menu='A' submenu='Arguments' inserttext='arguments[|]' hint='Access a function argument. Element 0 is the first.' flags='2'/>
+<tag menu='A' submenu='Arguments' inserttext='.callee' hint='The function that is currently running.' flags='2'/>
+<tag menu='A' submenu='Arguments' inserttext='.length' hint='The number of arguments passed to the current function.' flags='2'/>
+
+<tag menu='A' submenu='Array' inserttext='new Array(|)' hint='Create a new Array object.' flags='2'/>
+<tag menu='A' submenu='Array' flags='4'/>
+<tag menu='A' submenu='Array' inserttext='.concat(|)' hint='Returns a new array formed by concatenating each argument to the array.' flags='2'/>
+<tag menu='A' submenu='Array' inserttext='.join(|)' hint='Returns a string from converting each array element to a string and then concatenating them, with an optional separator between each. Default separator is a comma.' flags='2'/>
+<tag menu='A' submenu='Array' inserttext='.pop()' hint='Deletes the last element, returns value of deleted element, and decrements array length.' flags='2'/>
+<tag menu='A' submenu='Array' inserttext='.push(|)' hint='Appends one or more values to the end of the array.' flags='2'/>
+<tag menu='A' submenu='Array' inserttext='.reverse()' hint='Reverses the order of the elements in the array.' flags='2'/>
+<tag menu='A' submenu='Array' inserttext='.shift()' hint='Shift array elements down, removing and returning the first element of the array.' flags='2'/>
+<tag menu='A' submenu='Array' inserttext='.slice(|)' hint='slice(start, end) Returns a slice of the array. Does not modify the array.' flags='2'/>
+<tag menu='A' submenu='Array' inserttext='.sort(|)' hint='Sorts the array in place. Specify an optional sorting function.' flags='2'/>
+<tag menu='A' submenu='Array' inserttext='.splice(|)' hint='splice(start, deleteCount, value, ...) Returns a new array of the deleted elements. Inserts, removes, or replaces array elements.' flags='2'/>
+<tag menu='A' submenu='Array' inserttext='.toLocaleString(|)' hint='Returns a string from converting each array element to a string (using toLocaleString()) and then concatenating them with a locale specific separator.' flags='2'/>
+<tag menu='A' submenu='Array' inserttext='.toString()' hint='Returns a string from converting each array element to a string and then concatenating them in a comma separated list.' flags='2'/>
+<tag menu='A' submenu='Array' inserttext='.unshift(|)' hint='Inserts arguments at the beginning of the array. shifting elements up to make room. Modifies the array directly; does not create a new array.' flags='2'/>
+
+<tag menu='B' submenu='Boolean' inserttext='new Boolean(|)' hint='Create a new Boolean object.' flags='2'/>
+<tag menu='B' submenu='Boolean' inserttext='Boolean(|)' hint='Convert argument to a primitive boolean value.' flags='2'/>
+<tag menu='B' submenu='Boolean' flags='4'/>
+<tag menu='B' submenu='Boolean' inserttext='.toString()' hint='Returns the string "true" or "false" depending on the value of the Boolean object.' flags='2'/>
+<tag menu='B' submenu='Boolean' inserttext='.valueOf()' hint='Returns the primitive value true or false depending on the value of the Boolean object.' flags='2'/>
+
+<tag menu='B' submenu='Button' hint='Button inherits from Input and HTMLElement.' flags='0'/>
+<tag menu='B' submenu='Button' inserttext='.value' hint='The text that appears in the button.' flags='2'/>
+<tag menu='B' submenu='Button' inserttext='.onclick' hint='Event handler invoked when the button is clicked.' flags='2'/>
+
+<tag menu='B' flags='4'/>
+<tag menu='B' inserttext='break;' hint='break statement.' flags='2'/>
+<tag menu='B' inserttext='break |;' hint='break labelname;' flags='2'/>
+
+<tag menu='C' submenu='Checkbox' hint='Checkbox inherits from Input and HTMLElement.' flags='0'/>
+<tag menu='C' submenu='Checkbox' inserttext='.checked' hint='Specifies whether the checkbox is checked. Read/write boolean property.' flags='2'/>
+<tag menu='C' submenu='Checkbox' inserttext='.defaultChecked' hint='Specifies whether the checkbox is checked by default. Read-only boolean property.' flags='2'/>
+<tag menu='C' submenu='Checkbox' inserttext='.onclick' hint='Event handler invoked when the button is clicked or selected.' flags='2'/>
+<tag menu='C' submenu='Checkbox' inserttext='.value' hint='The value submitted when the form is submitted. Read/write string.' flags='2'/>
+
+<tag menu='C' flags='4'/>
+<tag menu='C' inserttext='continue;' hint='continue statement.' flags='2'/>
+<tag menu='C' inserttext='continue |;' hint='continue labelname;' flags='2'/>
+
+<tag menu='D' submenu='Date' inserttext='new Date(|)' hint='Create a new Date object.' flags='2'/>
+<tag menu='D' submenu='Date' flags='4'/>
+
+<tag menu='D' submenu='Date->.get Methods' inserttext='.getDate()' hint='Returns the day of the month (1-31) expressed in local time.' flags='2'/>
+<tag menu='D' submenu='Date->.get Methods' inserttext='.getDay()' hint='Day of the week (0-6). 0 is Sunday, 6 is Saturday. Expressed in local time.' flags='2'/>
+<tag menu='D' submenu='Date->.get Methods' inserttext='.getFullYear()' hint='Returns the four-digit year expressed in local time.' flags='2'/>
+<tag menu='D' submenu='Date->.get Methods' inserttext='.getHours()' hint='Returns the hours field (0-23) expressed in local time.' flags='2'/>
+<tag menu='D' submenu='Date->.get Methods' inserttext='.getMilliseconds()' hint='Returns the milliseconds field (0-999) expressed in local time.' flags='2'/>
+<tag menu='D' submenu='Date->.get Methods' inserttext='.getMinutes()' hint='Returns the minutes field (0-59) expressed in local time.' flags='2'/>
+<tag menu='D' submenu='Date->.get Methods' inserttext='.getMonth()' hint='Month field (0-11). 0 is January, 11 is December. Expressed in local time.' flags='2'/>
+<tag menu='D' submenu='Date->.get Methods' inserttext='.getSeconds()' hint='Returns the seconds field (0-59) expressed in local time.' flags='2'/>
+
+<tag menu='D' submenu='Date->.get Methods' inserttext='.getTime()' hint='Returns the date in millisconds since midnight GMT 1970-01-01.' flags='2'/>
+<tag menu='D' submenu='Date->.get Methods' inserttext='.getTimezoneOffset()' hint='Returns the difference, in minutes, between GMT and local time.' flags='2'/>
+
+<tag menu='D' submenu='Date->.get Methods' inserttext='.getUTCDate()' hint='Returns the day of the month (1-31) expressed in universal time.' flags='2'/>
+<tag menu='D' submenu='Date->.get Methods' inserttext='.getUTCDay()' hint='Day of the week (0-6). 0 is Sunday, 6 is Saturday. Expressed in universal time.' flags='2'/>
+<tag menu='D' submenu='Date->.get Methods' inserttext='.getUTCFullYear()' hint='Returns the four-digit year expressed in universal time.' flags='2'/>
+<tag menu='D' submenu='Date->.get Methods' inserttext='.getUTCHours()' hint='Returns the hours field (0-23) expressed in universal time.' flags='2'/>
+<tag menu='D' submenu='Date->.get Methods' inserttext='.getUTCMilliseconds()' hint='Returns the milliseconds field expressed in universal time.' flags='2'/>
+<tag menu='D' submenu='Date->.get Methods' inserttext='.getUTCMinutes()' hint='Returns the minutes field (0-59) expressed in universal time.' flags='2'/>
+<tag menu='D' submenu='Date->.get Methods' inserttext='.getUTCMonth()' hint='Month field (0-11). 0 is January, 11 is December. Expressed in universal time.' flags='2'/>
+<tag menu='D' submenu='Date->.get Methods' inserttext='.getUTCSeconds()' hint='Returns the seconds field (0-59) expressed in universal time.' flags='2'/>
+
+<tag menu='D' submenu='Date->.get Methods' inserttext='.getYear()' hint='Recommend getFullYear() instead. Returns the year field of a date minus 1900.' flags='2'/>
+
+<tag menu='D' submenu='Date->.set Methods' inserttext='.setDate(|)' hint='Set the day of the month (1-31) expressed in local time.' flags='2'/>
+<tag menu='D' submenu='Date->.set Methods' inserttext='.setFullYear(|)' hint='Set the four-digit year (and optionally the month and day) expressed in local time.' flags='2'/>
+<tag menu='D' submenu='Date->.set Methods' inserttext='.setHours(|)' hint='Set the hours field (0-23) (and optionally mins, secs, millis) expressed in local time.' flags='2'/>
+<tag menu='D' submenu='Date->.set Methods' inserttext='.setMilliseconds(|)' hint='Set the milliseconds field (0-999) expressed in local time.' flags='2'/>
+<tag menu='D' submenu='Date->.set Methods' inserttext='.setMinutes(|)' hint='Set the minutes field (0-59) (and optionally secs, millis) expressed in local time.' flags='2'/>
+<tag menu='D' submenu='Date->.set Methods' inserttext='.setMonth(|)' hint='Set the month field (0-11). 0 is January, 11 is December. Optionally set the day (1-31). Expressed in local time.' flags='2'/>
+<tag menu='D' submenu='Date->.set Methods' inserttext='.setSeconds(|)' hint='Set the seconds field (0-59) (and optionally millis) expressed in local time.' flags='2'/>
+<tag menu='D' submenu='Date->.set Methods' inserttext='.setTime(|)' hint='Set the date in millisconds since midnight GMT 1970-01-01.' flags='2'/>
+
+<tag menu='D' submenu='Date->.set Methods' inserttext='.setUTCDate(|)' hint='Set the day of the month (1-31) expressed in universal time.' flags='2'/>
+<tag menu='D' submenu='Date->.set Methods' inserttext='.setUTCFullYear(|)' hint='Set the four-digit year (and optionally the month and day) expressed in universal time.' flags='2'/>
+<tag menu='D' submenu='Date->.set Methods' inserttext='.setUTCHours(|)' hint='Set the hours field (0-23) (and optionally mins, secs, millis) expressed in universal time.' flags='2'/>
+<tag menu='D' submenu='Date->.set Methods' inserttext='.setUTCMilliseconds(|)' hint='Set the milliseconds field (0-999) expressed in universal time.' flags='2'/>
+<tag menu='D' submenu='Date->.set Methods' inserttext='.setUTCMinutes(|)' hint='Set the minutes field (0-59) (and optionally secs, millis) expressed in universal time.' flags='2'/>
+<tag menu='D' submenu='Date->.set Methods' inserttext='.setUTCMonth(|)' hint='Set the month field (0-11). 0 is January, 11 is December. Optionally set the day (1-31). Expressed in universal time.' flags='2'/>
+<tag menu='D' submenu='Date->.set Methods' inserttext='.setUTCSeconds(|)' hint='Set the seconds field (0-59) (and optionally millis) expressed in universal time.' flags='2'/>
+
+<tag menu='D' submenu='Date->.set Methods' inserttext='.setYear(|)' hint='Recommend setFullYear() instead. Set the year field of a date.' flags='2'/>
+
+<tag menu='D' submenu='Date' flags='4'/>
+
+<tag menu='D' submenu='Date' inserttext='Date.parse(|)' hint='Parse a date string and return the date in milliseconds since 1970-01-01.' flags='2'/>
+<tag menu='D' submenu='Date' inserttext='Date.UTC(|)' hint='Date.UTC(year, month, day, hours, minutes, seconds, ms) Convert UTC date to milliseconds since midnight GMT 1970-01-01.' flags='2'/>
+
+<tag menu='D' submenu='Date' flags='4'/>
+
+<tag menu='D' submenu='Date' inserttext='.toDateString()' hint='Returns string rep. of date portion expressed in the local time zone.' flags='2'/>
+<tag menu='D' submenu='Date' inserttext='.toGMTString()' hint='Recommend toUTCString() instead. Returns string rep. of date expressed in GMT time zone.' flags='2'/>
+<tag menu='D' submenu='Date' inserttext='.toLocaleDateString()' hint='Returns string rep. (formatted to local conventions) of date portion expressed in the local time zone.' flags='2'/>
+<tag menu='D' submenu='Date' inserttext='.toLocaleString()' hint='Returns string rep. (formatted to local conventions) of date and time expressed in the local time zone.' flags='2'/>
+<tag menu='D' submenu='Date' inserttext='.toLocaleTimeString()' hint='Returns string rep. (formatted to local conventions) of time portion expressed in the local time zone.' flags='2'/>
+<tag menu='D' submenu='Date' inserttext='.toString()' hint='Returns string rep. of date, expressed in the local time zone.' flags='2'/>
+<tag menu='D' submenu='Date' inserttext='.toTimeString()' hint='Returns string rep. of time portion expressed in the local time zone.' flags='2'/>
+<tag menu='D' submenu='Date' inserttext='.toUTCString()' hint='Returns string rep. of date, expressed in universal time.' flags='2'/>
+
+<tag menu='D' submenu='Date' inserttext='.valueOf()' hint='Returns the milliseconds rep. of a date. Same as getTime().' flags='2'/>
+
+<tag menu='D' submenu='Document' shiftprependtext='document' inserttext='.alinkColor' hint='The color of activated links in the document. From the alink attribute of the body tag.' flags='2'/>
+<tag menu='D' submenu='Document' shiftprependtext='document' inserttext='.all[|]' hint='An array of all HTML elements in a document.' flags='2'/>
+<tag menu='D' submenu='Document' shiftprependtext='document' inserttext='.all.tags(|)' hint='tags(tagname) Returns an array of HTML elements of the given type.' flags='2'/>
+<tag menu='D' submenu='Document' shiftprependtext='document' inserttext='.anchors[|]' hint='An array of Anchor objects from anchors that appear in the document.' flags='2'/>
+<tag menu='D' submenu='Document' shiftprependtext='document' inserttext='.applets[|]' hint='An array of Applet objects from applets that appear in the document.' flags='2'/>
+<tag menu='D' submenu='Document' shiftprependtext='document' inserttext='.bgColor' hint='The background color of the document. From the bgcolor attribute of the body tag.' flags='2'/>
+<tag menu='D' submenu='Document' shiftprependtext='document' inserttext='.body' hint='The body of the document.' flags='2'/>
+<tag menu='D' submenu='Document' shiftprependtext='document' inserttext='.clear()' hint='Deprecated in JS 1.1. Should not be used. Erases the document content.' flags='2'/>
+<tag menu='D' submenu='Document' shiftprependtext='document' inserttext='.close()' hint='Closes a document stream opened with open().' flags='2'/>
+<tag menu='D' submenu='Document' shiftprependtext='document' inserttext='.cookie' hint='String value of the cookie associated with the document. Read/write string property.' flags='2'/>
+<tag menu='D' submenu='Document' shiftprependtext='document' inserttext='.domain' hint="String value specifying the document's Internet domain. Example: domain.com" flags='2'/>
+<tag menu='D' submenu='Document' shiftprependtext='document' inserttext='.embeds[|]' hint='Array of objects representing data embedding in the document.' flags='2'/>
+<tag menu='D' submenu='Document' shiftprependtext='document' inserttext='.fgColor' hint='The default text color of the document. From the text attribute of the body tag.' flags='2'/>
+<tag menu='D' submenu='Document' shiftprependtext='document' inserttext='.forms[|]' hint='Array of Form objects from forms that appear in the document.' flags='2'/>
+<tag menu='D' submenu='Document' shiftprependtext='document' inserttext='.getElementById(|)' hint='The first element with the specified id.' flags='2'/>
+<tag menu='D' submenu='Document' shiftprependtext='document' inserttext='.getElementsByName(|)' hint='All elements with the specified name.' flags='2'/>
+<tag menu='D' submenu='Document' shiftprependtext='document' inserttext='.getElementsByTagName(|)' hint='All elements with the specified tagname.' flags='2'/>
+<tag menu='D' submenu='Document' shiftprependtext='document' inserttext='.images[|]' hint='Array of Image objects from images that appear in the document.' flags='2'/>
+<tag menu='D' submenu='Document' shiftprependtext='document' inserttext='.lastModified' hint='The date of the most recent change to the document. Read-only string. Reported by the web server.' flags='2'/>
+<tag menu='D' submenu='Document' shiftprependtext='document' inserttext='.linkColor' hint='The color of unvisited links in the document. From the link attribute of the body tag.' flags='2'/>
+<tag menu='D' submenu='Document' shiftprependtext='document' inserttext='.links[|]' hint='Array of Link objects from the hypertext links that appear in the document.' flags='2'/>
+<tag menu='D' submenu='Document' shiftprependtext='document' inserttext='.onload' hint='Event handler invoked when the document is loaded.' flags='2'/>
+<tag menu='D' submenu='Document' shiftprependtext='document' inserttext='.onunload' hint='Event handler invoked when the user browses away or the tab is closed.' flags='2'/>
+<tag menu='D' submenu='Document' shiftprependtext='document' inserttext='.open()' hint='Opens a stream where document contents can be written. Optionally mimetype argument.' flags='2'/>
+<tag menu='D' submenu='Document' shiftprependtext='document' inserttext='.plugins[|]' hint='Recommend embeds[] instead. Array of objects representing data embedding in the document.' flags='2'/>
+<tag menu='D' submenu='Document' shiftprependtext='document' inserttext='.referrer' hint='The URL that pointed to this document. Read-only string property.' flags='2'/>
+<tag menu='D' submenu='Document' shiftprependtext='document' inserttext='.styleSheets[|]' hint='Array of all external stylesheets on the page.' flags='2'/>
+<tag menu='D' submenu='Document' shiftprependtext='document' inserttext='.title' hint='The title of the document. Read-only string property.' flags='2'/>
+<tag menu='D' submenu='Document' shiftprependtext='document' inserttext='.URL' hint='The URL of the document. Read-only string property.' flags='2'/>
+<tag menu='D' submenu='Document' shiftprependtext='document' inserttext='.vlinkColor' hint='The color of visited links in the document. From the vlink attribute of the body tag.' flags='2'/>
+<tag menu='D' submenu='Document' shiftprependtext='document' inserttext='.write(|)' hint='Inserts a string or strings into the document or into a stream opened with open().' flags='2'/>
+<tag menu='D' submenu='Document' shiftprependtext='document' inserttext='.writeln(|)' hint='Like write(), but appends a newline character to the output.' flags='2'/>
+
+<tag menu='D' flags='4'/>
+<tag menu='D' inserttext='do {&#13;&#9;|&#13;\b} while ();' caption='do {|} while ();' hint='do/while loop.' flags='2'/>
+<tag menu='D' inserttext='decodeURI(|)' hint='Returns a string with hexadecimal escape sequences replaced with the characters they represent. Reverses encodeURI().' flags='2'/>
+<tag menu='D' inserttext='decodeURIComponent(|)' hint='Returns a string with hexadecimal escape sequences replaced with the characters they represent. Reverses encodeURIComponent().' flags='2'/>
+<tag menu='D' inserttext='delete |;' hint='Delete object property, array element, or specified variable. delete is a unary operator.' flags='2'/>
+
+<tag menu='E' submenu='Error' inserttext='new Error(|)' hint='Creates a new Error object. Optional message argument.' flags='2'/>
+<tag menu='E' submenu='Error' flags='4'/>
+<tag menu='E' submenu='Error' inserttext='.message' hint='Human-readable error message.' flags='2'/>
+<tag menu='E' submenu='Error' inserttext='.name' hint='The type of error or exception that occurred.' flags='2'/>
+<tag menu='E' submenu='Error' inserttext='.toString()' hint='Convert Error object to a string (implementation-defined).' flags='2'/>
+
+<tag menu='E' submenu='EvalError' inserttext='new EvalError(|)' hint='Creates a new EvalError object. Optional message argument.' flags='2'/>
+<tag menu='E' submenu='EvalError' flags='4'/>
+<tag menu='E' submenu='EvalError' inserttext='.message' hint='Human-readable error message.' flags='2'/>
+<tag menu='E' submenu='EvalError' inserttext='.name' hint='The type of error or exception that occurred.' flags='2'/>
+
+<tag menu='E' flags='4'/>
+<tag menu='E' inserttext='encodeURI(|)' hint='Returns a string with certain characters replaced with hexadecimal escape sequences.' flags='2'/>
+<tag menu='E' inserttext='encodeURIComponent(|)' hint='Returns a string with certain characters replaced with hexadecimal escape sequences.' flags='2'/>
+<tag menu='E' inserttext='escape(|)' hint='Deprecated. Recommend encodeURI() or encodeURIComponent() instead. Returns a string with certain characters replaced with hexadecimal escape sequences.' flags='2'/>
+<tag menu='E' inserttext='eval(|)' hint='Accepts a string that contains a JavaScript expression to evaluate or statements to execute.' flags='2'/>
+
+<tag menu='F' submenu='FileUpload' hint='FileUpload inherits from Input and HTMLElement.' flags='0'/>
+<tag menu='F' submenu='FileUpload' inserttext='onchange' hint='Event handler invoked when the user completes an edit in the FileUpload element.' flags='2'/>
+
+<tag menu='F' submenu='Form' hint='Form inherits from HTMLElement.' flags='0'/>
+<tag menu='F' submenu='Form' inserttext='.action' hint='The URL where the form data is sent. Read/write string.' flags='2'/>
+<tag menu='F' submenu='Form' inserttext='.elements[|]' hint='Array of input elements that appear in the form.' flags='2'/>
+<tag menu='F' submenu='Form' inserttext='.encoding' hint='Specifies how form data is encoded. Read/write string.' flags='2'/>
+<tag menu='F' submenu='Form' inserttext='.length' hint='Number of elements in the form. Equivalent to elements.length.' flags='2'/>
+<tag menu='F' submenu='Form' inserttext='.method' hint='The method by which form data is submitted. Read/write string ("get" or "post").' flags='2'/>
+<tag menu='F' submenu='Form' inserttext='.name' hint='The name of the form. From the name attribute of the form tag. Read/write string property.' flags='2'/>
+<tag menu='F' submenu='Form' inserttext='.onreset' hint='Event handler invoked just before elements of the form are reset.' flags='2'/>
+<tag menu='F' submenu='Form' inserttext='.onsubmit' hint='Event handler invoked just before the form is submitted.' flags='2'/>
+<tag menu='F' submenu='Form' inserttext='.reset()' hint='Resets the form. Each element is set to its default value.' flags='2'/>
+<tag menu='F' submenu='Form' inserttext='.submit()' hint='Submits the form as if the submit button was pressed.' flags='2'/>
+<tag menu='F' submenu='Form' inserttext='.target' hint='The name of the frame or window where form results should be displayed. Read/write string property.' flags='2'/>
+
+<tag menu='F' submenu='Function' inserttext='new Function(|)' hint='Creates a new Function object.' flags='2'/>
+<tag menu='F' submenu='Function' flags='4'/>
+<tag menu='F' submenu='Function' inserttext='.apply(|)' hint='.apply(thisobj, args) Invokes the specified function as if a method of thisobj, passing it the arguments in the args array.' flags='2'/>
+<tag menu='F' submenu='Function' inserttext='.arguments[|]' hint='Deprecated in favor of Arguments object. Access a function argument. Element 0 is the first.' flags='2'/>
+<tag menu='F' submenu='Function' inserttext='.arguments.length' hint='Deprecated in favor of Arguments object. The number of elements (arguments) in the array.' flags='2'/>
+<tag menu='F' submenu='Function' inserttext='.call(|)' hint='.call(thisobj, args) Invokes the specified function as if a method of thisobj, passing it the arguments following thisobj.' flags='2'/>
+<tag menu='F' submenu='Function' inserttext='.length' hint='Returns the number of named arguments declared when the function was defined.' flags='2'/>
+<tag menu='F' submenu='Function' inserttext='.prototype' hint='Refers to the object that serves as the prototype for an entire class of objects.' flags='2'/>
+<tag menu='F' submenu='Function' inserttext='.toString()' hint='Converts the function to a string in an implementation-dependent way.' flags='2'/>
+
+<tag menu='F' flags='4'/>
+<tag menu='F' submenu='for' inserttext='for (|;;)' hint='for loop.' flags='2'/>
+<tag menu='F' submenu='for' inserttext='for (|;;) {&#13;}' hint='for loop.' flags='2'/>
+<tag menu='F' submenu='for' inserttext='for (| in )' hint='for/in loop.' flags='2'/>
+<tag menu='F' submenu='for' inserttext='for (| in ) {&#13;}' hint='for/in loop.' flags='2'/>
+<tag menu='F' flags='4'/>
+
+<tag menu='F' inserttext='function |() {&#13;}' hint='Define a JavaScript function.' flags='2'/>
+
+<tag menu='H' submenu='Hidden' inserttext='.value' hint='Data passed to the server when the form is submitted. Read/write string.' flags='2'/>
+
+<tag menu='H' submenu='History' inserttext='.back()' hint='Revisit the URL that was visited immediately before the current one. Calling this is like clicking on the back button.' flags='2'/>
+<tag menu='H' submenu='History' inserttext='.forward()' hint='Revisit the URL that was visited immediately after the current one. Calling this is like clicking on the forward button.' flags='2'/>
+<tag menu='H' submenu='History' inserttext='.go(|)' hint='Revisit a URL based on a relative position (like -1, 0, 1, 2, etc.) or substring of a URL.' flags='2'/>
+<tag menu='H' submenu='History' inserttext='.length' hint='Number of URLs in the history list.' flags='2'/>
+
+<tag menu='H' submenu='HTMLElement' inserttext='.attributes' hint="An array of the element's attributes." flags='2'/>
+<tag menu='H' submenu='HTMLElement' inserttext='.childNodes' hint="An array of the element's childnodes." flags='2'/>
+<tag menu='H' submenu='HTMLElement' inserttext='.className' hint='The value of the class attribute. Read/write string.' flags='2'/>
+<tag menu='H' submenu='HTMLElement' inserttext='.id' hint="The element's id. Read/write string." flags='2'/>
+<tag menu='H' submenu='HTMLElement' inserttext='.innerHTML' hint='The HTML and text content of an element. Read/write.' flags='2'/>
+<tag menu='H' submenu='HTMLElement' inserttext='.innerText' hint='The text content (not including HTML tags) of an element and its descendents.' flags='2'/>
+<tag menu='H' submenu='HTMLElement' inserttext='.outerHTML' hint='(not in Firefox) The HTML and text content of an element, including the opening and closing tags.' flags='2'/>
+<tag menu='H' submenu='HTMLElement' inserttext='.outerText' hint='(not in Firefox) The text content (not including HTML) of an element and its descendents.' flags='2'/>
+<tag menu='H' submenu='HTMLElement' inserttext='.nodeValue' hint='The value of the element.' flags='2'/>
+<tag menu='H' submenu='HTMLElement' inserttext='.offsetHeight' hint='The height of an element, including borders and padding but not margins.' flags='2'/>
+<tag menu='H' submenu='HTMLElement' inserttext='.offsetLeft' hint='The horizontal offset in pixels relative to its offset container.' flags='2'/>
+<tag menu='H' submenu='HTMLElement' inserttext='.offsetWidth' hint='The width of an element, including borders and padding but not margins.' flags='2'/>
+<tag menu='H' submenu='HTMLElement' inserttext='.ownerDocument' hint='The root element (document object).' flags='2'/>
+<tag menu='H' submenu='HTMLElement' inserttext='.style' hint='The style attribute of an element. Read/write string.' flags='2'/>
+<tag menu='H' submenu='HTMLElement'  inserttext='.tagName' hint='The tagname of the element as an uppercase string.' flags='2'/>
+<tag menu='H' submenu='HTMLElement' inserttext='.value' hint='The value of the element.' flags='2'/>
+<tag menu='H' submenu='HTMLElement' flags='4'/>
+<tag menu='H' submenu='HTMLElement' inserttext='.onclick' hint='Event handler invoked when the user clicks on the element.' flags='2'/>
+<tag menu='H' submenu='HTMLElement' inserttext='.ondblclick' hint='Event handler invoked when the user double-clicks on the element.' flags='2'/>
+<tag menu='H' submenu='HTMLElement' inserttext='.onkeydown' hint='Event handler invoked when the user presses a key over the element.' flags='2'/>
+<tag menu='H' submenu='HTMLElement' inserttext='.onkeypress' hint='Event handler invoked when the user presses a key over the element.' flags='2'/>
+<tag menu='H' submenu='HTMLElement' inserttext='.onkeyup' hint='Event handler invoked when the user releases a key over the element.' flags='2'/>
+<tag menu='H' submenu='HTMLElement' inserttext='.onmousedown' hint='Event handler invoked when the user presses a mouse button over the element.' flags='2'/>
+<tag menu='H' submenu='HTMLElement' inserttext='.onmousemove' hint='Event handler invoked when the user moves the mouse pointer within the element.' flags='2'/>
+<tag menu='H' submenu='HTMLElement' inserttext='.onmouseout' hint='Event handler invoked when the user moves the mouse pointer out of the element.' flags='2'/>
+<tag menu='H' submenu='HTMLElement' inserttext='.onmouseover' hint='Event handler invoked when the user moves the mouse pointer over the element.' flags='2'/>
+<tag menu='H' submenu='HTMLElement' inserttext='.onmouseup' hint='Event handler invoked when the user releases a mouse button over the element.' flags='2'/>
+
+<tag menu='I' submenu='Image' inserttext='new Image(|)' hint='new Image(width, height) Creates a new Image object.' flags='2'/>
+<tag menu='I' submenu='Image' flags='4'/>
+<tag menu='I' submenu='Image' inserttext='.border' hint='The width, in pixels, of the image border if hyperlinked.' flags='2'/>
+<tag menu='I' submenu='Image' inserttext='.complete' hint='Specifies whether the image is completely loaded. Read-only boolean property.' flags='2'/>
+<tag menu='I' submenu='Image' inserttext='.height' hint='The height, in pixels, of the image.' flags='2'/>
+<tag menu='I' submenu='Image' inserttext='.hspace' hint='The extra space, in pixels, on the left and right of the image.' flags='2'/>
+<tag menu='I' submenu='Image' inserttext='.lowsrc' hint='Specifies an alternate image (usually smaller). Read/write string.' flags='2'/>
+<tag menu='I' submenu='Image' inserttext='.name' hint='The name of the image.' flags='2'/>
+<tag menu='I' submenu='Image' inserttext='.onabort' hint='Event handler invoked when the user aborts the image download.' flags='2'/>
+<tag menu='I' submenu='Image' inserttext='.onerror' hint='Event handler invoked if an error occurs downloading the image.' flags='2'/>
+<tag menu='I' submenu='Image' inserttext='.onload' hint='Event handler invoked when the image is successfully downloaded.' flags='2'/>
+<tag menu='I' submenu='Image' inserttext='.src' hint='The URL of the image. Read/write string.' flags='2'/>
+<tag menu='I' submenu='Image' inserttext='.vspace' hint='The extra space, in pixels, above and below the image.' flags='2'/>
+<tag menu='I' submenu='Image' inserttext='.width' hint='The width, in pixels, of the image.' flags='2'/>
+
+<tag menu='I' submenu='Input' inserttext='.blur()' hint='Removes keyboard focus from the element.' flags='2'/>
+<tag menu='I' submenu='Input' inserttext='.checked' hint='Specifies whether a checkbox or radio element is checked. Read/write boolean property.' flags='2'/>
+<tag menu='I' submenu='Input' inserttext='.click()' hint='Simulates a mouse-click on the element.' flags='2'/>
+<tag menu='I' submenu='Input' inserttext='.defaultChecked' hint='Specifies whether a checkbox or radio element is checked by default. Read-only boolean property.' flags='2'/>
+<tag menu='I' submenu='Input' inserttext='.defaultValue' hint='The initial text that appears when the form is reset. For text, textarea, and password elements.' flags='2'/>
+<tag menu='I' submenu='Input' inserttext='.focus()' hint='Gives keyboard focus to the element.' flags='2'/>
+<tag menu='I' submenu='Input' inserttext='.form' hint='Read-only reference to the form object that contains the element.' flags='2'/>
+<tag menu='I' submenu='Input' inserttext='.length' hint='The number of choices in the select element.' flags='2'/>
+<tag menu='I' submenu='Input' inserttext='.name' hint='The name of the element. Read-only string.' flags='2'/>
+<tag menu='I' submenu='Input' inserttext='.onblur' hint='Event handler invoked when the user takes keyboard focus away from the element.' flags='2'/>
+<tag menu='I' submenu='Input' inserttext='.onchange' hint='Event handler invoked when the user enters or selects a new value.' flags='2'/>
+<tag menu='I' submenu='Input' inserttext='.onclick' hint='Event handler invoked when the user clicks or selects the button. Buttons only.' flags='2'/>
+<tag menu='I' submenu='Input' inserttext='.onfocus' hint='Event handler invoked when the user gives keyboard focus to the element.' flags='2'/>
+<tag menu='I' submenu='Input' inserttext='.options[|]' hint='Array containing the option objects for a select element.' flags='2'/>
+<tag menu='I' submenu='Input' inserttext='.select()' hint='Selects the text that appears in the element. Only for elements displaying text.' flags='2'/>
+<tag menu='I' submenu='Input' inserttext='.selectedIndex' hint='Specifies which select object is currently selected. Read/write integer.' flags='2'/>
+<tag menu='I' submenu='Input' inserttext='.type' hint='The type of the form element ("button", "text", etc.). Read-only string.' flags='2'/>
+<tag menu='I' submenu='Input' inserttext='.value' hint='The value displayed and/or submitted. Read/write string.' flags='2'/>
+
+<tag menu='I' flags='4'/>
+<tag menu='I' submenu='if' inserttext='if (|)' hint='if statement.' flags='2'/>
+<tag menu='I' submenu='if' inserttext='if (|) {&#13;}' hint='if statement.' flags='2'/>
+<tag menu='I' submenu='if' inserttext='if (|) else' hint='if/else statement.' flags='2'/>
+<tag menu='I' submenu='if' inserttext='if (|) {&#13;}&#13;else {&#13;}' caption='if (|) {} else {}' hint='if/else statement.' flags='2'/>
+<tag menu='I' flags='4'/>
+<tag menu='I' inserttext='in |;' hint='Returns whether the lefthand operand (a string) is the name of a property of the righthand operand (an object).' flags='2'/>
+<tag menu='I' inserttext='Infinity' hint='Numeric property representing infinity.' flags='2'/>
+<tag menu='I' inserttext='instanceof |;' hint='Returns whether the lefthand operand (an object) is an instance of the righthand class.' flags='2'/>
+<tag menu='I' inserttext='isFinite(|)' hint='Determine whether a number is finite. Returns false if NaN (not a number) or pos or neg infinity.' flags='2'/>
+<tag menu='I' inserttext='isNaN(|)' hint='Determine whether argument is NaN (not a number) or can be converted to NaN.' flags='2'/>
+
+<tag menu='L' submenu='Link' inserttext='.hash' hint='The anchor portion, including the hash (#) mark. Example: "#chapter5"' flags='2'/>
+<tag menu='L' submenu='Link' inserttext='.host' hint='The hostname and port portion. Example: "www.mydomain.com:8080"' flags='2'/>
+<tag menu='L' submenu='Link' inserttext='.hostname' hint='The hostname portion. Example: "www.mydomain.com"' flags='2'/>
+<tag menu='L' submenu='Link' inserttext='.href' hint='The entire URL, not a portion of it.' flags='2'/>
+<tag menu='L' submenu='Link' inserttext='.onclick' hint='Event handler invoked when the user clicks the link. If false is returned, the link is not followed.' flags='2'/>
+<tag menu='L' submenu='Link' inserttext='.onmouseout' hint='Event handler invoked when the mouse is moved off the link.' flags='2'/>
+<tag menu='L' submenu='Link' inserttext='.onmouseover' hint='Event handler invoked when the mouse is moved over the link.' flags='2'/>
+<tag menu='L' submenu='Link' inserttext='.pathname' hint='The pathname portion. Example: "/directory/page.html"' flags='2'/>
+<tag menu='L' submenu='Link' inserttext='.port' hint='The port portion. Example: "8080"' flags='2'/>
+<tag menu='L' submenu='Link' inserttext='.protocol' hint='The protocol portion. Includes trailing colon. Example: "http:"' flags='2'/>
+<tag menu='L' submenu='Link' inserttext='.search' hint='The query portion. Example: "?var1=value&amp;var2=value2"' flags='2'/>
+<tag menu='L' submenu='Link' inserttext='.target' hint='The name of a Window object where the linked document should be displayed. Read/write string.' flags='2'/>
+
+<tag menu='L' submenu='Location' shiftprependtext='location' inserttext='.hash' hint='The anchor portion, including the hash (#) mark. Example: "#chapter5"' flags='2'/>
+<tag menu='L' submenu='Location' shiftprependtext='location' inserttext='.host' hint='The hostname and port portion. Example: "www.mydomain.com:8080"' flags='2'/>
+<tag menu='L' submenu='Location' shiftprependtext='location' inserttext='.hostname' hint='The hostname portion. Example: "www.mydomain.com"' flags='2'/>
+<tag menu='L' submenu='Location' shiftprependtext='location' inserttext='.href' hint='The entire URL, not a portion of it.' flags='2'/>
+<tag menu='L' submenu='Location' shiftprependtext='location' inserttext='.pathname' hint='The pathname portion. Example: "/directory/page.html"' flags='2'/>
+<tag menu='L' submenu='Location' shiftprependtext='location' inserttext='.port' hint='The port portion. Example: "8080"' flags='2'/>
+<tag menu='L' submenu='Location' shiftprependtext='location' inserttext='.protocol' hint='The protocol portion. Includes trailing colon. Example: "http:"' flags='2'/>
+<tag menu='L' submenu='Location' shiftprependtext='location' inserttext='.search' hint='The query portion. Example: "?var1=value&amp;var2=value2"' flags='2'/>
+<tag menu='L' submenu='Location' shiftprependtext='location' inserttext='.reload(|)' hint='Reload the current document. Optional Boolean argument to reload from cache if true.' flags='2'/>
+<tag menu='L' submenu='Location' shiftprependtext='location' inserttext='.replace(|)' hint='Loads and displays a new document without a new entry in the History object.' flags='2'/>
+
+<tag menu='M' submenu='Math->Constants' inserttext='Math.E' hint='The constant e, the base of natural logarithms. ~2.71828.' flags='2'/>
+<tag menu='M' submenu='Math->Constants' inserttext='Math.LN10' hint='The natural logarithm of 10. ~2.30259.' flags='2'/>
+<tag menu='M' submenu='Math->Constants' inserttext='Math.LN2' hint='The natural logarithm of 2. ~0.693147.' flags='2'/>
+<tag menu='M' submenu='Math->Constants' inserttext='Math.LOG10E' hint='The base-10 logarithm of the constant e. ~0.434294.' flags='2'/>
+<tag menu='M' submenu='Math->Constants' inserttext='Math.LOG2E' hint='The base-2 logarithm of the constant e. ~1.44270.' flags='2'/>
+<tag menu='M' submenu='Math->Constants' inserttext='Math.PI' hint='The constant pi. ~3.14159.' flags='2'/>
+<tag menu='M' submenu='Math->Constants' inserttext='Math.SQRT1_2' hint='The reciprocal of the square root of 2. ~0.707107.' flags='2'/>
+<tag menu='M' submenu='Math->Constants' inserttext='Math.SQRT2' hint='The square root of 2. ~1.41421.' flags='2'/>
+<tag menu='M' submenu='Math' flags='4'/>
+<tag menu='M' submenu='Math' inserttext='Math.abs(|)' hint='Computes an absolute value.' flags='2'/>
+<tag menu='M' submenu='Math' inserttext='Math.acos(|)' hint='Computes an arc cosine.' flags='2'/>
+<tag menu='M' submenu='Math' inserttext='Math.asin(|)' hint='Computes an arc sine.' flags='2'/>
+<tag menu='M' submenu='Math' inserttext='Math.atan(|)' hint='Computes an arc tangent.' flags='2'/>
+<tag menu='M' submenu='Math' inserttext='Math.atan2(|)' hint='Computes the angle from the X-axis to a point.' flags='2'/>
+<tag menu='M' submenu='Math' inserttext='Math.ceil(|)' hint='Rounds a number up.' flags='2'/>
+<tag menu='M' submenu='Math' inserttext='Math.cos(|)' hint='Computes a cosine.' flags='2'/>
+<tag menu='M' submenu='Math' inserttext='Math.exp(|)' hint='Computes an exponent of e.' flags='2'/>
+<tag menu='M' submenu='Math' inserttext='Math.floor(|)' hint='Rounds a number down.' flags='2'/>
+<tag menu='M' submenu='Math' inserttext='Math.log(|)' hint='Computes a natural logarithm.' flags='2'/>
+<tag menu='M' submenu='Math' inserttext='Math.max(|)' hint='Returns the largest number.' flags='2'/>
+<tag menu='M' submenu='Math' inserttext='Math.min(|)' hint='Returns the smallest number.' flags='2'/>
+<tag menu='M' submenu='Math' inserttext='Math.pow(|)' hint='Computes x to the y power.' flags='2'/>
+<tag menu='M' submenu='Math' inserttext='Math.random(|)' hint='Computes a random number.' flags='2'/>
+<tag menu='M' submenu='Math' inserttext='Math.round(|)' hint='Rounds to the nearest integer.' flags='2'/>
+<tag menu='M' submenu='Math' inserttext='Math.sin(|)' hint='Computes a sine.' flags='2'/>
+<tag menu='M' submenu='Math' inserttext='Math.sqrt(|)' hint='Computes a square root.' flags='2'/>
+<tag menu='M' submenu='Math' inserttext='Math.tan(|)' hint='Computes a tangent.' flags='2'/>
+
+<tag menu='N' submenu='Navigator' inserttext='.appCodeName' hint='The code name of the browser. Usually "Mozilla". Read-only string.' flags='2'/>
+<tag menu='N' submenu='Navigator' inserttext='.appName' hint='The name of the browser. Example: "Netscape", "Microsoft Internet Explorer". Read-only string.' flags='2'/>
+<tag menu='N' submenu='Navigator' inserttext='.appVersion' hint='The browser version and platform information. Read-only string.' flags='2'/>
+<tag menu='N' submenu='Navigator' inserttext='.cookieEnabled' hint='Specifies whether the browser has cookies enabled. Read-only boolean property.' flags='2'/>
+<tag menu='N' submenu='Navigator' inserttext='.javaEnabled()' hint='Returns true if Java is supported and enabled on the browser.' flags='2'/>
+<tag menu='N' submenu='Navigator' inserttext='.platform' hint='The OS and/or hardware platform the browser is running on. Read-only string.' flags='2'/>
+<tag menu='N' submenu='Navigator' inserttext='.userAgent' hint='The value that the browser uses for the user-agent header in HTTP requests. Read-only string.' flags='2'/>
+
+<tag menu='N' submenu='Number->Constants' inserttext='Number.MAX_VALUE' hint='The largest representable number. ~1.79E+308.' flags='2'/>
+<tag menu='N' submenu='Number->Constants' inserttext='Number.MIN_VALUE' hint='The smallest (closest to zero) representable number. ~5E-324.' flags='2'/>
+<tag menu='N' submenu='Number->Constants' inserttext='Number.NaN' hint='Numeric property representing the not-a-number value.' flags='2'/>
+<tag menu='N' submenu='Number->Constants' inserttext='Number.NEGATIVE_INFINITY' hint='Special value used to represent numbers smaller than -Number.MAX_VALUE.' flags='2'/>
+<tag menu='N' submenu='Number->Constants' inserttext='Number.POSITIVE_INFINITY' hint='Special value used to represent numbers greater than Number.MAX_VALUE.' flags='2'/>
+<tag menu='N' submenu='Number' flags='4'/>
+<tag menu='N' submenu='Number' inserttext='new Number(|)' hint='Create a new Number object.' flags='2'/>
+<tag menu='N' submenu='Number' inserttext='Number(|)' hint='Convert argument to a number.' flags='2'/>
+<tag menu='N' submenu='Number' flags='4'/>
+<tag menu='N' submenu='Number' inserttext='.toExponential(|)' hint='Returns a string rep. of number, in exponential notation, with x (0-20) digits after the decimal point.' flags='2'/>
+<tag menu='N' submenu='Number' inserttext='.toFixed(|)' hint='Returns a string rep. of number, with x (0-20) digits after the decimal point. Does not use exponential notation.' flags='2'/>
+<tag menu='N' submenu='Number' inserttext='.toLocaleString(|)' hint='Returns a string rep. of number, formatted to local conventions.' flags='2'/>
+<tag menu='N' submenu='Number' inserttext='.toPrecision(|)' hint='Returns a string rep. of number that contains x (1-21) significant digits. Rounded or padded with zeros as necessary.' flags='2'/>
+<tag menu='N' submenu='Number' inserttext='.toString()' hint='Returns a string rep. of number. A radix (base) argument of 2-36 is optional.' flags='2'/>
+<tag menu='N' submenu='Number' inserttext='.valueOf()' hint='Returns the primitive number value (rarely necessary to explicitly call this method).' flags='2'/>
+
+<tag menu='N' flags='4'/>
+<tag menu='N' inserttext='NaN' hint='Numeric property representing the not-a-number value.' flags='2'/>
+<tag menu='N' inserttext='new |;' hint='Create a new object using the new operator. new is a unary operator.' flags='2'/>
+<tag menu='N' inserttext='new |();' hint='Create a new object using the new operator. new is a unary operator.' flags='2'/>
+<tag menu='N' inserttext='null' hint='Special (unique) value that indicates no value. Not the same as undefined.' flags='2'/>
+
+<tag menu='O' submenu='Object' inserttext='new Object(|)' hint="Create a new 'Object' object. Optional argument is a primitive JavaScript value (number, boolean, string)." flags='2'/>
+<tag menu='O' submenu='Object' flags='4'/>
+<tag menu='O' submenu='Object' inserttext='.constructor' hint='Reference to the function used as a constructor for the object.' flags='2'/>
+<tag menu='O' submenu='Object' inserttext='.hasOwnProperty(|)' hint='Returns true if object has a noninherited property with the name given by the argument, else returns false.' flags='2'/>
+<tag menu='O' submenu='Object' inserttext='.isPrototypeOf(|)' hint='Returns true if the object is the prototype of the argument.' flags='2'/>
+<tag menu='O' submenu='Object' inserttext='.propertyIsEnumerable(|)' hint='Returns true if the object has an enumerable property with the name given by the argument.' flags='2'/>
+<tag menu='O' submenu='Object' inserttext='.toLocaleString()' hint="Returns the object's localized string representation." flags='2'/>
+<tag menu='O' submenu='Object' inserttext='.toString()' hint="Returns the object's string representation." flags='2'/>
+<tag menu='O' submenu='Object' inserttext='.valueOf()' hint="Returns the primitive value of the object." flags='2'/>
+
+<tag menu='O' submenu='Option' inserttext='new Option(|)' hint='new Option(text, value, defaultSelected, selected) Create a new Option object.' flags='2'/>
+<tag menu='O' submenu='Option' flags='4'/>
+<tag menu='O' submenu='Option' inserttext='.defaultSelected' hint='Specifies whether the option is initially selected. Boolean property.' flags='2'/>
+<tag menu='O' submenu='Option' inserttext='.index' hint='The position/index of the option in the select.options[] array. 0-based. Read-only integer.' flags='2'/>
+<tag menu='O' submenu='Option' inserttext='.selected' hint='Specifies whether the option is currently selected. Read/write boolean property.' flags='2'/>
+<tag menu='O' submenu='Option' inserttext='.text' hint='The text that appears to the user. Read/write string.' flags='2'/>
+<tag menu='O' submenu='Option' inserttext='.value' hint='The text passed to the web server if selected. Read/write string.' flags='2'/>
+
+<tag menu='P' submenu='Password' hint='Password inherits from Input and HTMLElement.' flags='0'/>
+<tag menu='P' submenu='Password' inserttext='.value' hint='The password entered by the user. Read/write string.' flags='2'/>
+
+<tag menu='P' flags='4'/>
+<tag menu='P' inserttext='parseFloat(|)' hint='Returns the first number that occurs in the string argument.' flags='2'/>
+<tag menu='P' inserttext='parseInt(|)' hint='Returns the first number that occurs in the string argument. Optional second argument is the radix (base).' flags='2'/>
+
+<tag menu='R' submenu='Radio' hint='Radio inherits from Input and HTMLElement.' flags='0'/>
+<tag menu='R' submenu='Radio' inserttext='.checked' hint='Specifies whether the radio button is checked. Read/write boolean property.' flags='2'/>
+<tag menu='R' submenu='Radio' inserttext='.defaultChecked' hint='Specifies whether the radio button is checked by default. Read-only boolean property.' flags='2'/>
+<tag menu='R' submenu='Radio' inserttext='.onclick' hint='Event handler invoked when the radio button is clicked or selected.' flags='2'/>
+<tag menu='R' submenu='Radio' inserttext='.value' hint='The value submitted when the form is submitted. Read/write string.' flags='2'/>
+
+<tag menu='R' submenu='RangeError' inserttext='new RangeError(|)' hint='Creates a new RangeError object. Optional message argument. Thrown when numeric value not in legal range.' flags='2'/>
+<tag menu='R' submenu='RangeError' flags='4'/>
+<tag menu='R' submenu='RangeError' inserttext='.message' hint='Human-readable error message.' flags='2'/>
+<tag menu='R' submenu='RangeError' inserttext='.name' hint='The type of error or exception that occurred.' flags='2'/>
+
+<tag menu='R' submenu='ReferenceError' inserttext='new ReferenceError(|)' hint='Creates a new ReferenceError object. Optional message argument. Thrown when nonexistent variable is read.' flags='2'/>
+<tag menu='R' submenu='ReferenceError' flags='4'/>
+<tag menu='R' submenu='ReferenceError' inserttext='.message' hint='Human-readable error message.' flags='2'/>
+<tag menu='R' submenu='ReferenceError' inserttext='.name' hint='The type of error or exception that occurred.' flags='2'/>
+
+<tag menu='R' submenu='RegExp->Anchor Characters' inserttext='^' hint='Match the beginning of the string and, in multiline mode, the beginning of a line.' flags='2'/>
+<tag menu='R' submenu='RegExp->Anchor Characters' inserttext='$' hint='Match the end of the string and, in multiline mode, the end of a line.' flags='2'/>
+<tag menu='R' submenu='RegExp->Anchor Characters' inserttext='\b' hint='Match a word boundary. Note that [\b] matches a backspace character.' flags='2'/>
+<tag menu='R' submenu='RegExp->Anchor Characters' inserttext='\B' hint='Match a position that is NOT a word boundary.' flags='2'/>
+<tag menu='R' submenu='RegExp->Anchor Characters' inserttext='(?=|)' hint="(?=p) Require that the following characters match p, but don't include them in the match." flags='2'/>
+<tag menu='R' submenu='RegExp->Anchor Characters' inserttext='(?!|)' hint="(?!p) Require that the following characters do NOT match p." flags='2'/>
+
+<tag menu='R' submenu='RegExp->Character Classes' inserttext='[|]' hint='Any one character between the brackets.' flags='2'/>
+<tag menu='R' submenu='RegExp->Character Classes' inserttext='[^|]' hint='Any one character NOT between the brackets.' flags='2'/>
+<tag menu='R' submenu='RegExp->Character Classes' inserttext='.' hint='Any character except newline or another Unicode line terminator.' flags='2'/>
+<tag menu='R' submenu='RegExp->Character Classes' inserttext='\d' hint='Any ASCII digit. Equivalent to [0-9].' flags='2'/>
+<tag menu='R' submenu='RegExp->Character Classes' inserttext='\D' hint='Any character that is NOT an ASCII digit. Equivalent to [^0-9].' flags='2'/>
+<tag menu='R' submenu='RegExp->Character Classes' inserttext='\w' hint='Any ASCII word character. Equivalent to [a-zA-Z0-9_].' flags='2'/>
+<tag menu='R' submenu='RegExp->Character Classes' inserttext='\W' hint='Any character that is NOT an ASCII word character. Equivalent to [^a-zA-Z0-9_].' flags='2'/>
+<tag menu='R' submenu='RegExp->Character Classes' inserttext='\s' hint='Any Unicode whitespace character.' flags='2'/>
+<tag menu='R' submenu='RegExp->Character Classes' inserttext='\S' hint='Any Unicode character that is NOT Unicode whitespace.' flags='2'/>
+<tag menu='R' submenu='RegExp->Character Classes' inserttext='[\b]' hint='A literal backspace character.' flags='2'/>
+
+<tag menu='R' submenu='RegExp->Flags' inserttext='i' hint='Perform case insensitive matching.' flags='2'/>
+<tag menu='R' submenu='RegExp->Flags' inserttext='g' hint='Perform global matching (find all matches insead of stopping after the first match).' flags='2'/>
+<tag menu='R' submenu='RegExp->Flags' inserttext='m' hint='Multi-line mode. ^ matches beg of line or string, $ matches end of line or string.' flags='2'/>
+
+<tag menu='R' submenu='RegExp->Literal Characters' inserttext='\0' hint='Null character (\u0000).' flags='2'/>
+<tag menu='R' submenu='RegExp->Literal Characters' inserttext='\f' hint='Form feed (\u000C).' flags='2'/>
+<tag menu='R' submenu='RegExp->Literal Characters' inserttext='\n' hint='Newline character (\u000A).' flags='2'/>
+<tag menu='R' submenu='RegExp->Literal Characters' inserttext='\r' hint='Carriage return (\u000D).' flags='2'/>
+<tag menu='R' submenu='RegExp->Literal Characters' inserttext='\t' hint='Tab character (\u0009).' flags='2'/>
+<tag menu='R' submenu='RegExp->Literal Characters' inserttext='\v' hint='Vertical tab (\u000B).' flags='2'/>
+<tag menu='R' submenu='RegExp->Literal Characters' inserttext='\c|' hint='Specify a control character in the form \cX. \cX specifies ^X.' flags='2'/>
+<tag menu='R' submenu='RegExp->Literal Characters' inserttext='\u|' hint='Specify a Unicode character in the form \uxxxx, where xxxx is a hexadecimal number.' flags='2'/>
+<tag menu='R' submenu='RegExp->Literal Characters' inserttext='\x|' hint='Specify a Latin character in the form \xnn, where nn is a hexadecimal number.' flags='2'/>
+
+<tag menu='R' submenu='RegExp->Repetition Characters' inserttext='{|,}' hint='{n,m} Match previous item at least n times but no more than m times.' flags='2'/>
+<tag menu='R' submenu='RegExp->Repetition Characters' inserttext='{|,}' hint='{n,} Match previous item at least n times.' flags='2'/>
+<tag menu='R' submenu='RegExp->Repetition Characters' inserttext='{|}' hint='{n} Match previous item exactly n times.' flags='2'/>
+<tag menu='R' submenu='RegExp->Repetition Characters' inserttext='?' hint='Match previous item zero or one times. Equivalent to {0,1}.' flags='2'/>
+<tag menu='R' submenu='RegExp->Repetition Characters' inserttext='+' hint='Match previous item one or more times. Equivalent to {1,}.' flags='2'/>
+<tag menu='R' submenu='RegExp->Repetition Characters' inserttext='*' hint='Match previous item zero or more times. Equivalent to {0,}.' flags='2'/>
+
+<tag menu='R' submenu='RegExp' flags='4'/>
+<tag menu='R' submenu='RegExp' inserttext='new RegExp(|)' hint='RegExp(pattern, attributes) Creates a new RegExp object.' flags='2'/>
+<tag menu='R' submenu='RegExp' flags='4'/>
+<tag menu='R' submenu='RegExp' inserttext='.exec(|)' hint='Searches string argument and returns array of results or null.' flags='2'/>
+<tag menu='R' submenu='RegExp' inserttext='.global' hint='Specifies whether the object performs global matching (created with g att). Read-only boolean property.' flags='2'/>
+<tag menu='R' submenu='RegExp' inserttext='.ignoreCase' hint='Specifies whether the object performs case-insensitive matching (created with i att). Read-only boolean property.' flags='2'/>
+<tag menu='R' submenu='RegExp' inserttext='.lastIndex' hint='The starting position of the next match. Read/write property.' flags='2'/>
+<tag menu='R' submenu='RegExp' inserttext='.multiline' hint='Specifies whether the object performs multiline mode matching (created with m att). Read-only boolean property.' flags='2'/>
+<tag menu='R' submenu='RegExp' inserttext='.source' hint='The text of the RegExp pattern. Read-only string property. Does not include delimiting slashes.' flags='2'/>
+<tag menu='R' submenu='RegExp' inserttext='.test(|)' hint='Returns true if the string argument matches the regex, else returns false.' flags='2'/>
+<tag menu='R' submenu='RegExp' inserttext='.toString()' hint='Returns a string rep. of the regular expression in the form of a literal.' flags='2'/>
+
+<tag menu='R' submenu='Reset' hint='Reset inherits from Input and HTMLElement.' flags='0'/>
+<tag menu='R' submenu='Reset' inserttext='.onclick' hint='Event handler invoked when the reset button is clicked.' flags='2'/>
+<tag menu='R' submenu='Reset' inserttext='.value' hint='The text that appears in the reset button. Read/write string.' flags='2'/>
+
+<tag menu='R' flags='4'/>
+<tag menu='R' inserttext='return;' hint='return statement.' flags='2'/>
+<tag menu='R' inserttext='return |;' hint='return statement.' flags='2'/>
+
+<tag menu='S' submenu='Screen' shiftprependtext='screen' inserttext='.availHeight' hint='The available height, in pixels, of the screen.' flags='2'/>
+<tag menu='S' submenu='Screen' shiftprependtext='screen' inserttext='.availWidth' hint='The available width, in pixels, of the screen.' flags='2'/>
+<tag menu='S' submenu='Screen' shiftprependtext='screen' inserttext='.colorDepth' hint='The number of colors available (base-2 logarithm). Example: 8 for 256 colors.' flags='2'/>
+<tag menu='S' submenu='Screen' shiftprependtext='screen' inserttext='.height' hint='The total height, in pixels, of the screen.' flags='2'/>
+<tag menu='S' submenu='Screen' shiftprependtext='screen' inserttext='.width' hint='The total width, in pixels, of the screen.' flags='2'/>
+
+<tag menu='S' submenu='Select' hint='Select inherits from Input and HTMLElement.' flags='0'/>
+<tag menu='S' submenu='Select' inserttext='.length' hint='The number of elements in the options[] array. Read-only integer.' flags='2'/>
+<tag menu='S' submenu='Select' inserttext='.options[|]' hint='Array of Option objects.' flags='2'/>
+<tag menu='S' submenu='Select' inserttext='.selectedIndex' hint='The index of the selected option. Read/write integer.' flags='2'/>
+<tag menu='S' submenu='Select' inserttext='.type' hint='The type of the element. "select-one" or "select-multiple". Read-only string.' flags='2'/>
+<tag menu='S' submenu='Select' inserttext='.onchange' hint='Event handler invoked when option is selected or deselected.' flags='2'/>
+
+<tag menu='S' submenu='String' inserttext='new String(|)' hint='Creates a new String object. The argument is the string to be stored.' flags='2'/>
+<tag menu='S' submenu='String' flags='4'/>
+<tag menu='S' submenu='String' inserttext='.charAt(|)' hint='Returns the nth character (n is the argument) of the string.' flags='2'/>
+<tag menu='S' submenu='String' inserttext='.charCodeAt(|)' hint='Returns the Unicode encoding of the nth character (n is the argument) of the string. Returns an integer between 0 and 65535.' flags='2'/>
+<tag menu='S' submenu='String' inserttext='.concat(|)' hint='Returns a new string that results from concatenating each of the arguments to the string.' flags='2'/>
+<tag menu='S' submenu='String' inserttext='.fromCharCode(|)' hint='Returns a new string made from the specified Unicode character encodings given in each argument.' flags='2'/>
+<tag menu='S' submenu='String' inserttext='.indexOf(|)' hint='Returns the first location of a substring in the string. Optional start parameter specifies where to start searching.' flags='2'/>
+<tag menu='S' submenu='String' inserttext='.lastIndexOf(|)' hint='Returns the last location of a substring in the string. Optional start parameter specifies where to start searching.' flags='2'/>
+<tag menu='S' submenu='String' inserttext='.length' hint='The length of the string. Read-only integer property.' flags='2'/>
+<tag menu='S' submenu='String' inserttext='.localeCompare(|)' hint='Compares the string to a target string using locale-specific ordering. Returns a number.' flags='2'/>
+<tag menu='S' submenu='String' inserttext='.match(|)' hint='Search string for regex matches and return an array containing the results.' flags='2'/>
+<tag menu='S' submenu='String' inserttext='.replace(|)' hint='Replace substrings in string. Returns a new string.' flags='2'/>
+<tag menu='S' submenu='String' inserttext='.search(|)' hint='Searches string for a regular expression. Returns the start of the first substring that matches or -1.' flags='2'/>
+<tag menu='S' submenu='String' inserttext='.slice(|)' hint='Returns a substring based on start position and end position arguments.' flags='2'/>
+<tag menu='S' submenu='String' inserttext='.split(|)' hint='Break a string into an array of strings based on delimiter and limit arguments. Delimiter can be string or reg ex.' flags='2'/>
+<tag menu='S' submenu='String' inserttext='.substr(|)' hint='Deprecated. Recommend substring() or slice() instead. Returns a substring based on start position and length arguments. Length argument is optional.' flags='2'/>
+<tag menu='S' submenu='String' inserttext='.substring(|)' hint='Returns a substring based on from position and to position arguments. To argument is optional. Length of returned string is to-from.' flags='2'/>
+<tag menu='S' submenu='String' inserttext='.toLocaleLowerCase()' hint='Returns a string converted to lowercase letters in a locale-specific way.' flags='2'/>
+<tag menu='S' submenu='String' inserttext='.toLocaleUpperCase()' hint='Returns a string converted to uppercase letters in a locale-specific way.' flags='2'/>
+<tag menu='S' submenu='String' inserttext='.toLowerCase()' hint='Returns a string with each uppercase letter converted to lowercase.' flags='2'/>
+<tag menu='S' submenu='String' inserttext='.toString()' hint='Returns the primitive string value of the string (rarely necessary to explicitly call this method).' flags='2'/>
+<tag menu='S' submenu='String' inserttext='.toUpperCase()' hint='Returns a string with each lowercase letter converted to uppercase.' flags='2'/>
+<tag menu='S' submenu='String' inserttext='.valueOf()' hint='Returns the primitive string value of the string.' flags='2'/>
+
+<tag menu='S' flags='4'/>
+
+<tag menu='S' submenu='Style (background *)' shiftprependtext='style' inserttext='.background' hint='Sets all background properties.' flags='2'/>
+<tag menu='S' submenu='Style (background *)' shiftprependtext='style' inserttext='.backgroundAttachment' hint='Sets whether a background-image is fixed or scrolls with the page.' flags='2'/>
+<tag menu='S' submenu='Style (background *)' shiftprependtext='style' inserttext='.backgroundColor' hint='The background-color of an element.' flags='2'/>
+<tag menu='S' submenu='Style (background *)' shiftprependtext='style' inserttext='.backgroundImage' hint='The background-image of an element.' flags='2'/>
+<tag menu='S' submenu='Style (background *)' shiftprependtext='style' inserttext='.backgroundPosition' hint='The starting position of a background-image.' flags='2'/>
+<tag menu='S' submenu='Style (background *)' shiftprependtext='style' inserttext='.backgroundRepeat' hint='Sets if and how to repeat a background-image.' flags='2'/>
+
+<tag menu='S' submenu='Style (border *)' shiftprependtext='style' inserttext='.border' hint='Sets all properties for the four borders.' flags='2'/>
+<tag menu='S' submenu='Style (border *)' shiftprependtext='style' inserttext='.borderBottom' hint='Sets all properties for the bottom border.' flags='2'/>
+<tag menu='S' submenu='Style (border *)' shiftprependtext='style' inserttext='.borderBottomColor' hint='The bottom border color.' flags='2'/>
+<tag menu='S' submenu='Style (border *)' shiftprependtext='style' inserttext='.borderBottomStyle' hint='The bottom border style.' flags='2'/>
+<tag menu='S' submenu='Style (border *)' shiftprependtext='style' inserttext='.borderBottomWidth' hint='The bottom border width.' flags='2'/>
+<tag menu='S' submenu='Style (border *)' shiftprependtext='style' inserttext='.borderColor' hint='The color of all four borders (up to four colors). Order: top, right, bottom left.' flags='2'/>
+<tag menu='S' submenu='Style (border *)' shiftprependtext='style' inserttext='.borderLeft' hint='Sets all properties for the left border.' flags='2'/>
+<tag menu='S' submenu='Style (border *)' shiftprependtext='style' inserttext='.borderLeftColor' hint='The left border color.' flags='2'/>
+<tag menu='S' submenu='Style (border *)' shiftprependtext='style' inserttext='.borderLeftStyle' hint='The left border style.' flags='2'/>
+<tag menu='S' submenu='Style (border *)' shiftprependtext='style' inserttext='.borderLeftWidth' hint='The left border width.' flags='2'/>
+<tag menu='S' submenu='Style (border *)' shiftprependtext='style' inserttext='.borderRight' hint='Sets all properties for the right border.' flags='2'/>
+<tag menu='S' submenu='Style (border *)' shiftprependtext='style' inserttext='.borderRightColor' hint='The right border color.' flags='2'/>
+<tag menu='S' submenu='Style (border *)' shiftprependtext='style' inserttext='.borderRightStyle' hint='The right border style.' flags='2'/>
+<tag menu='S' submenu='Style (border *)' shiftprependtext='style' inserttext='.borderRightWidth' hint='The right border width.' flags='2'/>
+<tag menu='S' submenu='Style (border *)' shiftprependtext='style' inserttext='.borderStyle' hint='The style of all four borders (up to four styles). Order: top, right, bottom left.' flags='2'/>
+<tag menu='S' submenu='Style (border *)' shiftprependtext='style' inserttext='.borderTop' hint='Sets all properties for the top border.' flags='2'/>
+<tag menu='S' submenu='Style (border *)' shiftprependtext='style' inserttext='.borderTopColor' hint='The top border color.' flags='2'/>
+<tag menu='S' submenu='Style (border *)' shiftprependtext='style' inserttext='.borderTopStyle' hint='The top border style.' flags='2'/>
+<tag menu='S' submenu='Style (border *)' shiftprependtext='style' inserttext='.borderTopWidth' hint='The top border width.' flags='2'/>
+<tag menu='S' submenu='Style (border *)' shiftprependtext='style' inserttext='.borderWidth' hint='The width of all four borders (up to four widths). Order: top, right, bottom left.' flags='2'/>
+
+<tag menu='S' submenu='Style (layout)' shiftprependtext='style' inserttext='.clear' hint='Sets on which sides of an element other floating elements are not allowed.' flags='2'/>
+<tag menu='S' submenu='Style (layout)' shiftprependtext='style' inserttext='.clip' hint='The shape of an element.' flags='2'/>
+<tag menu='S' submenu='Style (layout)' shiftprependtext='style' inserttext='.content' hint='Sets meta-information.' flags='2'/>
+<tag menu='S' submenu='Style (layout)' shiftprependtext='style' inserttext='.counterIncrement' hint='Sets a list of counter names, followed by an integer to set by how much the counter is incremented for each occurrence of the element (default is 1).' flags='2'/>
+<tag menu='S' submenu='Style (layout)' shiftprependtext='style' inserttext='.counterReset' hint='Sets a list of counter names, followed by an integer that gives the value that the counter is set to on each occurrence of the element (default is 0).' flags='2'/>
+<tag menu='S' submenu='Style (layout)' shiftprependtext='style' inserttext='.cssFloat' hint='Sets where the element will appear (float) in another element.' flags='2'/>
+<tag menu='S' submenu='Style (layout)' shiftprependtext='style' inserttext='.cursor' hint='The type of cursor to be displayed.' flags='2'/>
+<tag menu='S' submenu='Style (layout)' shiftprependtext='style' inserttext='.direction' hint='The text direction of an element.' flags='2'/>
+<tag menu='S' submenu='Style (layout)' shiftprependtext='style' inserttext='.display' hint='How an element will be displayed.' flags='2'/>
+<tag menu='S' submenu='Style (layout)' shiftprependtext='style' inserttext='.height' hint='The element height.' flags='2'/>
+<tag menu='S' submenu='Style (layout)' shiftprependtext='style' inserttext='.markerOffset' hint='The distance between the nearest border edges of a marker box and its principal box.' flags='2'/>
+<tag menu='S' submenu='Style (layout)' shiftprependtext='style' inserttext='.marks' hint='Sets whether to use cross marks or crop marks just outside the page box edge.' flags='2'/>
+<tag menu='S' submenu='Style (layout)' shiftprependtext='style' inserttext='.maxHeight' hint='The maximum height of an element.' flags='2'/>
+<tag menu='S' submenu='Style (layout)' shiftprependtext='style' inserttext='.maxWidth' hint='The maximum width of an element.' flags='2'/>
+<tag menu='S' submenu='Style (layout)' shiftprependtext='style' inserttext='.minHeight' hint='The minimum height of an element.' flags='2'/>
+<tag menu='S' submenu='Style (layout)' shiftprependtext='style' inserttext='.minWidth' hint='The minimum width of an element.' flags='2'/>
+<tag menu='S' submenu='Style (layout)' shiftprependtext='style' inserttext='.overflow' hint='How to handle content that does not fit in an element box.' flags='2'/>
+<tag menu='S' submenu='Style (layout)' shiftprependtext='style' inserttext='.verticalAlign' hint='The vertical alignment of content in an element.' flags='2'/>
+<tag menu='S' submenu='Style (layout)' shiftprependtext='style' inserttext='.visibility' hint='Sets whether or not an element should be visible.' flags='2'/>
+<tag menu='S' submenu='Style (layout)' shiftprependtext='style' inserttext='.width' hint='The element width.' flags='2'/>
+
+<tag menu='S' submenu='Style (list *)' shiftprependtext='style' inserttext='.listStyle' hint='Sets all the properties for a list.' flags='2'/>
+<tag menu='S' submenu='Style (list *)' shiftprependtext='style' inserttext='.listStyleImage' hint='Sets an image as the list-item marker.' flags='2'/>
+<tag menu='S' submenu='Style (list *)' shiftprependtext='style' inserttext='.listStylePosition' hint='Positions the list-item marker.' flags='2'/>
+<tag menu='S' submenu='Style (list *)' shiftprependtext='style' inserttext='.listStyleType' hint='The list-item marker type.' flags='2'/>
+
+<tag menu='S' submenu='Style (margin *)' shiftprependtext='style' inserttext='.margin' hint='The margins of an element (up to four values). Order: top, right, bottom left.' flags='2'/>
+<tag menu='S' submenu='Style (margin *)' shiftprependtext='style' inserttext='.marginBottom' hint='The bottom margin of an element.' flags='2'/>
+<tag menu='S' submenu='Style (margin *)' shiftprependtext='style' inserttext='.marginLeft' hint='The left margin of an element.' flags='2'/>
+<tag menu='S' submenu='Style (margin *)' shiftprependtext='style' inserttext='.marginRight' hint='The right margin of an element.' flags='2'/>
+<tag menu='S' submenu='Style (margin *)' shiftprependtext='style' inserttext='.marginTop' hint='The top margin of an element.' flags='2'/>
+
+<tag menu='S' submenu='Style (outline *)' shiftprependtext='style' inserttext='.outline' hint='Sets all outline properties.' flags='2'/>
+<tag menu='S' submenu='Style (outline *)' shiftprependtext='style' inserttext='.outlineColor' hint='The outline color around an element.' flags='2'/>
+<tag menu='S' submenu='Style (outline *)' shiftprependtext='style' inserttext='.outlineStyle' hint='The outline style around an element.' flags='2'/>
+<tag menu='S' submenu='Style (outline *)' shiftprependtext='style' inserttext='.outlineWidth' hint='The outline width around an element.' flags='2'/>
+
+<tag menu='S' submenu='Style (padding *)' shiftprependtext='style' inserttext='.padding' hint='The padding of an element (up to four values). Order: top, right, bottom left.' flags='2'/>
+<tag menu='S' submenu='Style (padding *)' shiftprependtext='style' inserttext='.paddingBottom' hint='The bottom padding of an element.' flags='2'/>
+<tag menu='S' submenu='Style (padding *)' shiftprependtext='style' inserttext='.paddingLeft' hint='The left padding of an element.' flags='2'/>
+<tag menu='S' submenu='Style (padding *)' shiftprependtext='style' inserttext='.paddingRight' hint='The right padding of an element.' flags='2'/>
+<tag menu='S' submenu='Style (padding *)' shiftprependtext='style' inserttext='.paddingTop' hint='The top padding of an element.' flags='2'/>
+
+<tag menu='S' submenu='Style (positioning)' shiftprependtext='style' inserttext='.bottom' hint='How far the bottom edge of an element is above the bottom edge of the containing block.' flags='2'/>
+<tag menu='S' submenu='Style (positioning)' shiftprependtext='style' inserttext='.left' hint='How far the left edge of an element is to the right of the left edge of the containing block.' flags='2'/>
+<tag menu='S' submenu='Style (positioning)' shiftprependtext='style' inserttext='.position' hint="The element's position (static, relative, absolute or fixed)." flags='2'/>
+<tag menu='S' submenu='Style (positioning)' shiftprependtext='style' inserttext='.right' hint='How far the right edge of an element is to the left of the right edge of the containing block.' flags='2'/>
+<tag menu='S' submenu='Style (positioning)' shiftprependtext='style' inserttext='.top' hint='How far the top edge of an element is below the top edge of the containing block.' flags='2'/>
+<tag menu='S' submenu='Style (positioning)' shiftprependtext='style' inserttext='.zIndex' hint='The stack order of an element.' flags='2'/>
+
+<tag menu='S' submenu='Style (printing)' shiftprependtext='style' inserttext='.orphans' hint='The minimum number of lines for a paragraph that must be left at the bottom of a page.' flags='2'/>
+<tag menu='S' submenu='Style (printing)' shiftprependtext='style' inserttext='.page' hint='Sets a page type to use when displaying an element.' flags='2'/>
+<tag menu='S' submenu='Style (printing)' shiftprependtext='style' inserttext='.pageBreakAfter' hint='The page-breaking behavior after an element.' flags='2'/>
+<tag menu='S' submenu='Style (printing)' shiftprependtext='style' inserttext='.pageBreakBefore' hint='The page-breaking behavior before an element.' flags='2'/>
+<tag menu='S' submenu='Style (printing)' shiftprependtext='style' inserttext='.pageBreakInside' hint='The page-breaking behavior inside an element.' flags='2'/>
+<tag menu='S' submenu='Style (printing)' shiftprependtext='style' inserttext='.size' hint='The orientation and size of a page.' flags='2'/>
+<tag menu='S' submenu='Style (printing)' shiftprependtext='style' inserttext='.widows' hint='The minimum number of lines for a paragraph that must be left at the top of a page.' flags='2'/>
+
+<tag menu='S' submenu='Style (table)' shiftprependtext='style' inserttext='.borderCollapse' hint='The table border model.' flags='2'/>
+<tag menu='S' submenu='Style (table)' shiftprependtext='style' inserttext='.borderSpacing' hint='The distance that separates cell borders.' flags='2'/>
+<tag menu='S' submenu='Style (table)' shiftprependtext='style' inserttext='.captionSide' hint='The position of the table caption.' flags='2'/>
+<tag menu='S' submenu='Style (table)' shiftprependtext='style' inserttext='.emptyCells' hint='Sets whether or not to show empty cells in a table.' flags='2'/>
+<tag menu='S' submenu='Style (table)' shiftprependtext='style' inserttext='.tableLayout' hint='The algorithm used to display the table cells, rows, and columns.' flags='2'/>
+
+<tag menu='S' submenu='Style (text)' shiftprependtext='style' inserttext='.color' hint='The text color.' flags='2'/>
+<tag menu='S' submenu='Style (text)' shiftprependtext='style' inserttext='.font' hint='Sets all font properties.' flags='2'/>
+<tag menu='S' submenu='Style (text)' shiftprependtext='style' inserttext='.fontFamily' hint='The font of an element.' flags='2'/>
+<tag menu='S' submenu='Style (text)' shiftprependtext='style' inserttext='.fontSize' hint='The font-size of an element.' flags='2'/>
+<tag menu='S' submenu='Style (text)' shiftprependtext='style' inserttext='.fontSizeAdjust' hint='Sets/adjusts the text size.' flags='2'/>
+<tag menu='S' submenu='Style (text)' shiftprependtext='style' inserttext='.fontStretch' hint='How to condense or stretch a font.' flags='2'/>
+<tag menu='S' submenu='Style (text)' shiftprependtext='style' inserttext='.fontStyle' hint='The font-style of an element.' flags='2'/>
+<tag menu='S' submenu='Style (text)' shiftprependtext='style' inserttext='.fontVariant' hint='Displays text in a small-caps font.' flags='2'/>
+<tag menu='S' submenu='Style (text)' shiftprependtext='style' inserttext='.fontWeight' hint='The weight (boldness) of the font.' flags='2'/>
+<tag menu='S' submenu='Style (text)' shiftprependtext='style' inserttext='.letterSpacing' hint='The space between characters.' flags='2'/>
+<tag menu='S' submenu='Style (text)' shiftprependtext='style' inserttext='.lineHeight' hint='The distance between lines.' flags='2'/>
+<tag menu='S' submenu='Style (text)' shiftprependtext='style' inserttext='.quotes' hint='Sets which quotation marks to use for embedded quotations.' flags='2'/>
+<tag menu='S' submenu='Style (text)' shiftprependtext='style' inserttext='.textAlign' hint='How to align text.' flags='2'/>
+<tag menu='S' submenu='Style (text)' shiftprependtext='style' inserttext='.textDecoration' hint='The text decoration.' flags='2'/>
+<tag menu='S' submenu='Style (text)' shiftprependtext='style' inserttext='.textIndent' hint='Indents the first line of text.' flags='2'/>
+<tag menu='S' submenu='Style (text)' shiftprependtext='style' inserttext='.textShadow' hint='The text shadow effect.' flags='2'/>
+<tag menu='S' submenu='Style (text)' shiftprependtext='style' inserttext='.textTransform' hint='Sets text capitalization effect.' flags='2'/>
+<tag menu='S' submenu='Style (text)' shiftprependtext='style' inserttext='.unicodeBidi' flags='2'/>
+<tag menu='S' submenu='Style (text)' shiftprependtext='style' inserttext='.whiteSpace' hint='How to handle line-breaks and white-space in text.' flags='2'/>
+<tag menu='S' submenu='Style (text)' shiftprependtext='style' inserttext='.wordSpacing' hint='The text spacing between words.' flags='2'/>
+
+<tag menu='S' flags='4'/>
+
+<tag menu='S' submenu='Submit' hint='Submit inherits from Input and HTMLElement.' flags='0'/>
+<tag menu='S' submenu='Submit' inserttext='.onclick' hint='Event handler invoked when the submit button is clicked.' flags='2'/>
+<tag menu='S' submenu='Submit' inserttext='.value' hint='The text that appears in the submit button. Read/write string.' flags='2'/>
+
+<tag menu='S' submenu='SyntaxError' inserttext='new SyntaxError(|)' hint='Creates a new SyntaxError object. Thrown to signal a syntax error. Optional message argument.' flags='2'/>
+<tag menu='S' submenu='SyntaxError' flags='4'/>
+<tag menu='S' submenu='SyntaxError' inserttext='.message' hint='Human-readable error message.' flags='2'/>
+<tag menu='S' submenu='SyntaxError' inserttext='.name' hint='The type of error or exception that occurred.' flags='2'/>
+
+<tag menu='S' flags='4'/>
+<tag menu='S' submenu='switch' inserttext='switch (|) {&#13;}' hint='switch statement.' flags='2'/>
+<tag menu='S' submenu='switch' inserttext='switch (|) {&#13;&#9;case ?:&#13;\b}' caption='switch (|) { case ?: }' hint='switch statement with case.' flags='2'/>
+<tag menu='S' submenu='switch' inserttext='switch (|) {&#13;&#9;case ?:&#13;default:&#13;\b}' caption='switch (|) { case ?: default: }' hint='switch statement with case and default.' flags='2'/>
+<tag menu='S' submenu='switch' inserttext='switch (|) {&#13;&#9;case ?:&#13;break;&#13;default:&#13;\b}' caption='switch (|) { case ?: break; default: }' hint='switch statement with case, break and default.' flags='2'/>
+<tag menu='S' submenu='switch' inserttext='switch (|) {&#13;&#9;case ?:&#13;break;&#13;case ?:&#13;break;&#13;default:&#13;\b}' caption='switch (|) { case ?: break; case ?: break; default: }' hint='switch statement with 2x case, break followed by default.' flags='2'/>
+<tag menu='S' submenu='switch' inserttext='switch (|) {&#13;&#9;case ?: {&#13;&#9;break; }&#13;\bcase ?: {&#13;&#9;break; }&#13;\bdefault: { }&#13;\b}' caption='switch (|) { case : { break; } case ?: { break; } default: {} }' hint='switch statement with 2x case, break followed by default.' 
+flags='2'/><tag menu='S' flags='4'/>
+
+<tag menu='S' flags='4'/>
+
+<tag menu='T' submenu='Text' hint='Text inherits from Input and HTMLElement.' flags='0'/>
+<tag menu='T' submenu='Text' inserttext='.value' hint='The text displayed in the input text field. Read/write string.' flags='2'/>
+<tag menu='T' submenu='Text' inserttext='.onchange' hint='Event handler invoked when text is changed and keyboard focus is moved. Not invoked with every keystroke.' flags='2'/>
+
+<tag menu='T' submenu='Textarea' hint='Textarea inherits from Input and HTMLElement.' flags='0'/>
+<tag menu='T' submenu='Textarea' inserttext='.value' hint='The text displayed in the text input field. Read/write string.' flags='2'/>
+<tag menu='T' submenu='Textarea' inserttext='.onchange' hint='Event handler invoked when text is changed and keyboard focus is moved. Not invoked with every keystroke.' flags='2'/>
+
+<tag menu='T' submenu='TypeError' inserttext='new TypeError(|)' hint='Creates a new TypeError object. Thrown when a value is not of the type expected. Optional message argument.' flags='2'/>
+<tag menu='T' submenu='TypeError' flags='4'/>
+<tag menu='T' submenu='TypeError' inserttext='.message' hint='Human-readable error message.' flags='2'/>
+<tag menu='T' submenu='TypeError' inserttext='.name' hint='The type of error or exception that occurred.' flags='2'/>
+
+<tag menu='T' flags='4'/>
+<tag menu='T' submenu='try/catch/finally' inserttext='try {&#13;&#9;|&#13;\b}&#13;catch () {&#13;&#9;&#13;\b}' caption='try () catch () {}' hint='try block with catch.' flags='2'/>
+<tag menu='T' submenu='try/catch/finally' inserttext='try {&#13;&#9;|&#13;\b}&#13;finally {&#13;&#9;&#13;\b}' caption='try () finally {}' hint='try block with finally.' flags='2'/>
+<tag menu='T' submenu='try/catch/finally' inserttext='try {&#13;&#9;|&#13;\b}&#13;catch () {&#13;&#9;&#13;\b}&#13;finally {&#13;&#9;&#13;\b}' caption='try () catch () {} finally {}' hint='try block with catch and finally.' flags='2'/>
+
+<tag menu='T' flags='4'/>
+<tag menu='T' inserttext='throw |;' hint='Throws an exception.' flags='2'/>
+<tag menu='T' inserttext='typeof(|)' hint='Return a string indicating the data type of the operand. typeof is a unary operator.' flags='2'/>
+
+<tag menu='U' submenu='URIError' inserttext='new URIError(|)' hint='Creates a new URIError object. Thrown by decode[URI]Component() if string contains illegal hexadecimal escapes. Optional message argument.' flags='2'/>
+<tag menu='U' submenu='URIError' flags='4'/>
+<tag menu='U' submenu='URIError' inserttext='.message' hint='Human-readable error message.' flags='2'/>
+<tag menu='U' submenu='URIError' inserttext='.name' hint='The type of error or exception that occurred.' flags='2'/>
+
+<tag menu='U' flags='4'/>
+<tag menu='U' inserttext='undefined' hint='Spcial value that holds the undefined value. Not the same as null.' flags='2'/>
+<tag menu='U' inserttext='unescape(|)' hint='Deprecated. Recommend decodeURI() or decodeURIComponent() instead. Decodes a string that was encoded with escape().' flags='2'/>
+
+<tag menu='V' inserttext='var |;' hint='Explicitly declare a variable or variables.' flags='2'/>
+<tag menu='V' inserttext='void' hint='Returns undefined and discards its operand value. void is a unary operator.' flags='2'/>
+
+<tag menu='W' submenu='Window->Window Features' hint="For the features argument of Window.open(url, name, features, replace)." flags='0'/>
+<tag menu='W' shiftprependtext='window' submenu='Window->Window Features' inserttext='.height' hint="The height, in pixels, of the window's document display area." flags='2'/>
+<tag menu='W' shiftprependtext='window' submenu='Window->Window Features' inserttext='.location' hint="Specifies whether the browser's URL input field is displayed." flags='2'/>
+<tag menu='W' shiftprependtext='window' submenu='Window->Window Features' inserttext='.menubar' hint="Specify whether the browser's menubar is displayed." flags='2'/>
+<tag menu='W' shiftprependtext='window' submenu='Window->Window Features' inserttext='.resizable' hint="Specifies whether the browser uses resize handles around its border." flags='2'/>
+<tag menu='W' shiftprependtext='window' submenu='Window->Window Features' inserttext='.scrollbars' hint="Enables horizontal and vertical scrollbars when needed." flags='2'/>
+<tag menu='W' shiftprependtext='window' submenu='Window->Window Features' inserttext='.status' hint="Specifies whether the status line is displayed." flags='2'/>
+<tag menu='W' shiftprependtext='window' submenu='Window->Window Features' inserttext='.toolbar' hint="Specifies whether the browser toolbar is displayed." flags='2'/>
+<tag menu='W' shiftprependtext='window' submenu='Window->Window Features' inserttext='.width' hint="The width, in pixels, of the window's document display area." flags='2'/>
+<tag menu='W' shiftprependtext='window' submenu='Window' flags='4'/>
+<tag menu='W' shiftprependtext='window' submenu='Window' inserttext='.alert(|)' hint='Displays a plain text (not HTML) message in a dialog box.' flags='2'/>
+<tag menu='W' shiftprependtext='window' submenu='Window' inserttext='.blur()' hint='Remove keyboard focus from the top-level browser window.' flags='2'/>
+<tag menu='W' shiftprependtext='window' submenu='Window' inserttext='.clearInterval(|)' hint='Set periodically executing code. Argument is a value returned by setInterval().' flags='2'/>
+<tag menu='W' shiftprependtext='window' submenu='Window' inserttext='.clearTimeout(|)' hint='Cancel a timeout. Argument is a value returned by setTimeout().' flags='2'/>
+<tag menu='W' shiftprependtext='window' submenu='Window' inserttext='.close()' hint='Closes the top-level browser window.' flags='2'/>
+<tag menu='W' shiftprependtext='window' submenu='Window' inserttext='.closed' hint='Specifies whether the window has been closed. Read-only boolean property.' flags='2'/>
+<tag menu='W' shiftprependtext='window' submenu='Window' inserttext='.confirm(|)' hint='Asks a yes-or-no question in a dialog box. The argument is the plain text string to display.' flags='2'/>
+<tag menu='W' shiftprependtext='window' submenu='Window' inserttext='.defaultStatus' hint="The default text to appear in the window's status line. Read/write string." flags='2'/>
+<tag menu='W' shiftprependtext='window' submenu='Window' inserttext='.document' hint='Reference to the Document object for the window or frame. Read-only.' flags='2'/>
+<tag menu='W' shiftprependtext='window' submenu='Window' inserttext='.focus()' hint='Gives keyboard focus to the top-level browser window.' flags='2'/>
+<tag menu='W' shiftprependtext='window' submenu='Window' inserttext='.frames[|]' hint='Array of Frame objects from frames that appear in the window.' flags='2'/>
+<tag menu='W' shiftprependtext='window' submenu='Window' inserttext='.history' hint='Reference to the History object that controls the browser URL history. Read-only.' flags='2'/>
+<tag menu='W' shiftprependtext='window' submenu='Window' inserttext='.length' hint='The number of frames in the window or frame. Equivalent to frames.length.' flags='2'/>
+<tag menu='W' shiftprependtext='window' submenu='Window' inserttext='.location' hint='Reference to the Location object that controls the browser location.' flags='2'/>
+<tag menu='W' shiftprependtext='window' submenu='Window' inserttext='.Math' hint='Reference to object containing math functions and constants. See the Math object.' flags='2'/>
+<tag menu='W' shiftprependtext='window' submenu='Window' inserttext='.moveBy(|)' hint='moveBy(dx, dy) Move a window to a relative position.' flags='2'/>
+<tag menu='W' shiftprependtext='window' submenu='Window' inserttext='.moveTo(|)' hint='moveTo(x, y) Move a window to an absolute position.' flags='2'/>
+<tag menu='W' shiftprependtext='window' submenu='Window' inserttext='.name' hint='The name of a window. Read/write string.' flags='2'/>
+<tag menu='W' shiftprependtext='window' submenu='Window' inserttext='.navigator' hint='Reference to the Navigator object. See the Navigator object. Read-only.' flags='2'/>
+<tag menu='W' shiftprependtext='window' submenu='Window' inserttext='.onblur' hint='Event handler invoked when the window loses keyboard focus.' flags='2'/>
+<tag menu='W' shiftprependtext='window' submenu='Window' inserttext='.onerror' hint='Event handler invoked when a JavaScript error occurs in code executing in the window.' flags='2'/>
+<tag menu='W' shiftprependtext='window' submenu='Window' inserttext='.onfocus' hint='Event handler invoked when the window is given keyboard focus.' flags='2'/>
+<tag menu='W' shiftprependtext='window' submenu='Window' inserttext='.onload' hint='Event handler invoked when a document or frameset is completely loaded into the window or frame.' flags='2'/>
+<tag menu='W' shiftprependtext='window' submenu='Window' inserttext='.onresize' hint='Event handler invoked when the window is resized.' flags='2'/>
+<tag menu='W' shiftprependtext='window' submenu='Window' inserttext='.onunload' hint='Event handler invoked when the browser unloads/leaves a document.' flags='2'/>
+<tag menu='W' shiftprependtext='window' submenu='Window' inserttext='.open(|)' hint='open(url, name, features, replace) Open a new window or locate a named window. Returns a reference to a Window object.' flags='2'/>
+<tag menu='W' shiftprependtext='window' submenu='Window' inserttext='.opener' hint='Reference to Window object with script that called open() to open the window. For top-level windows only. Read/write.' flags='2'/>
+<tag menu='W' shiftprependtext='window' submenu='Window' inserttext='.parent' hint='Reference to Window object that contains the window or frame. Read-only.' flags='2'/>
+<tag menu='W' shiftprependtext='window' submenu='Window' inserttext='.print()' hint='Prints the current document as if the user pressed the print button.' flags='2'/>
+<tag menu='W' shiftprependtext='window' submenu='Window' inserttext='.prompt(|)' hint='prompt(message, default) Opens a dialog box asking for text input from the user.' flags='2'/>
+<tag menu='W' shiftprependtext='window' submenu='Window' inserttext='.resizeBy(|)' hint='resizeBy(dw, dh) Resizes the window by a relative amount. Arguments in pixels.' flags='2'/>
+<tag menu='W' shiftprependtext='window' submenu='Window' inserttext='.resizeTo(|)' hint='resizeTo(width, height) Resizes the window to an absolute amount. Arguments in pixels.' flags='2'/>
+<tag menu='W' shiftprependtext='window' submenu='Window' inserttext='.screen' hint='Reference to the Screen object shared by all windows in the browser. See the Screen object.' flags='2'/>
+<tag menu='W' shiftprependtext='window' submenu='Window' inserttext='.scrollBy(|)' hint='scrollBy(dx, dy) Scroll a document by a relative amount. dx-scroll right, dy-scroll down.' flags='2'/>
+<tag menu='W' shiftprependtext='window' submenu='Window' inserttext='.scrollTo(|)' hint='scrollTo(x, y) Scroll a document so that the x- and y-coords are in the upper-left of the window.' flags='2'/>
+<tag menu='W' shiftprependtext='window' submenu='Window' inserttext='.self' hint='Reference to the Window itself. Identical to window property. Read-only.' flags='2'/>
+<tag menu='W' shiftprependtext='window' submenu='Window' inserttext='.setInterval(|)' hint='Periodically execute specified code every given number of milliseconds.' flags='2'/>
+<tag menu='W' shiftprependtext='window' submenu='Window' inserttext='.setTimeout(|)' hint='setTimeout(code, delay) Execute code after a delay given in milliseconds.' flags='2'/>
+<tag menu='W' shiftprependtext='window' submenu='Window' inserttext='.status' hint="Read/write string property that specifies transient text to appear in the window's status line." flags='2'/>
+<tag menu='W' shiftprependtext='window' submenu='Window' inserttext='.top' hint='Reference to the top-level Window that contains this window. Read-only.' flags='2'/>
+<tag menu='W' shiftprependtext='window' submenu='Window' inserttext='.window' hint='Reference to the Window itself. Identical to self property. Read-only.' flags='2'/>
+
+<tag menu='W' flags='4'/>
+<tag menu='W' inserttext='with (|) {&#13;&#9;&#13;\b}' hint='Not recommended due to possible side effects and poor style.' flags='2'/>
+
+</csetaginserterconfiguration>
